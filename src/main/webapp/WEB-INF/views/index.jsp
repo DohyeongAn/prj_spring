@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>indivisual project</title>
-    <link rel="stylesheet" href="../../resources/style.css" />
+    <link rel="stylesheet" href="../../resources/css/indivisual_style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
             href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
@@ -18,7 +18,7 @@
         <div class="text">이름 : 안도형</div>
         <div class="text">메일 : rrgg0204@naver.com</div>
 
-        <div class="text">나이 : 23</div>
+        <div class="text">나이 : 2000</div>
     </div>
 
     <div id="user_img"><img src="img/do로고-001 (1).png" alt="" /></div>
@@ -29,8 +29,8 @@
 
 <section id="section2" class="section">
     <div id="controlbox">
-        <a class="userbox" href="../index.html"> USER</a>
-        <a class="userbox" href="admin/production/form.html"> ADMIN</a>
+        <a class="userbox" href="/login"> USER</a>
+        <a class="userbox" href="/admin_login"> ADMIN</a>
     </div>
 </section>
 </body>
