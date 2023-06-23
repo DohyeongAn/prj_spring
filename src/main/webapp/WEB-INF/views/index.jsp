@@ -18,7 +18,7 @@
         <div class="text">이름 : 안도형</div>
         <div class="text">메일 : rrgg0204@naver.com</div>
 
-        <div class="text">나이 : 2000</div>
+        <div class="text">나이 20</div>
     </div>
 
     <div id="user_img"><img src="img/do로고-001 (1).png" alt="" /></div>
