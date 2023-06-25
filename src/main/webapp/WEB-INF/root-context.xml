@@ -14,7 +14,7 @@
         <property name="driverClassName" value="com.mysql.jdbc.Driver" />
         <property name="url" value="jdbc:mysql://dodo.cergn3eqkrjd.ap-northeast-2.rds.amazonaws.com:33061/dodomall" />
         <property name="username" value="dodoan" />
-        <property name="password" value="ANdohyeong2040!" />
+        <property name="password" value="dodo0204" />
     </bean>
 
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">

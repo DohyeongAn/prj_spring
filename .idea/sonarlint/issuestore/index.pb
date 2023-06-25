@@ -3,8 +3,6 @@ w
 G.idea/sonarlint/issuestore/b/e/bee4914b3287c2660de63f745878aec30a17e6d2,b/9/b940f37e1c110d2c26ced8cdf67f614bd9f23cf1
 
 Q.idea/sonarlint/securityhotspotstore/b/e/bee4914b3287c2660de63f745878aec30a17e6d2,b/9/b9229ef2632094f1b10870118bd7b21038474043
-O
-src/main/webapp/WEB-INF/web.xml,2/e/2e22b6edd746fa3dc40ad7276c87c8d87d72a392
 r
 Bsrc/main/webapp/resources/css/vendors/moment/src/lib/units/week.js,3/c/3ca87d5010313176794648f154db9783fc4bc30b
 r
@@ -1017,8 +1015,6 @@ n
 >src/main/webapp/resources/css/vendors/echarts/src/chart/pie.js,8/2/82f04b71b5cba4bcceb63583b7e0df0651c3ca68
 n
 >src/main/webapp/resources/css/vendors/echarts/src/chart/map.js,4/b/4bf78e050a5d2399dfbab3e89f71a5d9d6b8670b
-h
-8src/main/java/com/mycompany/app/home/HomeController.java,3/c/3c50cc78d90fa9c5903bf6c5654369fb6492f8d7
 |
 Lsrc/main/webapp/resources/css/vendors/echarts/src/chart/sankey/SankeyView.js,f/f/fff8fbf7e584aa1177a60d4f3c743d37bee4bcaa
 ~
@@ -7973,3 +7969,17 @@ i
 9src/main/webapp/resources/css/vendors/select2/.travis.yml,9/f/9fb1db7474a5e651ac5c12af1553878d5e7448c9
 y
 Isrc/main/webapp/resources/css/vendors/Chart.js/docs/00-Getting-Started.md,4/3/4396abd538a8ecf80474567c3de45129c5d3176c
+W
+'src/main/webapp/WEB-INF/views/index.jsp,3/0/305b3bb8194d08e1e32b17ac5f1d53c1cf0118c1
+X
+(src/main/webapp/WEB-INF/views/footer.jsp,9/a/9a549875954782aadfd152200a74f49acf667acb
+]
+-src/main/webapp/WEB-INF/views/admin_login.jsp,4/b/4bfc33c98a3fba6e92f72074fad710bb7d901a48
+s
+Csrc/main/java/com/mycompany/app/codegroup/CodeGroupServiceImpl.java,f/3/f3ff42979423fdc0751740810c7ed16d1e718eae
+o
+?src/main/java/com/mycompany/app/codegroup/CodeGroupService.java,e/b/eb3690d7e104ee6f625d2604fd957de8a2ace125
+k
+;src/main/java/com/mycompany/app/codegroup/CodeGroupDao.java,2/1/215225c5134d264512b8bdfb65570c435043fb3f
+r
+Bsrc/main/java/com/mycompany/app/codegroup/CodeGroupController.java,a/2/a2d1b1eda06cb6e0206e39bcea45259435906fd4
