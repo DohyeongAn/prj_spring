@@ -1340,9 +1340,14 @@ table.jambo_table tbody tr.selected td {
     float: left
 }
 .dataTables_filter {
-    width: 50%;
+    width: 100%;
     float: right;
     text-align: right
+}
+#datatable_filter button{
+    margin-bottom: 0;
+    margin-right: 0;
+    border-left: none;
 }
 .dataTables_info {
     width: 60%;

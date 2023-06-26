@@ -6,6 +6,13 @@
 <%@ taglib prefix="rb" uri="http://www.springframework.org/tags" %>
 
 codeGroupList.jsp
+<br>
+
+<input type="text" placeholder="제목">
+<input type="text" placeholder="이름">
+<input type="button" value="검색">
+
+
 
 <br>
 

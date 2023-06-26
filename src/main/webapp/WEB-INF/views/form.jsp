@@ -41,7 +41,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="/tables_dynamic" class="site_title"><i class="fa fa-paw"></i> <span>DodoMall admin</span></a>
+              <a href="/tablesDynamic" class="site_title"><i class="fa fa-paw"></i> <span>DodoMall admin</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -67,7 +67,7 @@
                 <ul class="nav side-menu">
                   <li><a><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="tables_dynamic">Table Dynamic</a></li>
+                      <li><a href="tablesDynamic">Table Dynamic</a></li>
                     </ul>
                   </li>
                   <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>

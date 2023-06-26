@@ -12,9 +12,8 @@ public class CodeGroupController {
 
     @Autowired
     CodeGroupServiceImpl service;
-
-    @RequestMapping("/codeGroupList")
-    public String codeGroupList(Model model){
+    @RequestMapping("/tablesDynamic")
+    public String tablesDynamic(Model model){
 
 //        List<CodeGroup> list = service.selectList();
 //        model.addAttribute("list", list);
@@ -22,6 +21,6 @@ public class CodeGroupController {
          model.addAttribute("list", service.selectList());
 
 
-        return "codeGroupList";
+        return "tablesDynamic";
     }
 }

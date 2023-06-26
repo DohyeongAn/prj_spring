@@ -4160,8 +4160,11 @@
 		var language = settings.oLanguage;
 		var previousSearch = settings.oPreviousSearch;
 		var features = settings.aanFeatures;
-		var input = '<input type="search" class="'+classes.sFilterInput+'"/>';
-	
+		var input = '<select class="form-control ' + classes.sFilterSelect + '"></select>' +
+			'<input type="search" class="' + classes.sFilterInput + '"/>' +
+			'<button class="form-control ' + classes.sFilterButton + ' input-sm ">Go</button>';
+
+
 		var str = language.sSearch;
 		str = str.match(/_INPUT_/) ?
 			str.replace('_INPUT_', input) :
