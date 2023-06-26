@@ -14,7 +14,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>DataTables | Dodomall</title>
+	
+    <title>General Form | Dodomall</title>
+
 
     <!-- Bootstrap -->
     <link href="/resources/css/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -24,15 +26,19 @@
     <link href="/resources/css/vendors/nprogress/nprogress.css" rel="stylesheet">
     <!-- iCheck -->
     <link href="/resources/css/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
-    <!-- Datatables -->
-    <link href="/resources/css/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
-    <link href="/resources/css/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
-    <link href="/resources/css/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
-    <link href="/resources/css/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
-    <link href="/resources/css/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap-wysiwyg -->
+    <link href="/resources/css/vendors/google-code-prettify/bin/prettify.min.css" rel="stylesheet">
+    <!-- Select2 -->
+    <link href="/resources/css/vendors/select2/dist/css/select2.min.css" rel="stylesheet">
+    <!-- Switchery -->
+    <link href="/resources/css/vendors/switchery/dist/switchery.min.css" rel="stylesheet">
+    <!-- starrr -->
+    <link href="/resources/css/vendors/starrr/dist/starrr.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="/resources/css/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
-    <link href="/resources/build/css/custom.css" rel="stylesheet">
+    <link href="/resources/build/css/custom.min.css" rel="stylesheet">
   </head>
 
   <body class="nav-md">
@@ -67,7 +73,6 @@
                 <ul class="nav side-menu">
                   <li><a><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <!-- <li><a href="tables.html">Tables</a></li> -->
                       <li><a href="tablesDynamic">Table Dynamic</a></li>
                     </ul>
                   </li>
@@ -204,7 +209,7 @@
           <div class="">
             <div class="page-title">
               <div class="title_left">
-                <h3>Users <small>Some examples to get you started</small></h3>
+                <h3>Form Elements</h3>
               </div>
 
               <div class="title_right">
@@ -218,14 +223,12 @@
                 </div>
               </div>
             </div>
-
             <div class="clearfix"></div>
-
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Default Example <small>Users</small></h2>
+                    <h2>Form Design <small>different form elements</small></h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -243,44 +246,44 @@
                     </ul>
                     <div class="clearfix"></div>
                   </div>
-                    <form name=formList>
                   <div class="x_content">
-                    <p class="text-muted font-13 m-b-30">
-                      DataTables has most features enabled by default, so all you need to do to use it with your own tables is to call the construction function: <code>$().DataTable();</code>
-                    </p>
-                    <table id="datatable" class="table table-striped table-bordered">
-                      <thead>
-                        <tr>
-                          <th>seq</th>
-                          <th>name</th>
-                        </tr>
-                      </thead>
+                    <br />
+                    <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
 
 
-                      <tbody>
 
-                      <c:choose>
-                        <c:when test="${fn:length(list) eq 0}">
-                        </c:when>
-                        <c:otherwise>
-                          <c:forEach items="${list}" var="list" varStatus="status">
-                            <tr>
-                            <td><c:out value="${list.seq}"></c:out></td>
-                            <td><a href="adminForm?seq=<c:out value="${list.seq}"/>">
-                              <c:out value="${list.name}"></c:out></a></td>
-                            </tr>
-                          </c:forEach>
-                        </c:otherwise>
-                      </c:choose>
-                      </tbody>
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="seq">seq <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" id="seq" class="form-control col-md-7 col-xs-12" placeholder="seq" required readonly value="<c:out value="${item.seq}"/>" >
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">name <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" id="name" class="form-control col-md-7 col-xs-12" placeholder="name" required value="<c:out value="${item.name}"/>" >
+                        </div>
+                      </div>
 
 
-                    </table>
-                  </div>
+                      <div class="ln_solid"></div>
+                      <div class="form-group">
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                          <button class="btn btn-primary" type="button">Cancel</button>
+						  <button class="btn btn-primary" type="reset">Reset</button>
+                          <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+                      </div>
+
                     </form>
+                  </div>
                 </div>
               </div>
             </div>
+
+
           </div>
         </div>
         <!-- /page content -->
@@ -304,41 +307,33 @@
     <script src="/resources/css/vendors/fastclick/lib/fastclick.js"></script>
     <!-- NProgress -->
     <script src="/resources/css/vendors/nprogress/nprogress.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="/resources/css/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
     <!-- iCheck -->
     <script src="/resources/css/vendors/iCheck/icheck.min.js"></script>
-    <!-- Datatables -->
-    <script src="/resources/css/vendors/datatables.net/js/jquery.dataTables.js"></script>
-    <script src="/resources/css/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-    <script src="/resources/css/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-    <script src="/resources/css/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
-    <script src="/resources/css/vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
-    <script src="/resources/css/vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
-    <script src="/resources/css/vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
-    <script src="/resources/css/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
-    <script src="/resources/css/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
-    <script src="/resources/css/vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-    <script src="/resources/css/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
-    <script src="/resources/css/vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
-    <script src="/resources/css/vendors/jszip/dist/jszip.min.js"></script>
-    <script src="/resources/css/vendors/pdfmake/build/pdfmake.min.js"></script>
-    <script src="/resources/css/vendors/pdfmake/build/vfs_fonts.js"></script>
-
+    <!-- bootstrap-daterangepicker -->
+    <script src="/resources/css/vendors/moment/min/moment.min.js"></script>
+    <script src="/resources/css/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- bootstrap-wysiwyg -->
+    <script src="/resources/css/vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script>
+    <script src="/resources/css/vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
+    <script src="/resources/css/vendors/google-code-prettify/src/prettify.js"></script>
+    <!-- jQuery Tags Input -->
+    <script src="/resources/css/vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
+    <!-- Switchery -->
+    <script src="/resources/css/vendors/switchery/dist/switchery.min.js"></script>
+    <!-- Select2 -->
+    <script src="/resources/css/vendors/select2/dist/js/select2.full.min.js"></script>
+    <!-- Parsley -->
+    <script src="/resources/css/vendors/parsleyjs/dist/parsley.min.js"></script>
+    <!-- Autosize -->
+    <script src="/resources/css/vendors/autosize/dist/autosize.min.js"></script>
+    <!-- jQuery autocomplete -->
+    <script src="/resources/css/vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js"></script>
+    <!-- starrr -->
+    <script src="/resources/css/vendors/starrr/dist/starrr.js"></script>
     <!-- Custom Theme Scripts -->
-    <script src="/resources/build/js/custom.js"></script>
-<%--    <script>--%>
-<%--      // 검색 컨테이너를 숨김 처리--%>
-<%--      const searchContainer = document.querySelector('.datatable-search');--%>
-<%--      searchContainer.style.display = 'none';--%>
-<%--      --%>
-<%--    </script>--%>
-  <script>
-    $("#btnSearch").on("click", function(){
-
-      //	$("form[name=formList]").attr("method","get");
-
-      $("form[name=formList]").attr("action","/admin").submit();
-
-    });
-  </script>
+    <script src="/resources/build/js/custom.min.js"></script>
+	
   </body>
 </html>

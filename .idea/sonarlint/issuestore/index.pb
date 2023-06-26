@@ -7945,7 +7945,5 @@ i
 9src/main/webapp/resources/css/vendors/select2/.travis.yml,9/f/9fb1db7474a5e651ac5c12af1553878d5e7448c9
 y
 Isrc/main/webapp/resources/css/vendors/Chart.js/docs/00-Getting-Started.md,4/3/4396abd538a8ecf80474567c3de45129c5d3176c
-W
-'src/main/webapp/WEB-INF/views/index.jsp,3/0/305b3bb8194d08e1e32b17ac5f1d53c1cf0118c1
 X
 (src/main/webapp/WEB-INF/views/footer.jsp,9/a/9a549875954782aadfd152200a74f49acf667acb

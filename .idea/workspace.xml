@@ -9,53 +9,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cbcc6b3-3dca-4656-9327-195a01a91926" name="변경" comment="0623 prj spring portfolio">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tablesDynamic.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0e9348e0-aa6a-4a14-a78f-5ed0f23ba927.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0e9348e0-aa6a-4a14-a78f-5ed0f23ba927.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/0/003470f342681e22bc96e833bbcadd200108bdb0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/d/0d2d4666d0beeb40ab038b5c0159932917f0ab90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/4/14c40e9504c633952258d68b7cf24d1373e77f58" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/1/215225c5134d264512b8bdfb65570c435043fb3f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4bfc33c98a3fba6e92f72074fad710bb7d901a48" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4f98dfc45cf1016824135185b38634ccffb33664" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/7924f33c8717d19e5c1b1c6a25cdbde0b8f026cd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/6/869c9fe2feced81fd2f502a8248f70e6b2418363" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/8861a920430217363a32afee55d7797406de3bc9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/88b9954e5765f7220827948abea5a384e419a1ca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/2/a2d1b1eda06cb6e0206e39bcea45259435906fd4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c1f471ed51e5ffbdfe58b1abe0f0cfdde7737600" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/2/c2efb859f1a2f5639ff98370172fed327680bd18" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/0/d0e817e608952ff962e91ec1a93d78e942b0f224" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/b/eb3690d7e104ee6f625d2604fd957de8a2ace125" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/ee67263bb367b7874b96d07d6d2eafce3e2c273f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/3/f3ff42979423fdc0751740810c7ed16d1e718eae" beforeDir="false" />
+    <list default="true" id="8cbcc6b3-3dca-4656-9327-195a01a91926" name="변경" comment="0626 prj spring portfolio">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminForm.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/testFormInput.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/0/305b3bb8194d08e1e32b17ac5f1d53c1cf0118c1" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/0/003470f342681e22bc96e833bbcadd200108bdb0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/d/0d2d4666d0beeb40ab038b5c0159932917f0ab90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/4/14c40e9504c633952258d68b7cf24d1373e77f58" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/1/215225c5134d264512b8bdfb65570c435043fb3f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/b/4bfc33c98a3fba6e92f72074fad710bb7d901a48" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/f/4f98dfc45cf1016824135185b38634ccffb33664" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/9/7924f33c8717d19e5c1b1c6a25cdbde0b8f026cd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/6/869c9fe2feced81fd2f502a8248f70e6b2418363" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/8/8861a920430217363a32afee55d7797406de3bc9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/8/88b9954e5765f7220827948abea5a384e419a1ca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/2/a2d1b1eda06cb6e0206e39bcea45259435906fd4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/1/c1f471ed51e5ffbdfe58b1abe0f0cfdde7737600" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/2/c2efb859f1a2f5639ff98370172fed327680bd18" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/0/d0e817e608952ff962e91ec1a93d78e942b0f224" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/b/eb3690d7e104ee6f625d2604fd957de8a2ace125" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/e/ee67263bb367b7874b96d07d6d2eafce3e2c273f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/3/f3ff42979423fdc0751740810c7ed16d1e718eae" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/0/305b3bb8194d08e1e32b17ac5f1d53c1cf0118c1" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/home/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/home/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin_login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin_login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/codeGroupList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/codeGroupList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tables_dynamic.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/build/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/build/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/codeGroupList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/testCodeGroupList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/form.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tablesDynamic.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tablesDynamic.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/vendors/datatables.net/js/jquery.dataTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/vendors/datatables.net/js/jquery.dataTables.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,6 +96,7 @@
     "project.structure.last.edited": "SDK",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.5264368",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "f299b778dc0a0ce23b6d5345f8f2b08a",
     "vue.rearranger.settings.migration": "true"
@@ -279,7 +251,7 @@
       <workItem from="1687695963824" duration="24000" />
       <workItem from="1687696872787" duration="422000" />
       <workItem from="1687738856664" duration="79000" />
-      <workItem from="1687739016191" duration="12632000" />
+      <workItem from="1687739016191" duration="26845000" />
     </task>
     <task id="LOCAL-00001" summary="set spring tomcat">
       <option name="closed" value="true" />
@@ -321,7 +293,15 @@
       <option name="project" value="LOCAL" />
       <updated>1687697258196</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="0626 prj spring portfolio">
+      <option name="closed" value="true" />
+      <created>1687758056857</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1687758056857</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +314,8 @@
     <MESSAGE value="1" />
     <MESSAGE value="0622 prj spring portfolio" />
     <MESSAGE value="0623 prj spring portfolio" />
-    <option name="LAST_COMMIT_MESSAGE" value="0623 prj spring portfolio" />
+    <MESSAGE value="0626 prj spring portfolio" />
+    <option name="LAST_COMMIT_MESSAGE" value="0626 prj spring portfolio" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -349,9 +330,9 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/home/HomeController.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminForm.jsp</url>
+          <line>225</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

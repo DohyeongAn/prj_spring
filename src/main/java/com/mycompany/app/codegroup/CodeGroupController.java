@@ -12,15 +12,28 @@ public class CodeGroupController {
 
     @Autowired
     CodeGroupServiceImpl service;
+
     @RequestMapping("/tablesDynamic")
-    public String tablesDynamic(Model model){
 
-//        List<CodeGroup> list = service.selectList();
-//        model.addAttribute("list", list);
+    public String tablesDynamic(CodeGroupVo vo, Model model) {
 
-         model.addAttribute("list", service.selectList());
+        System.out.println("vo.getShOption():" + vo.getShOption()) ;
+        System.out.println("vo.getShKeyword():" + vo.getShKeyword()) ;
 
+        model.addAttribute("list", service.selectList(vo));
 
         return "tablesDynamic";
     }
+    @RequestMapping("/adminForm")
+    public String form(CodeGroupVo vo, Model model) {
+
+        CodeGroup codeGroup = service.selectOne(vo);
+
+        model.addAttribute("item", codeGroup);
+
+        return "adminForm";
+    }
+
+
 }
+

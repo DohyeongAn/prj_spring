@@ -7945,7 +7945,5 @@ s
 Csrc/main/webapp/resources/css/vendors/moment/src/lib/parse/token.js,e/4/e41dccb50514cdf8ec043ed7981566fea9853ca6
 s
 Csrc/main/webapp/resources/css/vendors/moment/src/lib/parse/regex.js,6/3/6320aec7e0898ed117bcdffb41374d5b0659f804
-W
-'src/main/webapp/WEB-INF/views/index.jsp,3/0/305b3bb8194d08e1e32b17ac5f1d53c1cf0118c1
 X
 (src/main/webapp/WEB-INF/views/footer.jsp,9/a/9a549875954782aadfd152200a74f49acf667acb

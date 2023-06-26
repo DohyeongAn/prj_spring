@@ -4160,9 +4160,9 @@
 		var language = settings.oLanguage;
 		var previousSearch = settings.oPreviousSearch;
 		var features = settings.aanFeatures;
-		var input = '<select class="form-control ' + classes.sFilterSelect + '"></select>' +
-			'<input type="search" class="' + classes.sFilterInput + '"/>' +
-			'<button class="form-control ' + classes.sFilterButton + ' input-sm ">Go</button>';
+		var input = '<select name="shOption" class="form-control ' + classes.sFilterSelect + '"></select>' +
+			'<input type="text" name="shKeyword" class="' + classes.sFilterInput + '"/>' +
+			'<button id="btnSearch" class="form-control ' + classes.sFilterButton + ' input-sm ">Go</button>';
 
 
 		var str = language.sSearch;

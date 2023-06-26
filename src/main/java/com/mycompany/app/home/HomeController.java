@@ -29,13 +29,6 @@ public class HomeController {
 		return "admin_login";
 	}
 
-	@RequestMapping(value = "/form")
-	public String form() {
-		// 여기에서 서버단에 필요한 작업을 수행한다.
-
-		// 아래의 jsp 파일 호출
-		return "form";
-	}
 
 
 

@@ -13,7 +13,6 @@ codeGroupList.jsp
 <input type="button" value="검색">
 
 
-
 <br>
 
 <c:choose>
@@ -25,7 +24,8 @@ codeGroupList.jsp
     <c:otherwise>
         <c:forEach items="${list}" var="list" varStatus="status">
             <c:out value="${list.seq}"></c:out>
-            <c:out value="${list.name}"></c:out><br>
+            <a href="adminForm?seq=<c:out value="${list.seq}"/>">
+                <c:out value="${list.name}"></c:out></a><br>
         </c:forEach>
     </c:otherwise>
 </c:choose>
