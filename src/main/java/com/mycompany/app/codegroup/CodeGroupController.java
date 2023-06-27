@@ -67,5 +67,10 @@ public class CodeGroupController {
         return "redirect:/tablesDynamic";
     }
 
+    @RequestMapping("/adminUelete")
+    public String codeGroupUelete(CodeGroup dto) {
+        service.uelete(dto);
+        return "redirect:/tablesDynamic";
+    }
 }
 

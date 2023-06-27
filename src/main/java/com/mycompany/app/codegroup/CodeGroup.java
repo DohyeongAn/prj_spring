@@ -7,7 +7,9 @@ public class CodeGroup {
     // 주로 테이블의 컬럼명과 일치
     private String seq;
     private String name;
-//    -----
+    private Integer delNy;
+
+    //    -----
     public String getSeq() {
         return seq;
     }
@@ -22,5 +24,13 @@ public class CodeGroup {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Integer getDelNy() {
+        return delNy;
+    }
+
+    public void setDelNy(Integer delNy) {
+        this.delNy = delNy;
     }
 }

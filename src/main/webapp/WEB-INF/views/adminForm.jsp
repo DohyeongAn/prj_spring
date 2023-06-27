@@ -259,11 +259,20 @@
                           <input type="text" name="seq" id="seq" class="form-control col-md-7 col-xs-12" placeholder="seq" readonly value="<c:out value="${item.seq}"/>" >
                         </div>
                       </div>
+
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">name <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <input type="text" name="name" id="name" class="form-control col-md-7 col-xs-12" placeholder="name" required value="<c:out value="${item.name}"/>" >
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="delNy">delNy <c:out value="${item.delNy}"/><span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" name="delNy" id="delNy" class="form-control col-md-7 col-xs-12" placeholder="delNy" required value="<c:out value="${item.delNy}"/>" >
                         </div>
                       </div>
 
@@ -275,6 +284,7 @@
 						  <button class="btn btn-primary" type="reset">Reset</button>
                           <button id="submitBtn" type="submit" class="btn btn-success">Submit</button>
                           <button id="insertBtn" type="button" class="btn btn-success">Insert</button>
+                          <button id="ueleteBtn" type="button" class="btn btn-success">Use / Not Used</button>
                           <button id="deleteBtn" type="button" class="btn btn-danger">Delete</button>
 
                         </div>
@@ -358,6 +368,11 @@
 
     $("#cancel").on("click", function(){
       location.href="/tablesDynamic";
+    });
+
+    $("#ueleteBtn").on("click", function(){
+      alert("Use");
+      $("form[name=form]").attr("action","/adminUelete").submit();
     });
 
 

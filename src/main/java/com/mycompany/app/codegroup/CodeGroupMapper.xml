@@ -12,7 +12,7 @@
     <resultMap id="resultMapObj" type="com.mycompany.app.codegroup.CodeGroup"></resultMap>
 
     <select id="selectList" resultMap="resultMapObj">
-        SELECT *
+        SELECT seq, name, delNy
         FROM
             codegroup
         WHERE
@@ -20,8 +20,7 @@
     </select>
 
     <select id="selectOne" resultMap="resultMapObj">
-        SELECT seq,
-               name
+        SELECT seq, name, delNy
         FROM
             codegroup
         WHERE
@@ -46,6 +45,12 @@
         VALUES (#{name})
 
     </insert>
+
+    <update id="uelete">
+        UPDATE codegroup
+        SET delNy = #{delNy}
+        WHERE seq = #{seq}
+    </update>
 
 
 

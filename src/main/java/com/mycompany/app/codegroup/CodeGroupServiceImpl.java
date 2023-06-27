@@ -28,4 +28,7 @@ public class CodeGroupServiceImpl implements CodeGroupService{
     @Override
     public int insert(CodeGroup dto) { return dao.insert(dto); }
 
+    @Override
+    public int uelete(CodeGroup dto) { return dao.uelete(dto); }
+
 }

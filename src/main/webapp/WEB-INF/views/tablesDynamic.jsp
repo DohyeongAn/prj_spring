@@ -253,6 +253,7 @@
                         <tr>
                           <th>seq</th>
                           <th>name</th>
+                          <th>delNy</th>
                         </tr>
                       </thead>
 
@@ -268,6 +269,7 @@
                             <td><c:out value="${list.seq}"></c:out></td>
                             <td><a href="adminForm?seq=<c:out value="${list.seq}"/>">
                               <c:out value="${list.name}"></c:out></a></td>
+                              <td><c:out value="${list.delNy}"></c:out></td>
                             </tr>
                           </c:forEach>
                         </c:otherwise>

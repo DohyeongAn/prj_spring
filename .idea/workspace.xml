@@ -9,17 +9,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cbcc6b3-3dca-4656-9327-195a01a91926" name="변경" comment="0626 prj spring portfolio">
+    <list default="true" id="8cbcc6b3-3dca-4656-9327-195a01a91926" name="변경" comment="0627 prj spring portfolio">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/0e9348e0-aa6a-4a14-a78f-5ed0f23ba927.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0e9348e0-aa6a-4a14-a78f-5ed0f23ba927.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/5/45def7cdd2135aaa384c4b81a9ffb31f95969813" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/8/b87f6c221769e773916b1cfb4f5e6e514f4eda2c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/5/45def7cdd2135aaa384c4b81a9ffb31f95969813" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/8/b87f6c221769e773916b1cfb4f5e6e514f4eda2c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupVo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tablesDynamic.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tablesDynamic.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +92,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "모듈",
+    "project.structure.last.edited": "아티팩트",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.5264368",
     "run.code.analysis.last.selected.profile": "pProject Default",
@@ -123,9 +130,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.76" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="prj_spring:war exploded">
           <settings>
@@ -134,7 +139,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="873d2be9-a079-47db-a5c6-22f7ef363ccd" />
+        <option name="BASE_DIRECTORY_NAME" value="3d044100-cacd-4620-95e0-9bcf90fb4828" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -142,7 +147,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="49680" />
+        <option name="DEBUG_PORT" value="51619" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -246,7 +251,7 @@
       <workItem from="1687825054867" duration="9416000" />
       <workItem from="1687835856509" duration="387000" />
       <workItem from="1687836419700" duration="1457000" />
-      <workItem from="1687841683705" duration="1080000" />
+      <workItem from="1687841683705" duration="10112000" />
     </task>
     <task id="LOCAL-00001" summary="set spring tomcat">
       <option name="closed" value="true" />
@@ -304,7 +309,15 @@
       <option name="project" value="LOCAL" />
       <updated>1687787577497</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="0627 prj spring portfolio">
+      <option name="closed" value="true" />
+      <created>1687843063789</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1687843063790</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +331,8 @@
     <MESSAGE value="0622 prj spring portfolio" />
     <MESSAGE value="0623 prj spring portfolio" />
     <MESSAGE value="0626 prj spring portfolio" />
-    <option name="LAST_COMMIT_MESSAGE" value="0626 prj spring portfolio" />
+    <MESSAGE value="0627 prj spring portfolio" />
+    <option name="LAST_COMMIT_MESSAGE" value="0627 prj spring portfolio" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -326,7 +340,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/home/HomeController.java</url>
           <line>15</line>
-          <properties class="com.mycompany.app.home.HomeController">
+          <properties class="com.dodocompany.app.home.HomeController">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
