@@ -1,8 +1,4 @@
 
-w
-G.idea/sonarlint/issuestore/b/e/bee4914b3287c2660de63f745878aec30a17e6d2,b/9/b940f37e1c110d2c26ced8cdf67f614bd9f23cf1
-Å
-Q.idea/sonarlint/securityhotspotstore/b/e/bee4914b3287c2660de63f745878aec30a17e6d2,b/9/b9229ef2632094f1b10870118bd7b21038474043
 r
 Bsrc/main/webapp/resources/css/vendors/moment/src/lib/units/week.js,3/c/3ca87d5010313176794648f154db9783fc4bc30b
 r
@@ -7945,8 +7941,6 @@ y
 Isrc/main/webapp/resources/css/vendors/Chart.js/docs/00-Getting-Started.md,4/3/4396abd538a8ecf80474567c3de45129c5d3176c
 X
 (src/main/webapp/WEB-INF/views/footer.jsp,9/a/9a549875954782aadfd152200a74f49acf667acb
-7
-pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
 è
 _src/main/webapp/resources/css/vendors/datatables.net-responsive/js/dataTables.responsive.min.js,8/8/88b9954e5765f7220827948abea5a384e419a1ca
 ã
@@ -7963,19 +7957,11 @@ b
 .src/main/webapp/resources/build/css/custom.css,1/4/14c40e9504c633952258d68b7cf24d1373e77f58
 |
 Lsrc/main/webapp/resources/css/vendors/datatables.net/js/jquery.dataTables.js,0/d/0d2d4666d0beeb40ab038b5c0159932917f0ab90
-[
-+src/main/webapp/WEB-INF/servlet-context.xml,c/a/caa71e388fea443d533669ba089beac8771da866
-O
-src/main/webapp/WEB-INF/web.xml,2/e/2e22b6edd746fa3dc40ad7276c87c8d87d72a392
 W
 'src/main/webapp/WEB-INF/views/login.jsp,e/e/ee67263bb367b7874b96d07d6d2eafce3e2c273f
 W
 'src/main/webapp/WEB-INF/views/index.jsp,3/0/305b3bb8194d08e1e32b17ac5f1d53c1cf0118c1
-h
-8src/main/java/com/mycompany/app/home/HomeController.java,3/c/3c50cc78d90fa9c5903bf6c5654369fb6492f8d7
 c
 3src/main/webapp/WEB-INF/views/testCodeGroupList.jsp,0/2/02c9b4f33c85d27f2e288b93a8f8d392f9ef032d
-_
-/src/main/webapp/WEB-INF/views/testFormInput.jsp,b/1/b1d7b171509dc4459849e8606f419018074d56ae
 ]
 -src/main/webapp/WEB-INF/views/admin_login.jsp,4/b/4bfc33c98a3fba6e92f72074fad710bb7d901a48
