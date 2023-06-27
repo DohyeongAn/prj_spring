@@ -17,15 +17,16 @@ public class CodeGroupController {
 
     public String tablesDynamic(CodeGroupVo vo, Model model) {
 
-        System.out.println("vo.getShOption():" + vo.getShOption()) ;
-        System.out.println("vo.getShKeyword():" + vo.getShKeyword()) ;
+        System.out.println("vo.getShOption():" + vo.getShOption());
+        System.out.println("vo.getShKeyword():" + vo.getShKeyword());
 
         model.addAttribute("list", service.selectList(vo));
 
         return "tablesDynamic";
     }
+
     @RequestMapping("/adminForm")
-    public String form(CodeGroupVo vo, Model model) {
+    public String adminForm(CodeGroupVo vo, Model model) {
 
         CodeGroup codeGroup = service.selectOne(vo);
 
@@ -33,7 +34,38 @@ public class CodeGroupController {
 
         return "adminForm";
     }
+//    @RequestMapping("/codeGroupUpdt")
+//    public String codeGroupUpdt() {
+//        System.out.println("codeGroupUpdt");
+//
+//        return "adminForm";
+//    }
 
+    @RequestMapping("/adminUpdt")
+    public String adminUpdt(CodeGroup dto) {
+        System.out.println("adminUpdt");
+
+        service.update(dto);
+
+        return "redirect:/tablesDynamic";
+    }
+
+    @RequestMapping("/adminDel")
+    public String adminDelete(CodeGroup dto) {
+        System.out.println("adminDel");
+
+        service.delete(dto);
+
+        return "redirect:/tablesDynamic";
+    }
+    @RequestMapping("/adminIns")
+    public String adminIns(CodeGroup dto) {
+        System.out.println("adminIns");
+
+        service.insert(dto);
+
+        return "redirect:/tablesDynamic";
+    }
 
 }
 

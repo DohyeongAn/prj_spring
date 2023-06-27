@@ -8,11 +8,8 @@
 <!--        그리고 dao에서 namespace와 일치하여야 된다.-->
 <mapper namespace="com.mycompany.app.codegroup.CodeGroupMapper">
 
-
-<!--                                        select 결과물 받을 객체-->
-    <resultMap id="resultMapObj" type="com.mycompany.app.codegroup.CodeGroup">
-
-    </resultMap>
+    <!--                                        select 결과물 받을 객체-->
+    <resultMap id="resultMapObj" type="com.mycompany.app.codegroup.CodeGroup"></resultMap>
 
     <select id="selectList" resultMap="resultMapObj">
         SELECT *
@@ -24,12 +21,32 @@
 
     <select id="selectOne" resultMap="resultMapObj">
         SELECT seq,
-                name
+               name
         FROM
             codegroup
         WHERE
             seq = #{seq}
     </select>
+
+    <update id="update">
+        UPDATE codegroup
+        SET name = #{name}
+        WHERE seq = #{seq}
+    </update>
+
+    <delete id="delete">
+        DELETE
+        FROM codegroup
+        WHERE seq = #{seq}
+    </delete>
+
+    <insert id="insert">
+        INSERT INTO codegroup
+            (name)
+        VALUES (#{name})
+
+    </insert>
+
 
 
 </mapper>

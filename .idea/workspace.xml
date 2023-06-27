@@ -10,12 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8cbcc6b3-3dca-4656-9327-195a01a91926" name="변경" comment="0626 prj spring portfolio">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/testFormInput.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/0/305b3bb8194d08e1e32b17ac5f1d53c1cf0118c1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0e9348e0-aa6a-4a14-a78f-5ed0f23ba927.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0e9348e0-aa6a-4a14-a78f-5ed0f23ba927.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/0/305b3bb8194d08e1e32b17ac5f1d53c1cf0118c1" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupController.java" afterDir="false" />
@@ -23,11 +19,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/home/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/home/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/codeGroupList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/testCodeGroupList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/form.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tablesDynamic.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tablesDynamic.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/vendors/datatables.net/js/jquery.dataTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/vendors/datatables.net/js/jquery.dataTables.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminForm.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +85,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "SDK",
+    "project.structure.last.edited": "모듈",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.5264368",
     "run.code.analysis.last.selected.profile": "pProject Default",
@@ -142,7 +134,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="5268398c-8ad2-42bb-8c8d-e7d168d80703" />
+        <option name="BASE_DIRECTORY_NAME" value="873d2be9-a079-47db-a5c6-22f7ef363ccd" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -150,7 +142,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="49383" />
+        <option name="DEBUG_PORT" value="49680" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -216,7 +208,6 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="prj_spring:war exploded" />
-          <artifact name="prj_spring:war" />
         </option>
       </method>
     </configuration>
@@ -251,7 +242,11 @@
       <workItem from="1687695963824" duration="24000" />
       <workItem from="1687696872787" duration="422000" />
       <workItem from="1687738856664" duration="79000" />
-      <workItem from="1687739016191" duration="26845000" />
+      <workItem from="1687739016191" duration="27607000" />
+      <workItem from="1687825054867" duration="9416000" />
+      <workItem from="1687835856509" duration="387000" />
+      <workItem from="1687836419700" duration="1457000" />
+      <workItem from="1687841683705" duration="1080000" />
     </task>
     <task id="LOCAL-00001" summary="set spring tomcat">
       <option name="closed" value="true" />
@@ -301,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1687758056857</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="0626 prj spring portfolio">
+      <option name="closed" value="true" />
+      <created>1687787577497</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1687787577497</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

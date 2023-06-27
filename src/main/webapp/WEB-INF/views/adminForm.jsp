@@ -248,7 +248,7 @@
                   </div>
                   <div class="x_content">
                     <br />
-                    <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+                    <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" name="form" method="post">
 
 
 
@@ -256,14 +256,14 @@
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="seq">seq <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" id="seq" class="form-control col-md-7 col-xs-12" placeholder="seq" required readonly value="<c:out value="${item.seq}"/>" >
+                          <input type="text" name="seq" id="seq" class="form-control col-md-7 col-xs-12" placeholder="seq" readonly value="<c:out value="${item.seq}"/>" >
                         </div>
                       </div>
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">name <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" id="name" class="form-control col-md-7 col-xs-12" placeholder="name" required value="<c:out value="${item.name}"/>" >
+                          <input type="text" name="name" id="name" class="form-control col-md-7 col-xs-12" placeholder="name" required value="<c:out value="${item.name}"/>" >
                         </div>
                       </div>
 
@@ -271,9 +271,12 @@
                       <div class="ln_solid"></div>
                       <div class="form-group">
                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                          <button class="btn btn-primary" type="button">Cancel</button>
+                          <button id="cancel" class="btn btn-primary" type="button">Cancel</button>
 						  <button class="btn btn-primary" type="reset">Reset</button>
-                          <button type="submit" class="btn btn-success">Submit</button>
+                          <button id="submitBtn" type="submit" class="btn btn-success">Submit</button>
+                          <button id="insertBtn" type="button" class="btn btn-success">Insert</button>
+                          <button id="deleteBtn" type="button" class="btn btn-danger">Delete</button>
+
                         </div>
                       </div>
 
@@ -336,4 +339,27 @@
     <script src="/resources/build/js/custom.min.js"></script>
 	
   </body>
+  <script type="text/javascript">
+    $("#submitBtn").on("click", function(){
+      alert("submit");
+      $("form[name=form]").attr("action","/adminUpdt").submit();
+    });
+
+    $("#deleteBtn").on("click", function(){
+      alert("delete");
+      $("form[name=form]").attr("action","/adminDel").submit();
+    });
+
+    $("#insertBtn").on("click", function(){
+      alert("insert");
+      $("form[name=form]").attr("action","/adminIns").submit();
+    });
+
+
+    $("#cancel").on("click", function(){
+      location.href="/tablesDynamic";
+    });
+
+
+  </script>
 </html>
