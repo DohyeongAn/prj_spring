@@ -2279,8 +2279,6 @@ p
 @src/main/webapp/resources/css/vendors/select2/dist/js/i18n/vi.js,1/9/19f9e49441a75a74f9a8ecfb6999542b335a0460
 s
 Csrc/main/webapp/resources/css/vendors/select2/dist/js/i18n/zh-TW.js,9/7/97faaa9418a87a9b00e47c031f746fc90637d5a4
-X
-(src/main/webapp/WEB-INF/views/header.jsp,c/b/cb531d3ceedf877860b36a3c7f7856bda7d93ea2
 s
 Csrc/main/webapp/resources/css/vendors/select2/dist/js/i18n/zh-CN.js,5/3/536a4bdfed15b77e5aa89bbb5baeaa9e151205d8
 p
@@ -3895,10 +3893,6 @@ Zsrc/main/webapp/resources/css/vendors/parsleyjs/bower_components/jquery/src/cor
 Ysrc/main/webapp/resources/css/vendors/parsleyjs/bower_components/jquery/src/core/ready.js,8/1/81685ce607fca47bc25c740d070ceb59b3ac5a3f
 ç
 ]src/main/webapp/resources/css/vendors/parsleyjs/bower_components/jquery/src/core/parseHTML.js,9/4/94785b50a4b6a3119822997d32638d425edf4612
-w
-G.idea/sonarlint/issuestore/b/9/b940f37e1c110d2c26ced8cdf67f614bd9f23cf1,d/6/d6823b41781114413d97983f144674d2f8cf5f9f
-w
-G.idea/sonarlint/issuestore/b/9/b9229ef2632094f1b10870118bd7b21038474043,d/5/d5bd7fdc5f1a0f93d145d0c00f8b9b1f2050b069
 ë
 asrc/main/webapp/resources/css/vendors/parsleyjs/bower_components/jquery/src/data/var/data_user.js,8/d/8d1e572b9ef59475473e030676024d9f8a20b91c
 ë
@@ -3907,10 +3901,6 @@ asrc/main/webapp/resources/css/vendors/parsleyjs/bower_components/jquery/src/dat
 [src/main/webapp/resources/css/vendors/parsleyjs/bower_components/jquery/src/data/accepts.js,5/f/5ff3815ba407c2db3776b74afdfa47382378ea34
 à
 Xsrc/main/webapp/resources/css/vendors/parsleyjs/bower_components/jquery/src/data/Data.js,8/2/8240a9fab36492062ec47a37e39bce1f3c100826
-Å
-Q.idea/sonarlint/securityhotspotstore/b/9/b9229ef2632094f1b10870118bd7b21038474043,4/f/4fbe379a08d319ef052e23dd638d63c7f9564a9b
-Å
-Q.idea/sonarlint/securityhotspotstore/b/9/b940f37e1c110d2c26ced8cdf67f614bd9f23cf1,3/c/3c11b54f1d2d3560651c04dd4c614a8c167bd3a0
 ä
 Zsrc/main/webapp/resources/css/vendors/parsleyjs/bower_components/jquery/src/event/alias.js,6/3/63e527b02843810594d2d80ee2194c3a009787e8
 â
@@ -7939,8 +7929,6 @@ s
 Csrc/main/webapp/resources/css/vendors/moment/src/lib/parse/token.js,e/4/e41dccb50514cdf8ec043ed7981566fea9853ca6
 s
 Csrc/main/webapp/resources/css/vendors/moment/src/lib/parse/regex.js,6/3/6320aec7e0898ed117bcdffb41374d5b0659f804
-X
-(src/main/webapp/WEB-INF/views/footer.jsp,9/a/9a549875954782aadfd152200a74f49acf667acb
 è
 _src/main/webapp/resources/css/vendors/datatables.net-responsive/js/dataTables.responsive.min.js,8/8/88b9954e5765f7220827948abea5a384e419a1ca
 ã
@@ -7957,11 +7945,11 @@ b
 .src/main/webapp/resources/build/css/custom.css,1/4/14c40e9504c633952258d68b7cf24d1373e77f58
 |
 Lsrc/main/webapp/resources/css/vendors/datatables.net/js/jquery.dataTables.js,0/d/0d2d4666d0beeb40ab038b5c0159932917f0ab90
-W
-'src/main/webapp/WEB-INF/views/login.jsp,e/e/ee67263bb367b7874b96d07d6d2eafce3e2c273f
-W
-'src/main/webapp/WEB-INF/views/index.jsp,3/0/305b3bb8194d08e1e32b17ac5f1d53c1cf0118c1
 c
 3src/main/webapp/WEB-INF/views/testCodeGroupList.jsp,0/2/02c9b4f33c85d27f2e288b93a8f8d392f9ef032d
-]
--src/main/webapp/WEB-INF/views/admin_login.jsp,4/b/4bfc33c98a3fba6e92f72074fad710bb7d901a48
+O
+src/main/webapp/WEB-INF/web.xml,2/e/2e22b6edd746fa3dc40ad7276c87c8d87d72a392
+_
+/src/main/webapp/WEB-INF/views/testFormInput.jsp,b/1/b1d7b171509dc4459849e8606f419018074d56ae
+s
+Csrc/main/java/com/mycompany/app/codegroup/CodeGroupServiceImpl.java,f/3/f3ff42979423fdc0751740810c7ed16d1e718eae
