@@ -1,58 +1,0 @@
-
-U	php:S1131"@Remove the useless trailing whitespaces at the end of this line.(›ûä·
-U	php:S1131"@Remove the useless trailing whitespaces at the end of this line.(¤üÈ
-Z	php:S1131"@Remove the useless trailing whitespaces at the end of this line.(¶¾”¦ûÿÿÿÿ
-Z	php:S1131"@Remove the useless trailing whitespaces at the end of this line.(ÙîÏ„øÿÿÿÿ
-U	php:S1131"@Remove the useless trailing whitespaces at the end of this line.( ºÀŽ
-U	php:S1131"@Remove the useless trailing whitespaces at the end of this line.(ÐöœÙ
-U	php:S1131"@Remove the useless trailing whitespaces at the end of this line.(ÔŽïÞ
-Z	php:S1131"@Remove the useless trailing whitespaces at the end of this line.(ÙîÏ„øÿÿÿÿ
-U	php:S1131"@Remove the useless trailing whitespaces at the end of this line.( ºÀŽ
-U	php:S1131"@Remove the useless trailing whitespaces at the end of this line.(ÐöœÙ
-U	php:S1131"@Remove the useless trailing whitespaces at the end of this line.(ÔŽïÞ
-Z	php:S1131"@Remove the useless trailing whitespaces at the end of this line.(„¦ÇËúÿÿÿÿ
-U	php:S1131"@Remove the useless trailing whitespaces at the end of this line.( ºÀŽ
-U	php:S1131"@Remove the useless trailing whitespaces at the end of this line.(ÐöœÙ
-U	php:S1131 "@Remove the useless trailing whitespaces at the end of this line.(ÔŽïÞ
-Z	php:S1131$"@Remove the useless trailing whitespaces at the end of this line.(ÙîÏ„øÿÿÿÿ
-U	php:S1131%"@Remove the useless trailing whitespaces at the end of this line.( ºÀŽ
-U	php:S1131&"@Remove the useless trailing whitespaces at the end of this line.(ÐöœÙ
-U	php:S1131'"@Remove the useless trailing whitespaces at the end of this line.(ÔŽïÞ
-Z	php:S1131*"@Remove the useless trailing whitespaces at the end of this line.(„¦ÇËúÿÿÿÿ
-U	php:S1131+"@Remove the useless trailing whitespaces at the end of this line.( ºÀŽ
-U	php:S1131,"@Remove the useless trailing whitespaces at the end of this line.(ÐöœÙ
-U	php:S1131-"@Remove the useless trailing whitespaces at the end of this line.(ÔŽïÞ
-Z	php:S11310"@Remove the useless trailing whitespaces at the end of this line.(„¦ÇËúÿÿÿÿ
-U	php:S11311"@Remove the useless trailing whitespaces at the end of this line.( ºÀŽ
-U	php:S11312"@Remove the useless trailing whitespaces at the end of this line.(ÐöœÙ
-U	php:S11313"@Remove the useless trailing whitespaces at the end of this line.(ÔŽïÞ
-Z	php:S11317"@Remove the useless trailing whitespaces at the end of this line.(ÙîÏ„øÿÿÿÿ
-U	php:S11318"@Remove the useless trailing whitespaces at the end of this line.( ºÀŽ
-U	php:S11319"@Remove the useless trailing whitespaces at the end of this line.(ÐöœÙ
-U	php:S1131:"@Remove the useless trailing whitespaces at the end of this line.(ÔŽïÞ
-_php:S103"KSplit this 122 characters long line (which is greater than 120 authorized).(Î´Ô‘
-_php:S103"KSplit this 122 characters long line (which is greater than 120 authorized).(Î´Ô‘
-_php:S103!"KSplit this 122 characters long line (which is greater than 120 authorized).(Î´Ô‘
-_php:S103("KSplit this 122 characters long line (which is greater than 120 authorized).(Î´Ô‘
-_php:S103."KSplit this 122 characters long line (which is greater than 120 authorized).(Î´Ô‘
-_php:S1034"KSplit this 122 characters long line (which is greater than 120 authorized).(Î´Ô‘
-_php:S103;"KSplit this 122 characters long line (which is greater than 120 authorized).(Î´Ô‘
-W	php:S1808"=Move this open curly brace to the beginning of the next line.(¦ããüÿÿÿÿ
-_	php:S1808"JPut one space between the closing parenthesis and the opening curly brace.(´ÞÞÕ
-d	php:S1808"JPut one space between the closing parenthesis and the opening curly brace.(¦ããüÿÿÿÿ
-d	php:S1808"JPut one space between the closing parenthesis and the opening curly brace.(ˆœß‡ùÿÿÿÿ
-d	php:S1808"JPut one space between the closing parenthesis and the opening curly brace.(Òß††úÿÿÿÿ
-d	php:S1808#"JPut one space between the closing parenthesis and the opening curly brace.(ˆÚºâÿÿÿÿÿ
-]	php:S1808"HPut one space between this "switch" keyword and the opening parenthesis.(´ÞÞÕ
-^	php:S1808"DPut one space between this "if" keyword and the opening parenthesis.(ˆœß‡ùÿÿÿÿ
-b	php:S1808"HPut one space between this "elseif" keyword and the opening parenthesis.(Òß††úÿÿÿÿ
-b	php:S1808#"HPut one space between this "elseif" keyword and the opening parenthesis.(ˆÚºâÿÿÿÿÿ
-[	php:S18086"FPut one space between this "else" keyword and the opening curly brace.(å¥ž‡
-b	php:S1301"MReplace this "switch" statement with "if" statements to increase readability.(´ÞÞÕ
-7	php:S1780A"Remove this closing tag "?>".(Ö‘äÏúÿÿÿÿ
-3php:S113"'Add a new line at the end of this file.
-wphp:S117"^Rename this local variable "$step_number" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(¶¾”¦ûÿÿÿÿ
-_	php:S1779"RReplace all non line feed end of line characters in this file "service.php" by LF.
-a	php:S18716"LThis branch's code block is the same as the block for the branch on line 15.(å¥ž‡
-M	php:S1757"3Change this opening tag to either "<?php" or "<?=".(ïËëºøÿÿÿÿ
-3php:S125"Remove this commented out code.(¤üÈ

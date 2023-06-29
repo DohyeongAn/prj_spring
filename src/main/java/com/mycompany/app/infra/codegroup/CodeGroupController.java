@@ -45,7 +45,7 @@ public class CodeGroupController {
 
         service.update(dto);
 
-        return "redirect:/tablesDynamic";
+        return "redirect:/adminList";
     }
 
     @RequestMapping("/adminDel")
@@ -54,7 +54,7 @@ public class CodeGroupController {
 
         service.delete(dto);
 
-        return "redirect:/tablesDynamic";
+        return "redirect:/adminList";
     }
     @RequestMapping("/adminIns")
     public String adminIns(CodeGroup dto) {
@@ -62,13 +62,13 @@ public class CodeGroupController {
 
         service.insert(dto);
 
-        return "redirect:/tablesDynamic";
+        return "redirect:/adminList";
     }
 
     @RequestMapping("/adminUelete")
     public String adminUelete(CodeGroup dto) {
         service.uelete(dto);
-        return "redirect:/tablesDynamic";
+        return "redirect:/adminList";
     }
 }
 

@@ -9,116 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cbcc6b3-3dca-4656-9327-195a01a91926" name="변경" comment="0627 prj spring portfolio good">
-      <change afterPath="$PROJECT_DIR$/.idea/CamelCaseConfigNew.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2e22b6edd746fa3dc40ad7276c87c8d87d72a392" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/1/b1d7b171509dc4459849e8606f419018074d56ae" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/3/f3ff42979423fdc0751740810c7ed16d1e718eae" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/e/2e22b6edd746fa3dc40ad7276c87c8d87d72a392" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/1/b1d7b171509dc4459849e8606f419018074d56ae" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/3/f3ff42979423fdc0751740810c7ed16d1e718eae" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/index/IndexController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4jdbc.log4j2.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/codegroup/codeGroupForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/codegroup/codeGroupList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/biography/about.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/biography/biographyUserView.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/indexUserView.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/img/dohyeongan.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/img/gallery/dodomallEx.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/icon/android-icon-144x144.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/icon/android-icon-192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/icon/android-icon-36x36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/icon/android-icon-48x48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/icon/android-icon-72x72.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/icon/android-icon-96x96.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/icon/apple-icon-114x114.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/icon/apple-icon-120x120.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/icon/apple-icon-144x144.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/icon/apple-icon-152x152.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/icon/apple-icon-180x180.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/icon/apple-icon-57x57.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/icon/apple-icon-60x60.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/icon/apple-icon-72x72.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/icon/apple-icon-76x76.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/icon/apple-icon-precomposed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/icon/apple-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/icon/browserconfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/icon/doiconBlue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/icon/favicon-16x16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/icon/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/icon/favicon-96x96.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/icon/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/icon/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/icon/ms-icon-144x144.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/icon/ms-icon-150x150.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/icon/ms-icon-310x310.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/icon/ms-icon-70x70.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/img/dohyeongan.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/0/305b3bb8194d08e1e32b17ac5f1d53c1cf0118c1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/c/3c11b54f1d2d3560651c04dd4c614a8c167bd3a0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4bfc33c98a3fba6e92f72074fad710bb7d901a48" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4fbe379a08d319ef052e23dd638d63c7f9564a9b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/a/9a549875954782aadfd152200a74f49acf667acb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/b/cb531d3ceedf877860b36a3c7f7856bda7d93ea2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/5/d5bd7fdc5f1a0f93d145d0c00f8b9b1f2050b069" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/6/d6823b41781114413d97983f144674d2f8cf5f9f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/ee67263bb367b7874b96d07d6d2eafce3e2c273f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/0/305b3bb8194d08e1e32b17ac5f1d53c1cf0118c1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/c/3c11b54f1d2d3560651c04dd4c614a8c167bd3a0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/b/4bfc33c98a3fba6e92f72074fad710bb7d901a48" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/f/4fbe379a08d319ef052e23dd638d63c7f9564a9b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/a/9a549875954782aadfd152200a74f49acf667acb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/b/cb531d3ceedf877860b36a3c7f7856bda7d93ea2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/5/d5bd7fdc5f1a0f93d145d0c00f8b9b1f2050b069" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/6/d6823b41781114413d97983f144674d2f8cf5f9f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/e/ee67263bb367b7874b96d07d6d2eafce3e2c273f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/codegroup/CodeGroupVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/home/HomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/root-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/root-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/codegroup/adminForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin_login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/codegroup/adminLogin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tablesDynamic.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/codegroup/adminList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/testCodeGroupList.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/testFormInput.jsp" beforeDir="false" />
-    </list>
+    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-        <option value="CSS File" />
-        <option value="Jsp File" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="SIGN_OFF_COMMIT" value="true" />
-  </component>
-  <component name="GitToolBoxStore">
-    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -127,9 +22,6 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -137,74 +29,19 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2RWDgWSuukfGVuviex7aUm2PF24" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectViewState">
-    <option name="autoscrollFromSource" value="true" />
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "false",
-    "WebServerToolWindowFactoryState": "false",
-    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "git-widget-placeholder": "main",
-    "import_schema_mapping": "<schema-mapping>\n  <databases>\n    <list>\n      <schema-mapping-item>\n        <source-data-source-id>0e9348e0-aa6a-4a14-a78f-5ed0f23ba927</source-data-source-id>\n        <source-path>schema/&quot;dodomall&quot;</source-path>\n        <target-data-source-id>0e9348e0-aa6a-4a14-a78f-5ed0f23ba927</target-data-source-id>\n        <target-path>schema/&quot;dodomall&quot;</target-path>\n      </schema-mapping-item>\n    </list>\n  </databases>\n</schema-mapping>",
-    "last_opened_file_path": "/Users/andohyeong/IdeaProjects/prj_spring/src/main/webapp/resources/img",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "아티팩트",
+    "project.structure.last.edited": "모듈",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.5264368",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "f299b778dc0a0ce23b6d5345f8f2b08a",
-    "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
-    ]
+    "project.structure.side.proportion": "0.5264368"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/resources/img" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/resources/assets/img" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/resources/icon" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/resources" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/resources/assets/img/gallery" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/resources" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/codegroup" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/resources/css/vendors/jquery/dist" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.mycompany.app.infra.index" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="configurationTypes">
-      <set>
-        <option value="com.poratu.idea.plugins.tomcat" />
-      </set>
-    </option>
-  </component>
   <component name="RunManager">
-    <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.76" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8 -Duser.language=en -Duser.region=en" />
+    <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.76" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="11">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
@@ -216,7 +53,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="3d044100-cacd-4620-95e0-9bcf90fb4828" />
+        <option name="BASE_DIRECTORY_NAME" value="9a894ab3-7d82-4ecf-9f57-f02c7cdc6b7e" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -224,7 +61,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="51619" />
+        <option name="DEBUG_PORT" value="51527" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -294,154 +131,7 @@
       </method>
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="디폴트 작업">
-      <changelist id="8cbcc6b3-3dca-4656-9327-195a01a91926" name="변경" comment="" />
-      <created>1687357054529</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1687357054529</updated>
-      <workItem from="1687357059680" duration="39000" />
-      <workItem from="1687357106733" duration="324000" />
-      <workItem from="1687357460864" duration="138000" />
-      <workItem from="1687392941540" duration="2520000" />
-      <workItem from="1687396060319" duration="23000" />
-      <workItem from="1687396246063" duration="3241000" />
-      <workItem from="1687400315775" duration="158000" />
-      <workItem from="1687400636026" duration="911000" />
-      <workItem from="1687405146020" duration="13515000" />
-      <workItem from="1687427432273" duration="998000" />
-      <workItem from="1687428942078" duration="1028000" />
-      <workItem from="1687430127632" duration="6000" />
-      <workItem from="1687430145540" duration="13000" />
-      <workItem from="1687479225914" duration="20665000" />
-      <workItem from="1687685289388" duration="5547000" />
-      <workItem from="1687694673009" duration="52000" />
-      <workItem from="1687695255143" duration="122000" />
-      <workItem from="1687695492463" duration="212000" />
-      <workItem from="1687695817321" duration="20000" />
-      <workItem from="1687695963824" duration="24000" />
-      <workItem from="1687696872787" duration="422000" />
-      <workItem from="1687738856664" duration="79000" />
-      <workItem from="1687739016191" duration="27607000" />
-      <workItem from="1687825054867" duration="9416000" />
-      <workItem from="1687835856509" duration="387000" />
-      <workItem from="1687836419700" duration="1457000" />
-      <workItem from="1687841683705" duration="10112000" />
-      <workItem from="1687865733782" duration="2310000" />
-      <workItem from="1687911564374" duration="23106000" />
-    </task>
-    <task id="LOCAL-00001" summary="set spring tomcat">
-      <option name="closed" value="true" />
-      <created>1687357386599</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1687357386599</updated>
-    </task>
-    <task id="LOCAL-00002" summary="1">
-      <option name="closed" value="true" />
-      <created>1687399878237</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1687399878237</updated>
-    </task>
-    <task id="LOCAL-00003" summary="0622 prj spring portfolio">
-      <option name="closed" value="true" />
-      <created>1687429846981</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1687429846981</updated>
-    </task>
-    <task id="LOCAL-00004" summary="0623 prj spring portfolio">
-      <option name="closed" value="true" />
-      <created>1687508069500</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1687508069500</updated>
-    </task>
-    <task id="LOCAL-00005" summary="0623 prj spring portfolio">
-      <option name="closed" value="true" />
-      <created>1687697258196</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1687697258196</updated>
-    </task>
-    <task id="LOCAL-00006" summary="0626 prj spring portfolio">
-      <option name="closed" value="true" />
-      <created>1687758056857</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1687758056857</updated>
-    </task>
-    <task id="LOCAL-00007" summary="0626 prj spring portfolio">
-      <option name="closed" value="true" />
-      <created>1687787577497</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1687787577497</updated>
-    </task>
-    <task id="LOCAL-00008" summary="0627 prj spring portfolio">
-      <option name="closed" value="true" />
-      <created>1687843063789</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1687843063790</updated>
-    </task>
-    <task id="LOCAL-00009" summary="0627 prj spring portfolio good">
-      <option name="closed" value="true" />
-      <created>1687868460987</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1687868460987</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="set spring tomcat" />
-    <MESSAGE value="1" />
-    <MESSAGE value="0622 prj spring portfolio" />
-    <MESSAGE value="0623 prj spring portfolio" />
-    <MESSAGE value="0626 prj spring portfolio" />
-    <MESSAGE value="0627 prj spring portfolio" />
-    <MESSAGE value="0627 prj spring portfolio good" />
-    <option name="LAST_COMMIT_MESSAGE" value="0627 prj spring portfolio good" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/codegroup/adminForm.jsp</url>
-          <line>225</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

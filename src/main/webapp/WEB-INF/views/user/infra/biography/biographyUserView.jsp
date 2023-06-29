@@ -90,7 +90,7 @@
         >
             <!-- Uncomment the line below if you also wish to use an image logo -->
             <!-- <img src="../../../../../resources/assets/img/logo.png" alt=""> -->
-            <i class="fa-regular fa-laptop-code"></i>
+            <i class="fa-solid fa-laptop-code"></i>
             <img src="../../../../../resources/assets/img/dodoanLogoWhite.png" alt="" />
         </a>
 

@@ -61,7 +61,7 @@
                 <br />
 
                 <div>
-                  <h1><i class="fa-regular fa-laptop-code"></i> DodoMall admin</h1>
+                  <h1><i class="fa-solid fa-laptop-code"></i> DodoMall admin</h1>
                 </div>
               </div>
             </form>
