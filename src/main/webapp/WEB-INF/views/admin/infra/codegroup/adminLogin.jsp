@@ -25,7 +25,7 @@
     <link href="../../../../../resources/css/vendors/animate.css/animate.min.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
-    <link href="../../../../../resources/build/css/custom.min.css" rel="stylesheet">
+    <link href="../../../../../resources/build/css/custom.css" rel="stylesheet">
   </head>
 
   <body class="login">
@@ -96,7 +96,7 @@
                 <br />
 
                 <div>
-                  <h1><i class="fa fa-paw"></i> Gentelella Alela!</h1>
+                  <h1><i class="fa-solid fa-laptop-code"></i> Gentelella Alela!</h1>
                   <p>©2016 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and Terms</p>
                 </div>
               </div>

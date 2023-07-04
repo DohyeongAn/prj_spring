@@ -20,10 +20,20 @@
     <link href="/resources/css/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="/resources/css/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- FontAwsome -->
+    <script
+            src="https://kit.fontawesome.com/df1b18aebb.js"
+            crossorigin="anonymous"
+    ></script>
     <!-- NProgress -->
     <link href="/resources/css/vendors/nprogress/nprogress.css" rel="stylesheet">
     <!-- iCheck -->
     <link href="/resources/css/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- FontAwsome -->
+    <script
+            src="https://kit.fontawesome.com/df1b18aebb.js"
+            crossorigin="anonymous"
+    ></script>
     <!-- Datatables -->
     <link href="/resources/css/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
     <link href="/resources/css/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
@@ -41,7 +51,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="/adminList" class="site_title"><i class="fa fa-paw"></i> <span>DodoMall admin</span></a>
+              <a href="/adminList" class="site_title"><i class="fa-solid fa-laptop-code"></i> <span>DodoMall admin</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -249,6 +259,16 @@
 <%--                      DataTables has most features enabled by default, so all you need to do to use it with your own tables is to call the construction function: <code>$().DataTable();</code>--%>
                       회원 데이터를 조회 할 수 있습니다.
                     </p>
+                    <div class="col-4">
+                      <input type="text" name="shKeyword" class="form-control form-control-sm"
+                        value="<c:out value="${vo.shKeyword}"/>"
+                      >
+                    </div>
+                    <div class="col-4">
+                      <button class="btn btn-dark" type="submit" id="btnSearch">검색</button>
+                      <a href="/codeGroupXdmForm"><button class="btn btn-danger addBtn" type="button">추가</button></a>
+                    </div>
+                  </div>
                     <table id="datatable" class="table table-striped table-bordered">
                       <thead>
                         <tr>

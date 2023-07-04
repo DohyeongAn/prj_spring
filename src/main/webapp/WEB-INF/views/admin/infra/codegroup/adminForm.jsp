@@ -22,6 +22,11 @@
     <link href="/resources/css/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="/resources/css/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- FontAwsome -->
+    <script
+            src="https://kit.fontawesome.com/df1b18aebb.js"
+            crossorigin="anonymous"
+    ></script>
     <!-- NProgress -->
     <link href="/resources/css/vendors/nprogress/nprogress.css" rel="stylesheet">
     <!-- iCheck -->
@@ -38,7 +43,7 @@
     <link href="/resources/css/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
-    <link href="/resources/build/css/custom.min.css" rel="stylesheet">
+    <link href="/resources/build/css/custom.css" rel="stylesheet">
   </head>
 
   <body class="nav-md">
@@ -47,7 +52,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="/adminList" class="site_title"><i class="fa fa-paw"></i> <span>DodoMall admin</span></a>
+              <a href="/adminList" class="site_title"><i class="fa-solid fa-laptop-code"></i> <span>DodoMall admin</span></a>
             </div>
 
             <div class="clearfix"></div>

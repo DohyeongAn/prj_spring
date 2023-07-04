@@ -176,13 +176,15 @@ html , body{
     display: none
 }
 .nav-sm .navbar.nav_title a i {
-    font-size: 27px;
     margin: 13px 0 0 3px
 }
 .site_title i {
     border: 1px solid #EAEAEA;
-    padding: 5px 6px;
-    border-radius: 50%
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 6px;
 }
 .nav-sm .main_container .top_nav {
     display: block;
@@ -3219,7 +3221,7 @@ ul.project_files li a i {
     display: block !important;
 }
 .form-group .btn {
-    margin-bottom: -6px;
+    /*margin-bottom: -6px;*/
 }
 
 .input-group-btn .btn { margin-bottom:0; }
