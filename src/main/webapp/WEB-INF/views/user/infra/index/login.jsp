@@ -452,7 +452,7 @@
                     <ul class="mb_common_btn">
                         <li><a href="find_id.php">아이디찾기</a></li>
                         <li><a href="find_password.php">비밀번호찾기</a></li>
-                        <li><a href="member_join.php">회원가입</a></li>
+                        <li><a href="join">회원가입</a></li>
                     </ul>
                 </div>
 

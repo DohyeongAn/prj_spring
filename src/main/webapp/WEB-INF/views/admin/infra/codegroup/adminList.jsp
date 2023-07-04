@@ -254,52 +254,98 @@
                     <div class="clearfix"></div>
                   </div>
                     <form name=formList>
-                  <div class="x_content">
-                    <p class="text-muted font-13 m-b-30">
-<%--                      DataTables has most features enabled by default, so all you need to do to use it with your own tables is to call the construction function: <code>$().DataTable();</code>--%>
-                      회원 데이터를 조회 할 수 있습니다.
-                    </p>
-                    <div class="col-4">
-                      <input type="text" name="shKeyword" class="form-control form-control-sm"
-                        value="<c:out value="${vo.shKeyword}"/>"
-                      >
-                    </div>
-                    <div class="col-4">
-                      <button class="btn btn-dark" type="submit" id="btnSearch">검색</button>
-                      <a href="/codeGroupXdmForm"><button class="btn btn-danger addBtn" type="button">추가</button></a>
-                    </div>
-                  </div>
-                    <table id="datatable" class="table table-striped table-bordered">
-                      <thead>
-                        <tr>
-                          <th>seq</th>
-                          <th>name</th>
-                          <th>delNy</th>
-                        </tr>
-                      </thead>
 
 
-                      <tbody>
-
-                      <c:choose>
-                        <c:when test="${fn:length(list) eq 0}">
-                        </c:when>
-                        <c:otherwise>
-                          <c:forEach items="${list}" var="list" varStatus="status">
+                      <div id="datatable_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="dataTables_length" id="datatable_length">
+                            <label
+                            >Show
+                              <select name="datatable_length" aria-controls="datatable" class="form-control input-sm">
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                              </select>
+                              entries</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div id="datatable_filter" class="dataTables_filter">
+                            <label>Search:<select name="shOption" class="form-control undefined">
+                              <option value="">seq</option>
+                              <option value="" selected>name</option>
+                              <option value="">delNy</option>
+                            </select>
+                              <input type="text" name="shKeyword" value="<c:out value="${vo.shKeyword}"/>" class="form-control input-sm" placeholder="" aria-controls="datatable"/>
+                              <button id="btnSearch" class="form-control undefined input-sm" >Go</button>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <table id="" class="table table-striped table-bordered">
+                            <thead>
                             <tr>
-                            <td><c:out value="${list.seq}"></c:out></td>
-                            <td><a href="adminForm?seq=<c:out value="${list.seq}"/>">
-                              <c:out value="${list.name}"></c:out></a></td>
-                              <td><c:out value="${list.delNy}"></c:out></td>
+                              <th>seq</th>
+                              <th>name</th>
+                              <th>delNy</th>
                             </tr>
-                          </c:forEach>
-                        </c:otherwise>
-                      </c:choose>
-                      </tbody>
+                            </thead>
 
 
-                    </table>
-                  </div>
+                            <tbody>
+
+                            <c:choose>
+                              <c:when test="${fn:length(list) eq 0}">
+                              </c:when>
+                              <c:otherwise>
+                                <c:forEach items="${list}" var="list" varStatus="status">
+                                  <tr>
+                                    <td><c:out value="${list.seq}"></c:out></td>
+                                    <td><a href="adminForm?seq=<c:out value="${list.seq}"/>">
+                                      <c:out value="${list.name}"></c:out></a></td>
+                                    <td><c:out value="${list.delNy}"></c:out></td>
+                                  </tr>
+                                </c:forEach>
+                              </c:otherwise>
+                            </c:choose>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                        <!-- pagination s -->
+<%--                        <%@include file="../../../include/pagination.jsp"%>--%>
+                        <!-- pagination e -->
+<%--                      <div class="row">--%>
+<%--                        <div class="col-sm-5">--%>
+<%--                          <div--%>
+<%--                                  class="dataTables_info"--%>
+<%--                                  id="datatable_info"--%>
+<%--                                  role="status"--%>
+<%--                                  aria-live="polite">Showing 1 to 6 of 6 entries</div>--%>
+<%--                        </div>--%>
+<%--                        <div class="col-sm-7">--%>
+<%--                          <div class="dataTables_paginate paging_simple_numbers" id="datatable_paginate">--%>
+<%--                            <ul class="pagination">--%>
+<%--                              <li class="paginate_button previous disabled" id="datatable_previous">--%>
+<%--                                <a href="#" aria-controls="datatable" data-dt-idx="0" tabindex="0">Previous</a>--%>
+<%--                              </li>--%>
+<%--                              <li class="paginate_button active">--%>
+<%--                                <a href="#" aria-controls="datatable" data-dt-idx="1" tabindex="0">1</a>--%>
+<%--                              </li>--%>
+<%--                              <li class="paginate_button next disabled" id="datatable_next">--%>
+<%--                                <a href="#" aria-controls="datatable" data-dt-idx="2" tabindex="0">Next</a>--%>
+<%--                              </li>--%>
+<%--                            </ul>--%>
+<%--                          </div>--%>
+<%--                        </div>--%>
+<%--                      </div>--%>
+                    </div>
+
+
                     </form>
                 </div>
               </div>
@@ -357,11 +403,12 @@
   <script>
     $("#btnSearch").on("click", function(){
 
-      //	$("form[name=formList]").attr("method","get");
+      //	$("form[name=adminList]").attr("method","get");
 
-      $("form[name=formList]").attr("action","/admin").submit();
+      $("form[name=adminList]").attr("action","/adminList").submit();
 
     });
+
   </script>
   </body>
 </html>

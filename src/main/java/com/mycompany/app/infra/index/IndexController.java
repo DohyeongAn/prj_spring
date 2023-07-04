@@ -38,11 +38,18 @@ public class IndexController {
         return "user/infra/index/login";
     }
 
+    @RequestMapping(value = "/join")
+    public String join(){
+
+        return "user/infra/index/join";
+    }
+
     @RequestMapping(value = "/adminLogin")
     public String adminLogin(){
 
         return "admin/infra/codegroup/adminLogin";
     }
+
 
 
 

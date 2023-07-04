@@ -1,6 +1,8 @@
 package com.mycompany.app.infra.codegroup;
 
-public class CodeGroupVo {
+import com.mycompany.app.infra.common.base.BaseVo;
+
+public class CodeGroupVo extends BaseVo {
 
     private Integer shOption;
     private String shKeyword;
@@ -33,4 +35,5 @@ public class CodeGroupVo {
     public void setDelNy(Integer delNy) {
         this.delNy = delNy;
     }
+
 }
