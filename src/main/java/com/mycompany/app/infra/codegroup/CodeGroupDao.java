@@ -29,6 +29,8 @@ public class CodeGroupDao{
         return codeGroup;
     }
 
+    public int selectOneCount(CodeGroupVo vo) { return sqlSession.selectOne(namespace + ".selectOneCount", vo); }
+
     public int update(CodeGroup dto) { return sqlSession.update(namespace + ".update", dto); }
 
     public int delete(CodeGroup dto) { return sqlSession.delete(namespace + ".delete", dto); }

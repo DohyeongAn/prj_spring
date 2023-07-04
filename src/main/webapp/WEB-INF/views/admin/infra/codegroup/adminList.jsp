@@ -254,8 +254,8 @@
                     <div class="clearfix"></div>
                   </div>
                     <form name=formList>
-
-
+                      <input type="hidden" name="thisPage" value="<c:out value="${vo.thisPage}" default="1"/>">
+                      <input type="hidden" name="rowNumToShow" value="<c:out value="${vo.rowNumToShow}"/>">
                       <div id="datatable_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
                       <div class="row">
                         <div class="col-sm-6">
@@ -317,7 +317,7 @@
                         </div>
                       </div>
                         <!-- pagination s -->
-<%--                        <%@include file="../../../include/pagination.jsp"%>--%>
+                        <%@include file="../../../include/pagination.jsp"%>
                         <!-- pagination e -->
 <%--                      <div class="row">--%>
 <%--                        <div class="col-sm-5">--%>
