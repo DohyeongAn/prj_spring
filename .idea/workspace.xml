@@ -9,18 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="0705 페이지내이션 멤버">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/sidebar.jsp" afterDir="false" />
+    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="0705 멤버리스트 완료 폼은해야합니다">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/effa3b8e-8f86-4263-aead-4e928f6d291a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/effa3b8e-8f86-4263-aead-4e928f6d291a.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/a/0ae75fbd57f1c55d355c41d284126a9198dd7037" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/a/0ae75fbd57f1c55d355c41d284126a9198dd7037" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/Member.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/MemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/MemberMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/MemberServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/MemberVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/MemberVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/codegroup/adminForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/codegroup/adminForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/codegroup/adminList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/codegroup/adminList.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/member/adminMemberForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/member/adminMemberForm.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/member/adminMemberList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/member/adminMemberList.jsp" afterDir="false" />
     </list>
@@ -88,7 +84,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.5264368&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;f299b778dc0a0ce23b6d5345f8f2b08a&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -225,7 +221,11 @@
       <workItem from="1688343477114" duration="31000" />
       <workItem from="1688344857696" duration="284000" />
       <workItem from="1688345152286" duration="11796000" />
-      <workItem from="1688520663599" duration="12250000" />
+      <workItem from="1688520663599" duration="12496000" />
+      <workItem from="1688538694566" duration="302000" />
+      <workItem from="1688539014334" duration="245000" />
+      <workItem from="1688539322157" duration="2273000" />
+      <workItem from="1688542121506" duration="1411000" />
     </task>
     <task id="LOCAL-00003" summary="0704">
       <option name="closed" value="true" />
@@ -251,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688523562921</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="0705 멤버리스트 완료 폼은해야합니다">
+      <option name="closed" value="true" />
+      <created>1688536802736</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1688536802736</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +272,8 @@
     <MESSAGE value="0704" />
     <MESSAGE value="0704 페이지내이션완료" />
     <MESSAGE value="0705 페이지내이션 멤버" />
-    <option name="LAST_COMMIT_MESSAGE" value="0705 페이지내이션 멤버" />
+    <MESSAGE value="0705 멤버리스트 완료 폼은해야합니다" />
+    <option name="LAST_COMMIT_MESSAGE" value="0705 멤버리스트 완료 폼은해야합니다" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

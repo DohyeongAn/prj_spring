@@ -7,12 +7,13 @@ public class MemberVo extends BaseVo {
     private Integer shOption;
     private String shKeyword;
     private String seq;
-    private String defultNy;
+    private String defaultNy;
     private String userName;
-    private String PhoneNumber;
+    private String phoneNumber;
     private String id;
     private String nickName;
     private String password;
+    private String postalCode;
     private String address;
     private String addressDetail;
     private Integer smsCheck;
@@ -45,12 +46,12 @@ public class MemberVo extends BaseVo {
         this.seq = seq;
     }
 
-    public String getDefultNy() {
-        return defultNy;
+    public String getDefaultNy() {
+        return defaultNy;
     }
 
-    public void setDefultNy(String defultNy) {
-        this.defultNy = defultNy;
+    public void setDefaultNy(String defaultNy) {
+        this.defaultNy = defaultNy;
     }
 
     public String getUserName() {
@@ -62,12 +63,13 @@ public class MemberVo extends BaseVo {
     }
 
     public String getPhoneNumber() {
-        return PhoneNumber;
+        return phoneNumber;
     }
 
     public void setPhoneNumber(String phoneNumber) {
-        PhoneNumber = phoneNumber;
+        this.phoneNumber = phoneNumber;
     }
+
 
     public String getId() {
         return id;
@@ -91,6 +93,14 @@ public class MemberVo extends BaseVo {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getPostalCode() {
+        return postalCode;
+    }
+
+    public void setPostalCode(String postalCode) {
+        this.postalCode = postalCode;
     }
 
     public String getAddress() {
@@ -117,12 +127,12 @@ public class MemberVo extends BaseVo {
         this.smsCheck = smsCheck;
     }
 
-    public String getCratedAt() {
+    public String getCreatedAt() {
         return createdAt;
     }
 
-    public void setCratedAt(String cratedAt) {
-        this.createdAt = cratedAt;
+    public void setCreatedAt(String createdAt) {
+        this.createdAt = createdAt;
     }
 
     public Integer getDelNy() {

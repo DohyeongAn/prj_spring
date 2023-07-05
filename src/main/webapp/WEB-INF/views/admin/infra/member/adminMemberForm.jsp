@@ -218,6 +218,7 @@
                   </p>
                     <br />
                     <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" name="form" method="post">
+
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="seq">seq <span class="required">*</span>
                         </label>
@@ -227,10 +228,10 @@
                       </div>
 
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="defultNy">defultNy <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="defaultNy">defaultNy <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="defultNy" id="defultNy" class="form-control col-md-7 col-xs-12" placeholder="defultNy" required value="<c:out value="${item.defultNy}"/>" >
+                          <input type="text" name="defaultNy" id="defaultNy" class="form-control col-md-7 col-xs-12" placeholder="defaultNy" required value="<c:out value="${item.defaultNy}"/>" >
                         </div>
                       </div>
 
@@ -312,15 +313,15 @@
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="createdAt">createdAt <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="createdAt" id="createdAt" class="form-control col-md-7 col-xs-12" placeholder="createdAt" value="<c:out value="${item.createdAt}"/>" >
+                          <input type="text" name="createdAt" id="createdAt" class="form-control col-md-7 col-xs-12" placeholder="createdAt" readonly value="<c:out value="${item.createdAt}"/>" >
                         </div>
                       </div>
 
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="delNy2">delNy <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="delNy">delNy <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="delNy2" id="delNy2" class="form-control col-md-7 col-xs-12" placeholder="delNy" required value="<c:out value="${item.delNy}"/>" >
+                          <input type="text" name="delNy" id="delNy" class="form-control col-md-7 col-xs-12" placeholder="delNy" required value="<c:out value="${item.delNy}"/>" >
                         </div>
                       </div>
 

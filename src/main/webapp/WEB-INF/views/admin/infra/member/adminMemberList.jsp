@@ -253,7 +253,7 @@
                             <thead>
                             <tr>
                               <th>seq</th>
-                              <th>defultNy</th>
+                              <th>defaultNy</th>
                               <th>userName</th>
                               <th>phoneNumber</th>
                               <th>id</th>
@@ -275,10 +275,10 @@
                                 <c:forEach items="${list}" var="list" varStatus="status">
                                   <tr>
                                     <td><c:out value="${list.seq}"/></td>
-                                    <td><c:out value="${list.defultNy}"/></td>
+                                    <td><c:out value="${list.defaultNy}"/></td>
                                     <td><c:out value="${list.userName}"/></td>
                                     <td><c:out value="${list.phoneNumber}"/></td>
-                                    <td><a href="adminMemberForm?seq=<c:out value="${list.id}"/>">
+                                    <td><a href="adminMemberForm?seq=<c:out value="${list.seq}"/>">
                                       <c:out value="${list.id}"></c:out> </a>
                                     </td>
                                     <td><c:out value="${list.nickName}"/></td>

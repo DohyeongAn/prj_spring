@@ -3,9 +3,9 @@ package com.mycompany.app.infra.member;
 public class Member {
 
     private String seq;
-    private String defultNy;
+    private String defaultNy;
     private String userName;
-    private String PhoneNumber;
+    private String phoneNumber;
     private String id;
     private String nickName;
     private String password;
@@ -27,12 +27,12 @@ public class Member {
         this.seq = seq;
     }
 
-    public String getDefultNy() {
-        return defultNy;
+    public String getDefaultNy() {
+        return defaultNy;
     }
 
-    public void setDefultNy(String defultNy) {
-        this.defultNy = defultNy;
+    public void setDefaultNy(String defaultNy) {
+        this.defaultNy = defaultNy;
     }
 
     public String getUserName() {
@@ -44,11 +44,11 @@ public class Member {
     }
 
     public String getPhoneNumber() {
-        return PhoneNumber;
+        return phoneNumber;
     }
 
     public void setPhoneNumber(String phoneNumber) {
-        PhoneNumber = phoneNumber;
+        this.phoneNumber = phoneNumber;
     }
 
     public String getId() {

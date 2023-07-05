@@ -14,7 +14,7 @@
 
     <sql id="abc">
         seq,
-        defultNy,
+        defaultNy,
         userName,
         phoneNumber,
         id,
@@ -62,7 +62,7 @@
     <update id="update">
         UPDATE member
         SET
-        defultNy = #{defultNy},
+        defaultNy = #{defaultNy},
         userName = #{userName},
         phoneNumber = #{phoneNumber},
         id = #{id},
@@ -84,7 +84,7 @@
 
     <insert id="insert">
         INSERT INTO member (
-        defultNy,
+        defaultNy,
         userName,
         phoneNumber,
         id,
@@ -97,7 +97,7 @@
         createdAt,
         delNy
         ) VALUES (
-        #{defultNy},
+        #{defaultNy},
         #{userName},
         #{phoneNumber},
         #{id},
