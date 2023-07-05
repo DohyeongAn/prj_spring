@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class MemberServiceImpl {
+public class MemberServiceImpl implements MemberService {
 
     @Autowired
     MemberDao dao;

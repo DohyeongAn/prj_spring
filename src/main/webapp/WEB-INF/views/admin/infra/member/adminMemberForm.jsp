@@ -70,49 +70,7 @@
             <!-- /menu profile quick info -->
 
             <br />
-
-            <!-- sidebar menu -->
-            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-              <div class="menu_section">
-                <h3>General</h3>
-                <ul class="nav side-menu">
-                  <li><a><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
-                      <li><a href="adminList">Data List</a></li>
-                      <li><a href="adminMemberList">Member List</a></li>
-
-                    </ul>
-                  </li>
-                  <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
-                      <li><a href="adminForm">Data Form</a></li>
-                      <li><a href="adminMemberForm">Data Form</a></li>
-
-                    </ul>
-                  </li>
-
-                </ul>
-              </div>
-
-            </div>
-            <!-- /sidebar menu -->
-
-            <!-- /menu footer buttons -->
-            <div class="sidebar-footer hidden-small">
-              <a data-toggle="tooltip" data-placement="top" title="Settings">
-                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-              </a>
-              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
-                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
-              </a>
-              <a data-toggle="tooltip" data-placement="top" title="Lock">
-                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
-              </a>
-              <a data-toggle="tooltip" data-placement="top" title="Logout" href="../codegroup/adminLogin.jsp">
-                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
-              </a>
-            </div>
-            <!-- /menu footer buttons -->
+            <%@include file="../../../include/sidebar.jsp"%>
           </div>
         </div>
 
@@ -269,12 +227,13 @@
                       </div>
 
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">name <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="defultNy">defultNy <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="name" id="name" class="form-control col-md-7 col-xs-12" placeholder="name" required value="<c:out value="${item.defultNy}"/>" >
+                          <input type="text" name="defultNy" id="defultNy" class="form-control col-md-7 col-xs-12" placeholder="defultNy" required value="<c:out value="${item.defultNy}"/>" >
                         </div>
                       </div>
+
 
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="userName">userName <span class="required">*</span>
@@ -317,6 +276,14 @@
                       </div>
 
                       <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="postalCode">postalCode <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" name="postalCode" id="postalCode" class="form-control col-md-7 col-xs-12" placeholder="postalCode" required value="<c:out value="${item.postalCode}"/>" >
+                        </div>
+                      </div>
+
+                      <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="address">address <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
@@ -332,13 +299,6 @@
                         </div>
                       </div>
 
-                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="delNy">delNy <span class="required">*</span>
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="delNy" id="delNy" class="form-control col-md-7 col-xs-12" placeholder="delNy" required value="<c:out value="${item.delNy}"/>" >
-                        </div>
-                      </div>
 
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="smsCheck">smsCheck <span class="required">*</span>
@@ -352,7 +312,7 @@
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="createdAt">createdAt <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="createdAt" id="createdAt" class="form-control col-md-7 col-xs-12" placeholder="createdAt" required value="<c:out value="${item.createdAt}"/>" >
+                          <input type="text" name="createdAt" id="createdAt" class="form-control col-md-7 col-xs-12" placeholder="createdAt" value="<c:out value="${item.createdAt}"/>" >
                         </div>
                       </div>
 
@@ -438,17 +398,17 @@
   <script type="text/javascript">
     $("#submitBtn").on("click", function(){
       alert("submit");
-      $("form[name=form]").attr("action","/adminUpdt").submit();
+      $("form[name=form]").attr("action","/adminMemberUpdt").submit();
     });
 
     $("#deleteBtn").on("click", function(){
       alert("delete");
-      $("form[name=form]").attr("action","/adminDel").submit();
+      $("form[name=form]").attr("action","/adminMemberDel").submit();
     });
 
     $("#insertBtn").on("click", function(){
       alert("insert");
-      $("form[name=form]").attr("action","/adminIns").submit();
+      $("form[name=form]").attr("action","/adminMemberIns").submit();
     });
 
 
@@ -458,7 +418,7 @@
 
     $("#ueleteBtn").on("click", function(){
       alert("Use");
-      $("form[name=form]").attr("action","/adminUelete").submit();
+      $("form[name=form]").attr("action","/adminMemberUelete").submit();
     });
 
 

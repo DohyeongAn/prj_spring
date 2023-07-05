@@ -16,7 +16,7 @@ public class MemberVo extends BaseVo {
     private String address;
     private String addressDetail;
     private Integer smsCheck;
-    private String cratedAt;
+    private String createdAt;
     private Integer delNy;
     //	-----
 
@@ -118,11 +118,11 @@ public class MemberVo extends BaseVo {
     }
 
     public String getCratedAt() {
-        return cratedAt;
+        return createdAt;
     }
 
     public void setCratedAt(String cratedAt) {
-        this.cratedAt = cratedAt;
+        this.createdAt = cratedAt;
     }
 
     public Integer getDelNy() {
