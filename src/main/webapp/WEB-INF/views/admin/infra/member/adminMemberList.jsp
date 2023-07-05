@@ -85,8 +85,6 @@
                   <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="adminForm">Data Form</a></li>
-                      <li><a href="adminMemberForm">Data Form</a></li>
-
                     </ul>
                   </li>
 
@@ -107,7 +105,7 @@
               <a data-toggle="tooltip" data-placement="top" title="Lock">
                 <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
               </a>
-              <a data-toggle="tooltip" data-placement="top" title="Logout" href="adminLogin.jsp">
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="../codegroup/adminLogin.jsp">
                 <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
               </a>
             </div>
@@ -138,7 +136,7 @@
                       </a>
                     </li>
                     <li><a href="javascript:;">Help</a></li>
-                    <li><a href="adminLogin.jsp"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                    <li><a href="../codegroup/adminLogin.jsp"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
                   </ul>
                 </li>
 
@@ -293,30 +291,47 @@
                             <thead>
                             <tr>
                               <th>seq</th>
-                              <th>name</th>
+                              <th>defultNy</th>
+                              <th>userName</th>
+                              <th>phoneNumber</th>
+                              <th>id</th>
+                              <th>nickName</th>
+                              <th>password</th>
+                              <th>address</th>
+                              <th>addressDetail</th>
+                              <th>delNy</th>
+                              <th>smsCheck</th>
+                              <th>cratedAt</th>
                               <th>delNy</th>
                             </tr>
                             </thead>
-
-
                             <tbody>
-
                             <c:choose>
                               <c:when test="${fn:length(list) eq 0}">
                               </c:when>
                               <c:otherwise>
-                                <c:forEach items="${list}" var="list" varStatus="status">
+                                <c:forEach items="${list}" var="item" varStatus="status">
                                   <tr>
-                                    <td><c:out value="${list.seq}"></c:out></td>
-                                    <td><a href="adminForm?seq=<c:out value="${list.seq}"/>">
-                                      <c:out value="${list.name}"></c:out></a></td>
-                                    <td><c:out value="${list.delNy}"></c:out></td>
+                                    <td><c:out value="${item.seq}"></c:out></td>
+                                    <td><a href="adminMemberForm?seq=<c:out value="${item.seq}"/>"><c:out value="${item.defultNy}"></c:out></a></td>
+                                    <td><c:out value="${item.userName}"></c:out></td>
+                                    <td><c:out value="${item.phoneNumber}"></c:out></td>
+                                    <td><c:out value="${item.id}"></c:out></td>
+                                    <td><c:out value="${item.nickName}"></c:out></td>
+                                    <td><c:out value="${item.password}"></c:out></td>
+                                    <td><c:out value="${item.address}"></c:out></td>
+                                    <td><c:out value="${item.addressDetail}"></c:out></td>
+                                    <td><c:out value="${item.delNy}"></c:out></td>
+                                    <td><c:out value="${item.smsCheck}"></c:out></td>
+                                    <td><c:out value="${item.cratedAt}"></c:out></td>
+                                    <td><c:out value="${item.delNy}"></c:out></td>
                                   </tr>
                                 </c:forEach>
                               </c:otherwise>
                             </c:choose>
                             </tbody>
                           </table>
+
                         </div>
                       </div>
                         <!-- pagination s -->

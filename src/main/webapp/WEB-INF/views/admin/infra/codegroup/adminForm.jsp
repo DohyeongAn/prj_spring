@@ -79,11 +79,15 @@
                   <li><a><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="adminList">Data List</a></li>
+                      <li><a href="adminMemberList">Member List</a></li>
+
                     </ul>
                   </li>
                   <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="adminForm">Data Form</a></li>
+                      <li><a href="adminMemberForm">Data Form</a></li>
+
                     </ul>
                   </li>
 

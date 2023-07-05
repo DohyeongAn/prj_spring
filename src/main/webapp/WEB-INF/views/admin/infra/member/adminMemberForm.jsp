@@ -14,7 +14,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>DataTables | Dodomall</title>
+	
+    <title>General Form | Dodomall</title>
+
 
     <!-- Bootstrap -->
     <link href="/resources/css/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -29,17 +31,16 @@
     <link href="/resources/css/vendors/nprogress/nprogress.css" rel="stylesheet">
     <!-- iCheck -->
     <link href="/resources/css/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
-    <!-- FontAwsome -->
-    <script
-            src="https://kit.fontawesome.com/df1b18aebb.js"
-            crossorigin="anonymous"
-    ></script>
-    <!-- Datatables -->
-    <link href="/resources/css/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
-    <link href="/resources/css/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
-    <link href="/resources/css/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
-    <link href="/resources/css/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
-    <link href="/resources/css/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap-wysiwyg -->
+    <link href="/resources/css/vendors/google-code-prettify/bin/prettify.min.css" rel="stylesheet">
+    <!-- Select2 -->
+    <link href="/resources/css/vendors/select2/dist/css/select2.min.css" rel="stylesheet">
+    <!-- Switchery -->
+    <link href="/resources/css/vendors/switchery/dist/switchery.min.css" rel="stylesheet">
+    <!-- starrr -->
+    <link href="/resources/css/vendors/starrr/dist/starrr.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="/resources/css/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
     <link href="/resources/build/css/custom.css" rel="stylesheet">
@@ -77,9 +78,9 @@
                 <ul class="nav side-menu">
                   <li><a><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <!-- <li><a href="tables.html">Tables</a></li> -->
                       <li><a href="adminList">Data List</a></li>
                       <li><a href="adminMemberList">Member List</a></li>
+
                     </ul>
                   </li>
                   <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
@@ -107,7 +108,7 @@
               <a data-toggle="tooltip" data-placement="top" title="Lock">
                 <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
               </a>
-              <a data-toggle="tooltip" data-placement="top" title="Logout" href="adminLogin.jsp">
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="../codegroup/adminLogin.jsp">
                 <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
               </a>
             </div>
@@ -138,7 +139,7 @@
                       </a>
                     </li>
                     <li><a href="javascript:;">Help</a></li>
-                    <li><a href="adminLogin.jsp"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                    <li><a href="../codegroup/adminLogin.jsp"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
                   </ul>
                 </li>
 
@@ -217,7 +218,7 @@
           <div class="">
             <div class="page-title">
               <div class="title_left">
-                <h3>DodoMall <small>Data List</small></h3>
+                <h3>DodoMall <small>Data Form</small></h3>
               </div>
 
               <div class="title_right">
@@ -231,14 +232,12 @@
                 </div>
               </div>
             </div>
-
             <div class="clearfix"></div>
-
             <div class="row">
-              <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="col-md-12 col-sm-12 col다-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>User Data List<small>회원 데이터 조회</small></h2>
+                    <h2>User Data Form <small>회원 데이터 수정</small></h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -256,103 +255,134 @@
                     </ul>
                     <div class="clearfix"></div>
                   </div>
-                    <form name=formList>
-                      <input type="hidden" name="thisPage" value="<c:out value="${vo.thisPage}" default="1"/>">
-                      <input type="hidden" name="rowNumToShow" value="<c:out value="${vo.rowNumToShow}"/>">
-                      <div id="datatable_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
-                      <div class="row">
-                        <div class="col-sm-6">
-                          <div class="dataTables_length" id="datatable_length">
-                            <label
-                            >Show
-                              <select name="datatable_length" aria-controls="datatable" class="form-control input-sm">
-                                <option value="10">10</option>
-                                <option value="25">25</option>
-                                <option value="50">50</option>
-                                <option value="100">100</option>
-                              </select>
-                              entries</label>
-                          </div>
-                        </div>
-                        <div class="col-sm-6">
-                          <div id="datatable_filter" class="dataTables_filter">
-                            <label>Search:<select name="shOption" class="form-control undefined">
-                              <option value="">seq</option>
-                              <option value="" selected>name</option>
-                              <option value="">delNy</option>
-                            </select>
-                              <input type="text" name="shKeyword" value="<c:out value="${vo.shKeyword}"/>" class="form-control input-sm" placeholder="" aria-controls="datatable"/>
-                              <button id="btnSearch" class="form-control undefined input-sm" >Go</button>
-                            </label>
-                          </div>
+                  <div class="x_content"> <p class="text-muted font-13 m-b-30">
+                    회원 데이터를 조회 할 수 있습니다.
+                  </p>
+                    <br />
+                    <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" name="form" method="post">
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="seq">seq <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" name="seq" id="seq" class="form-control col-md-7 col-xs-12" placeholder="seq" readonly value="<c:out value="${item.seq}"/>" >
                         </div>
                       </div>
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <table id="" class="table table-striped table-bordered">
-                            <thead>
-                            <tr>
-                              <th>seq</th>
-                              <th>name</th>
-                              <th>delNy</th>
-                            </tr>
-                            </thead>
 
-
-                            <tbody>
-
-                            <c:choose>
-                              <c:when test="${fn:length(list) eq 0}">
-                              </c:when>
-                              <c:otherwise>
-                                <c:forEach items="${list}" var="list" varStatus="status">
-                                  <tr>
-                                    <td><c:out value="${list.seq}"></c:out></td>
-                                    <td><a href="adminForm?seq=<c:out value="${list.seq}"/>">
-                                      <c:out value="${list.name}"></c:out></a></td>
-                                    <td><c:out value="${list.delNy}"></c:out></td>
-                                  </tr>
-                                </c:forEach>
-                              </c:otherwise>
-                            </c:choose>
-                            </tbody>
-                          </table>
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">name <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" name="name" id="name" class="form-control col-md-7 col-xs-12" placeholder="name" required value="<c:out value="${item.defultNy}"/>" >
                         </div>
                       </div>
-                        <!-- pagination s -->
-                        <%@include file="../../../include/pagination.jsp"%>
-                        <!-- pagination e -->
-<%--                      <div class="row">--%>
-<%--                        <div class="col-sm-5">--%>
-<%--                          <div--%>
-<%--                                  class="dataTables_info"--%>
-<%--                                  id="datatable_info"--%>
-<%--                                  role="status"--%>
-<%--                                  aria-live="polite">Showing 1 to 6 of 6 entries</div>--%>
-<%--                        </div>--%>
-<%--                        <div class="col-sm-7">--%>
-<%--                          <div class="dataTables_paginate paging_simple_numbers" id="datatable_paginate">--%>
-<%--                            <ul class="pagination">--%>
-<%--                              <li class="paginate_button previous disabled" id="datatable_previous">--%>
-<%--                                <a href="#" aria-controls="datatable" data-dt-idx="0" tabindex="0">Previous</a>--%>
-<%--                              </li>--%>
-<%--                              <li class="paginate_button active">--%>
-<%--                                <a href="#" aria-controls="datatable" data-dt-idx="1" tabindex="0">1</a>--%>
-<%--                              </li>--%>
-<%--                              <li class="paginate_button next disabled" id="datatable_next">--%>
-<%--                                <a href="#" aria-controls="datatable" data-dt-idx="2" tabindex="0">Next</a>--%>
-<%--                              </li>--%>
-<%--                            </ul>--%>
-<%--                          </div>--%>
-<%--                        </div>--%>
-<%--                      </div>--%>
-                    </div>
 
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="userName">userName <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" name="userName" id="userName" class="form-control col-md-7 col-xs-12" placeholder="userName" required value="<c:out value="${item.userName}"/>" >
+                        </div>
+                      </div>
 
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="phoneNumber">phoneNumber <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" name="phoneNumber" id="phoneNumber" class="form-control col-md-7 col-xs-12" placeholder="phoneNumber" required value="<c:out value="${item.phoneNumber}"/>" >
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="id">id <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" name="id" id="id" class="form-control col-md-7 col-xs-12" placeholder="id" required value="<c:out value="${item.id}"/>" >
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="nickName">nickName <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" name="nickName" id="nickName" class="form-control col-md-7 col-xs-12" placeholder="nickName" required value="<c:out value="${item.nickName}"/>" >
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="password">password <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" name="password" id="password" class="form-control col-md-7 col-xs-12" placeholder="password" required value="<c:out value="${item.password}"/>" >
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="address">address <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" name="address" id="address" class="form-control col-md-7 col-xs-12" placeholder="address" required value="<c:out value="${item.address}"/>" >
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="addressDetail">addressDetail <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" name="addressDetail" id="addressDetail" class="form-control col-md-7 col-xs-12" placeholder="addressDetail" required value="<c:out value="${item.addressDetail}"/>" >
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="delNy">delNy <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" name="delNy" id="delNy" class="form-control col-md-7 col-xs-12" placeholder="delNy" required value="<c:out value="${item.delNy}"/>" >
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="smsCheck">smsCheck <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" name="smsCheck" id="smsCheck" class="form-control col-md-7 col-xs-12" placeholder="smsCheck" required value="<c:out value="${item.smsCheck}"/>" >
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="createdAt">createdAt <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" name="createdAt" id="createdAt" class="form-control col-md-7 col-xs-12" placeholder="createdAt" required value="<c:out value="${item.createdAt}"/>" >
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="delNy2">delNy <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" name="delNy2" id="delNy2" class="form-control col-md-7 col-xs-12" placeholder="delNy" required value="<c:out value="${item.delNy}"/>" >
+                        </div>
+                      </div>
+
+                      <div class="ln_solid"></div>
+                      <div class="form-group">
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                          <button id="insertBtn" type="button" class="btn btn-success">Insert</button>
+                          <button id="cancel" class="btn btn-primary" type="button">Cancel</button>
+                          <button class="btn btn-primary" type="reset">Reset</button>
+                          <button id="submitBtn" type="submit" class="btn btn-success">Submit</button>
+                          <button id="ueleteBtn" type="button" class="btn btn-danger">Use / Not Used</button>
+                          <button id="deleteBtn" type="button" class="btn btn-danger">Delete</button>
+                        </div>
+                      </div>
                     </form>
+
+                  </div>
                 </div>
               </div>
             </div>
+
+
           </div>
         </div>
         <!-- /page content -->
@@ -376,42 +406,61 @@
     <script src="/resources/css/vendors/fastclick/lib/fastclick.js"></script>
     <!-- NProgress -->
     <script src="/resources/css/vendors/nprogress/nprogress.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="/resources/css/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
     <!-- iCheck -->
     <script src="/resources/css/vendors/iCheck/icheck.min.js"></script>
-    <!-- Datatables -->
-    <script src="/resources/css/vendors/datatables.net/js/jquery.dataTables.js"></script>
-    <script src="/resources/css/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-    <script src="/resources/css/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-    <script src="/resources/css/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
-    <script src="/resources/css/vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
-    <script src="/resources/css/vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
-    <script src="/resources/css/vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
-    <script src="/resources/css/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
-    <script src="/resources/css/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
-    <script src="/resources/css/vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-    <script src="/resources/css/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
-    <script src="/resources/css/vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
-    <script src="/resources/css/vendors/jszip/dist/jszip.min.js"></script>
-    <script src="/resources/css/vendors/pdfmake/build/pdfmake.min.js"></script>
-    <script src="/resources/css/vendors/pdfmake/build/vfs_fonts.js"></script>
-
+    <!-- bootstrap-daterangepicker -->
+    <script src="/resources/css/vendors/moment/min/moment.min.js"></script>
+    <script src="/resources/css/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- bootstrap-wysiwyg -->
+    <script src="/resources/css/vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script>
+    <script src="/resources/css/vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
+    <script src="/resources/css/vendors/google-code-prettify/src/prettify.js"></script>
+    <!-- jQuery Tags Input -->
+    <script src="/resources/css/vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
+    <!-- Switchery -->
+    <script src="/resources/css/vendors/switchery/dist/switchery.min.js"></script>
+    <!-- Select2 -->
+    <script src="/resources/css/vendors/select2/dist/js/select2.full.min.js"></script>
+    <!-- Parsley -->
+    <script src="/resources/css/vendors/parsleyjs/dist/parsley.min.js"></script>
+    <!-- Autosize -->
+    <script src="/resources/css/vendors/autosize/dist/autosize.min.js"></script>
+    <!-- jQuery autocomplete -->
+    <script src="/resources/css/vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js"></script>
+    <!-- starrr -->
+    <script src="/resources/css/vendors/starrr/dist/starrr.js"></script>
     <!-- Custom Theme Scripts -->
-    <script src="/resources/build/js/custom.js"></script>
-<%--    <script>--%>
-<%--      // 검색 컨테이너를 숨김 처리--%>
-<%--      const searchContainer = document.querySelector('.datatable-search');--%>
-<%--      searchContainer.style.display = 'none';--%>
-<%--      --%>
-<%--    </script>--%>
-  <script>
-    $("#btnSearch").on("click", function(){
-
-      //	$("form[name=adminList]").attr("method","get");
-
-      $("form[name=adminList]").attr("action","/adminList").submit();
-
+    <script src="/resources/build/js/custom.min.js"></script>
+	
+  </body>
+  <script type="text/javascript">
+    $("#submitBtn").on("click", function(){
+      alert("submit");
+      $("form[name=form]").attr("action","/adminUpdt").submit();
     });
 
+    $("#deleteBtn").on("click", function(){
+      alert("delete");
+      $("form[name=form]").attr("action","/adminDel").submit();
+    });
+
+    $("#insertBtn").on("click", function(){
+      alert("insert");
+      $("form[name=form]").attr("action","/adminIns").submit();
+    });
+
+
+    $("#cancel").on("click", function(){
+      location.href="/adminList";
+    });
+
+    $("#ueleteBtn").on("click", function(){
+      alert("Use");
+      $("form[name=form]").attr("action","/adminUelete").submit();
+    });
+
+
   </script>
-  </body>
 </html>

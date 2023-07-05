@@ -9,22 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="0704">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/code/Code.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/code/CodeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/code/CodeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/code/CodeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/code/CodeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/code/CodeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/code/CodeVo.java" afterDir="false" />
+    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="0704 페이지내이션완료">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/MemberDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/MemberImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/MemberMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/Vo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/codegroup/adminMemberList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/effa3b8e-8f86-4263-aead-4e928f6d291a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/effa3b8e-8f86-4263-aead-4e928f6d291a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/index/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/index/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/codegroup/adminList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/codegroup/adminList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/pagination.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/pagination.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +33,7 @@
       <list>
         <option value="Jsp File" />
         <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -80,7 +78,7 @@
     "WebServerToolWindowFactoryState": "false",
     "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/andohyeong/IdeaProjects/prj_spring/src/main/webapp/WEB-INF/views/user/infra/index",
+    "last_opened_file_path": "/Users/andohyeong/IdeaProjects/prj_spring/src/main/webapp/WEB-INF/views/admin/infra/codegroup",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -101,6 +99,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/codegroup" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index" />
     </key>
   </component>
@@ -231,7 +230,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688457565816</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="0704 페이지내이션완료">
+      <option name="closed" value="true" />
+      <created>1688459721799</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688459721799</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +249,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="intellij window version" />
     <MESSAGE value="0704" />
-    <option name="LAST_COMMIT_MESSAGE" value="0704" />
+    <MESSAGE value="0704 페이지내이션완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="0704 페이지내이션완료" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
