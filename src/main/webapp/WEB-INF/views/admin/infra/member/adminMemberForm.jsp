@@ -331,7 +331,7 @@
                           <button id="insertBtn" type="button" class="btn btn-success">Insert</button>
                           <button id="cancel" class="btn btn-primary" type="button">Cancel</button>
                           <button class="btn btn-primary" type="reset">Reset</button>
-                          <button id="submitBtn" type="submit" class="btn btn-success">Submit</button>
+                          <button id="submitBtn" type="submit" class="btn btn-success">Update</button>
                           <button id="ueleteBtn" type="button" class="btn btn-danger">Use / Not Used</button>
                           <button id="deleteBtn" type="button" class="btn btn-danger">Delete</button>
                         </div>
@@ -397,6 +397,13 @@
 	
   </body>
   <script type="text/javascript">
+
+    $("#insertBtn").on("click", function(){
+      alert("insert");
+      $("form[name=form]").attr("action","/adminMemberIns").submit();
+    });
+
+
     $("#submitBtn").on("click", function(){
       alert("submit");
       $("form[name=form]").attr("action","/adminMemberUpdt").submit();
@@ -407,10 +414,7 @@
       $("form[name=form]").attr("action","/adminMemberDel").submit();
     });
 
-    $("#insertBtn").on("click", function(){
-      alert("insert");
-      $("form[name=form]").attr("action","/adminMemberIns").submit();
-    });
+
 
 
     $("#cancel").on("click", function(){

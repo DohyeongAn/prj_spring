@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="prj_spring:war exploded" />
+      <artifact name="prj_spring:Web exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="0705 멤버리스트 완료 폼은해야합니다">
+    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="0707 럭키 세븐 드디어 오류수정">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj_spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/prj_spring.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/admin/infra/member/adminMemberForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/admin/infra/member/adminMemberForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/user/infra/index/join.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/user/infra/index/join.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/member/adminMemberForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/member/adminMemberForm.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/join.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/join.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,10 +66,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "false",
     "WebServerToolWindowFactoryState": "false",
     "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
     "git-widget-placeholder": "main",
@@ -99,8 +104,9 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.76" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="11">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
-      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="prj_spring:Web exploded">
           <settings>
@@ -252,7 +258,23 @@
       <option name="project" value="LOCAL" />
       <updated>1688536802736</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="0707 럭키 세븐 드디어 오류수정">
+      <option name="closed" value="true" />
+      <created>1688697125892</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1688697125892</updated>
+    </task>
+    <task id="LOCAL-00008" summary="0707 럭키 세븐 드디어 오류수정">
+      <option name="closed" value="true" />
+      <created>1688697351267</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1688697351267</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,12 +283,14 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="intellij window version" />
     <MESSAGE value="0704" />
     <MESSAGE value="0704 페이지내이션완료" />
     <MESSAGE value="0705 페이지내이션 멤버" />
     <MESSAGE value="0705 멤버리스트 완료 폼은해야합니다" />
-    <option name="LAST_COMMIT_MESSAGE" value="0705 멤버리스트 완료 폼은해야합니다" />
+    <MESSAGE value="0707 럭키 세븐 드디어 오류수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="0707 럭키 세븐 드디어 오류수정" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

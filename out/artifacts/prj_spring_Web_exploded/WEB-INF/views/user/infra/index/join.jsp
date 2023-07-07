@@ -961,5 +961,15 @@
     });
   </script>
 
+<%--  회원가입--%>
+
+  <script type="text/javascript">
+
+    $("#mb_join_btn").on("click", function(){
+      alert("회원가입이 완료되었습니다.");
+      $("form[name=form]").attr("action","/adminMemberIns").submit();
+    });
+  </script>
+
   </body>
 </html>
