@@ -353,7 +353,7 @@
             <b class="fotm join_tit">회원가입</b>
 
             <form
-              name="member_join"
+              name="form"
               id="member_join"
               method="post"
               autocomplete="off"
@@ -363,7 +363,7 @@
                 type="hidden"
                 name="mb_timestamp"
                 id="mb_timestamp"
-                value="20230531104043940074||1.221.22.171"
+                value=""
               /><input
                 type="hidden"
                 name="mb_naver_id"
@@ -389,23 +389,39 @@
                 name="mb_apple_id"
                 id="mb_apple_id"
                 value=""
-              /><input
-                type="hidden"
-                name="mb_farmer4989_id"
-                id="mb_farmer4989_id"
-                value=""
-              /><input type="hidden" name="mb_type" id="mb_type" value="1" />
+              />
+
+              <input
+                      type="hidden"
+                      name="delNy"
+                      id="delNy"
+                      value="0"
+              />
+              <input
+                      type="hidden"
+                      name="defaultNy"
+                      id="defaultNy"
+                      value="0"
+                />
+              <input
+                        type="hidden"
+                        name="seq"
+                        id="seq"
+                />
+
+              <input type="hidden" name="mb_type" id="mb_type" value="1" />
 
               <p class="mb_join_title">기본정보</p>
 
               <div class="mb_join_row">
                 <input
                   type="text"
-                  name="mb_name"
+                  name="userName"
                   id="mb_name"
                   value=""
                   class="form-control inppt"
                   placeholder="이름"
+                  required
                 />
               </div>
               <p id="mb_name_msg" class="p_msg"></p>
@@ -413,11 +429,12 @@
               <div class="mb_join_row">
                 <input
                   type="text"
-                  name="mb_hp"
+                  name="phoneNumber"
                   id="mb_hp"
                   value=""
                   class="form-control inppt"
                   placeholder="휴대폰번호"
+                  required
                 />
               </div>
               <p id="mb_hp_msg" class="p_msg"></p>
@@ -450,7 +467,7 @@
               <div class="mb_join_row">
                 <input
                   type="text"
-                  name="mb_id"
+                  name="id"
                   id="mb_id"
                   value=""
                   class="form-control inppt"
@@ -462,7 +479,7 @@
               <div class="mb_join_row">
                 <input
                   type="text"
-                  name="mb_nick"
+                  name="nickName"
                   id="mb_nick"
                   value=""
                   class="form-control inppt"
@@ -474,7 +491,7 @@
               <div class="mb_join_row">
                 <input
                   type="password"
-                  name="mb_password"
+                  name="password"
                   id="mb_password"
                   value=""
                   autocomplete="off"
@@ -489,7 +506,7 @@
               <div class="mb_join_row">
                 <input
                   type="password"
-                  name="mb_password_confirm"
+                  name="password_confirm"
                   id="mb_password_confirm"
                   value=""
                   autocomplete="off"
@@ -507,7 +524,7 @@
                 <div class="zip_wrap">
                   <input
                     type="text"
-                    name="mb_zipcode"
+                    name="postalCode"
                     id="mb_zipcode"
                     value=""
                     class="form-control inppt"
@@ -520,7 +537,7 @@
 
                 <input
                   type="text"
-                  name="mb_addr1"
+                  name="address"
                   id="mb_addr1"
                   value=""
                   class="form-control inppt"
@@ -529,7 +546,7 @@
                 />
                 <input
                   type="text"
-                  name="mb_addr2"
+                  name="addressDetail"
                   id="mb_addr2"
                   value=""
                   class="form-control inppt"
@@ -673,9 +690,9 @@
                   <label
                     ><input
                       type="checkbox"
-                      name="mb_sms"
+                      name="smsCheck"
                       id="mb_sms"
-                      value="1"
+                      value="0"
                       class=""
                     />
                     SMS/전화를 통한 정보수신에 동의합니다.</label
@@ -683,13 +700,8 @@
                 </div>
               </div>
 
-              <input
-                type="submit"
-                name="mb_join_btn"
-                id="mb_join_btn"
-                value="동의하고 회원가입"
-                class=""
-              />
+              <button type="insertBtn" name="insertBtn" id="mb_join_btn">동의하고 회원가입</button>
+
               <div class="mb_join_line"></div>
 
               <p class="mb_join_title">이용약관</p>
