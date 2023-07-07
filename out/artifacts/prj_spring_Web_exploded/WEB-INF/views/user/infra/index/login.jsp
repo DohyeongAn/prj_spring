@@ -6,37 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>dodomall_login</title>
 
-    <!-- 구글 폰트 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
-            rel="stylesheet"
-    />
-
-    <!-- 폰트어썸 -->
-    <script
-            src="https://kit.fontawesome.com/df1b18aebb.js"
-            crossorigin="anonymous"
-    ></script>
-
-    <!-- 부트스트렙 -->
-    <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-            crossorigin="anonymous"
-    />
-    <!-- 리셋 css -->
-    <link rel="stylesheet" href="../../resources/css/resetcss.css" />
-
-    <!-- 메인 css -->
-    <link rel="stylesheet" href="../../resources/css/style.css" />
-
-    <!-- 쿼리 -->
-    <script src="../../../../../resources/js/jquery.min.js"></script>
-    <!-- 메인 js -->
-    <script src="../../../../../resources/js/shop.js"></script>
 </head>
 <body>
 

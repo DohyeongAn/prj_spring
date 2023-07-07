@@ -15,10 +15,10 @@ public class IndexController {
         return "user/infra/biography/about";
     }
 
-//    @RequestMapping("/indexUesrView")
-//    public String indexUsrView() {
-//        return "user/infra/index/indexUserView";
-//    }
+    @RequestMapping("/dodomall")
+    public String dodomall() {
+        return "user/infra/index/dodomall";
+    }
 
 
 

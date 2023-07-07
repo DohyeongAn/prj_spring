@@ -4,6 +4,7 @@
     <option name="state">
       <map>
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/codegroup/adminList.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/codegroup" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/dodomall.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/join.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index" />
       </map>
     </option>
