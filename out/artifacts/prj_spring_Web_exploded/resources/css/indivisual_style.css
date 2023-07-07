@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* 폰트 */
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+
+.section {
+    width: 100%;
+    text-align: left;
+    padding: 10vh 10vw;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+#indivisual {
+    background-color: rgba(210, 49, 49, 0.58);
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: 2px solid;
+}
+#user_img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid;
+}
+#user_img img {
+    width: 300px;
+    height: 300px;
+}
+#controlbox {
+    margin: auto;
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.userbox {
+    width: 150px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+    line-height: 100px;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 2px solid;
+}
+#project{
+    display: flex;
+    justify-content: center;
+}
+.userbox:hover{
+    font-size: 35px;
+    background-color: rgba(210, 49, 49, 0.58);
+    transition: .5s;
+}
