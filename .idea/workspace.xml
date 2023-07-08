@@ -9,31 +9,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="회원가입완료">
-      <change afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/user/infra/index/dodomall.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/Dodomall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/DodomallController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/DodomallDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/DodomallService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/DodomallServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/DodomallVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/dodomall.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/91c896256ca726e2e8144ac8c32c7b132135ef59" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/a/eada2d92abfff2ac5d062638eedd5d656fa73a6f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/f/efdf44fb9910552015bf52938e5e3da633d40e31" beforeDir="false" />
+    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="한정특가500오류">
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/0/004a74eeec3934d697c542f318d645a3495df87a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2fdf93fbcab5b72a304e329cc0d499fdb1f82d9a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/f/3f2146327ccae4bc4a349aa0099e7a4bcb2a5bff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/57990e1d839e938c535c0c0bd1854176111b9509" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/3/735b8cedc7536cb5c508c61d33be365c1ceb0059" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/c/7c3387e524712e6b1754a41ccbac0c13698ad4a4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8b5ec4221ca4de7c1e8c0011601bcade3717002d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/a/caa71e388fea443d533669ba089beac8771da866" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/8/d8b23e0032a11a6c1ce64e5d2542c0c1d1e2ab50" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/0/004a74eeec3934d697c542f318d645a3495df87a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/f/2fdf93fbcab5b72a304e329cc0d499fdb1f82d9a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/f/3f2146327ccae4bc4a349aa0099e7a4bcb2a5bff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/7/57990e1d839e938c535c0c0bd1854176111b9509" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/3/735b8cedc7536cb5c508c61d33be365c1ceb0059" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/c/7c3387e524712e6b1754a41ccbac0c13698ad4a4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/b/8b5ec4221ca4de7c1e8c0011601bcade3717002d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/a/caa71e388fea443d533669ba089beac8771da866" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/8/d8b23e0032a11a6c1ce64e5d2542c0c1d1e2ab50" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/user/infra/index/limited_price.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/limited_price.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/1/91c896256ca726e2e8144ac8c32c7b132135ef59" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/a/eada2d92abfff2ac5d062638eedd5d656fa73a6f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/f/efdf44fb9910552015bf52938e5e3da633d40e31" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/user/infra/index/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/user/infra/index/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/user/infra/index/indexUserView.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/user/infra/index/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/user/infra/index/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/index/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/index/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +47,8 @@
       <list>
         <option value="AnnotationType" />
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -96,12 +98,12 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "아티팩트",
+    "project.structure.last.edited": "모듈",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.5264368",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.lookFeel",
-    "spring.configuration.checksum": "f299b778dc0a0ce23b6d5345f8f2b08a",
+    "spring.configuration.checksum": "3ad503640ba1ec29e8f1d4e4707c8a39",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -242,6 +244,7 @@
       <workItem from="1688539014334" duration="245000" />
       <workItem from="1688539322157" duration="2273000" />
       <workItem from="1688542121506" duration="1411000" />
+      <workItem from="1688821116277" duration="1044000" />
     </task>
     <task id="LOCAL-00003" summary="0704">
       <option name="closed" value="true" />
@@ -299,7 +302,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688699002290</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="메인화면 삽입">
+      <option name="closed" value="true" />
+      <created>1688705820336</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1688705820336</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +327,9 @@
     <MESSAGE value="0705 멤버리스트 완료 폼은해야합니다" />
     <MESSAGE value="0707 럭키 세븐 드디어 오류수정" />
     <MESSAGE value="회원가입완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="회원가입완료" />
+    <MESSAGE value="메인화면 삽입" />
+    <MESSAGE value="한정특가500오류" />
+    <option name="LAST_COMMIT_MESSAGE" value="한정특가500오류" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

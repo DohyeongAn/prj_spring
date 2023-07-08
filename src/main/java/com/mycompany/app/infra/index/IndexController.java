@@ -20,6 +20,11 @@ public class IndexController {
         return "user/infra/index/dodomall";
     }
 
+    @RequestMapping("/limited_price")
+    public String limited_price() {
+        return "user/infra/index/limited_price";
+    }
+
 
 
     @RequestMapping(value = "/")

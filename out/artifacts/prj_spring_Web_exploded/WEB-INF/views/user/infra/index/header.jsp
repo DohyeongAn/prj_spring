@@ -83,7 +83,7 @@
       </div>
 
       <div id="category_menu">
-        <a href="limited_price.html">한정특가</a>
+        <a href="limited_price">한정특가</a>
         <a href="best.html">베스트</a>
         <a href="new.html">신상품</a>
         <a href="livetv.html"
