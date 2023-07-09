@@ -10,32 +10,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="한정특가500오류">
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/0/004a74eeec3934d697c542f318d645a3495df87a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2fdf93fbcab5b72a304e329cc0d499fdb1f82d9a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/f/3f2146327ccae4bc4a349aa0099e7a4bcb2a5bff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/57990e1d839e938c535c0c0bd1854176111b9509" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/3/735b8cedc7536cb5c508c61d33be365c1ceb0059" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/c/7c3387e524712e6b1754a41ccbac0c13698ad4a4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8b5ec4221ca4de7c1e8c0011601bcade3717002d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/a/caa71e388fea443d533669ba089beac8771da866" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/8/d8b23e0032a11a6c1ce64e5d2542c0c1d1e2ab50" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/0/004a74eeec3934d697c542f318d645a3495df87a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/f/2fdf93fbcab5b72a304e329cc0d499fdb1f82d9a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/f/3f2146327ccae4bc4a349aa0099e7a4bcb2a5bff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/7/57990e1d839e938c535c0c0bd1854176111b9509" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/3/735b8cedc7536cb5c508c61d33be365c1ceb0059" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/c/7c3387e524712e6b1754a41ccbac0c13698ad4a4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/b/8b5ec4221ca4de7c1e8c0011601bcade3717002d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/a/caa71e388fea443d533669ba089beac8771da866" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/8/d8b23e0032a11a6c1ce64e5d2542c0c1d1e2ab50" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/user/infra/index/limited_price.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/limited_price.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/classes/com/mycompany/app/infra/dodomall/DodomallMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/DodomallMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/dodomall/adminDodomallForm.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/dodomall/adminDodomallList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/effa3b8e-8f86-4263-aead-4e928f6d291a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/effa3b8e-8f86-4263-aead-4e928f6d291a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/0/004a74eeec3934d697c542f318d645a3495df87a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2fdf93fbcab5b72a304e329cc0d499fdb1f82d9a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/f/3f2146327ccae4bc4a349aa0099e7a4bcb2a5bff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/57990e1d839e938c535c0c0bd1854176111b9509" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/3/735b8cedc7536cb5c508c61d33be365c1ceb0059" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/c/7c3387e524712e6b1754a41ccbac0c13698ad4a4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8b5ec4221ca4de7c1e8c0011601bcade3717002d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/8/d8b23e0032a11a6c1ce64e5d2542c0c1d1e2ab50" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/0/004a74eeec3934d697c542f318d645a3495df87a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/f/2fdf93fbcab5b72a304e329cc0d499fdb1f82d9a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/f/3f2146327ccae4bc4a349aa0099e7a4bcb2a5bff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/7/57990e1d839e938c535c0c0bd1854176111b9509" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/3/735b8cedc7536cb5c508c61d33be365c1ceb0059" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/c/7c3387e524712e6b1754a41ccbac0c13698ad4a4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/b/8b5ec4221ca4de7c1e8c0011601bcade3717002d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/8/d8b23e0032a11a6c1ce64e5d2542c0c1d1e2ab50" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/user/infra/index/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/user/infra/index/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/index/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/index/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/admin/infra/member/adminMemberList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/admin/infra/member/adminMemberList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/include/sidebar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/include/sidebar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/user/infra/index/dodomall.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/user/infra/index/dodomall.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/Dodomall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/Dodomall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/DodomallController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/DodomallController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/DodomallDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/DodomallDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/DodomallService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/DodomallService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/DodomallServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/DodomallServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/DodomallVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/DodomallVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/member/adminMemberList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/member/adminMemberList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/sidebar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/sidebar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/dodomall.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/dodomall.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +104,7 @@
     "WebServerToolWindowFactoryState": "false",
     "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/andohyeong/IdeaProjects/prj_spring/src/main/webapp/WEB-INF/views/admin/infra/codegroup",
+    "last_opened_file_path": "/Users/andohyeong/IdeaProjects/prj_spring/src/main/webapp/WEB-INF/views/admin/infra/codegroup/dodomall",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -114,10 +125,12 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/codegroup/dodomall" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/codegroup" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/member" />
     </key>
   </component>
@@ -244,7 +257,8 @@
       <workItem from="1688539014334" duration="245000" />
       <workItem from="1688539322157" duration="2273000" />
       <workItem from="1688542121506" duration="1411000" />
-      <workItem from="1688821116277" duration="1044000" />
+      <workItem from="1688821116277" duration="1139000" />
+      <workItem from="1688882259653" duration="5793000" />
     </task>
     <task id="LOCAL-00003" summary="0704">
       <option name="closed" value="true" />
@@ -310,7 +324,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688705820336</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="한정특가500오류">
+      <option name="closed" value="true" />
+      <created>1688822259884</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1688822259884</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

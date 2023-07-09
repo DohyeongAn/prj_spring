@@ -261,7 +261,6 @@
                               <th>password</th>
                               <th>address</th>
                               <th>addressDetail</th>
-                              <th>delNy</th>
                               <th>smsCheck</th>
                               <th>createdAt</th>
                               <th>delNy</th>
@@ -285,7 +284,6 @@
                                     <td><c:out value="${list.password}"/></td>
                                     <td><c:out value="${list.address}"/></td>
                                     <td><c:out value="${list.addressDetail}"/></td>
-                                    <td><c:out value="${list.delNy}"/></td>
                                     <td><c:out value="${list.smsCheck}"/></td>
                                     <td><c:out value="${list.createdAt}"/></td>
                                     <td><c:out value="${list.delNy}"/></td>

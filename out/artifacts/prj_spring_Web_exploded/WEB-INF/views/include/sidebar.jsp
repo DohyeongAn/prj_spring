@@ -9,14 +9,14 @@
         <ul class="nav child_menu">
           <li><a href="adminList">Data List</a></li>
           <li><a href="adminMemberList">Member List</a></li>
-
+          <li><a href="adminDodomallList">Dodomall Item List</a> </li>
         </ul>
       </li>
       <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
         <ul class="nav child_menu">
           <li><a href="adminForm">Data Form</a></li>
           <li><a href="adminMemberForm">Member Form</a></li>
-
+          <li><a href="adminDodomallForm">Dodomall Item Form</a> </li>
         </ul>
       </li>
 

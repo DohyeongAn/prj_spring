@@ -254,15 +254,13 @@
                             <tr>
                               <th>seq</th>
                               <th>defaultNy</th>
-                              <th>userName</th>
-                              <th>phoneNumber</th>
-                              <th>id</th>
-                              <th>nickName</th>
-                              <th>password</th>
-                              <th>address</th>
-                              <th>addressDetail</th>
-                              <th>smsCheck</th>
-                              <th>createdAt</th>
+                              <th>itemImageUrl</th>
+                              <th>itemDescription</th>
+                              <th>itemName</th>
+                              <th>itemDiscountRate</th>
+                              <th>itemPrice1</th>
+                              <th>itemPrice2</th>
+                              <th>itemDeliveryStatus</th>
                               <th>delNy</th>
                             </tr>
                             </thead>
@@ -275,17 +273,15 @@
                                   <tr>
                                     <td><c:out value="${list.seq}"/></td>
                                     <td><c:out value="${list.defaultNy}"/></td>
-                                    <td><c:out value="${list.userName}"/></td>
-                                    <td><c:out value="${list.phoneNumber}"/></td>
-                                    <td><a href="adminMemberForm?seq=<c:out value="${list.seq}"/>">
-                                      <c:out value="${list.id}"></c:out> </a>
+                                    <td><c:out value="${list.itemImageUrl}"/></td>
+                                    <td><c:out value="${list.itemDescription}"/></td>
+                                    <td><a href="adminDodomallForm?seq=<c:out value="${list.seq}"/>">
+                                      <c:out value="${list.itemName}"></c:out> </a>
                                     </td>
-                                    <td><c:out value="${list.nickName}"/></td>
-                                    <td><c:out value="${list.password}"/></td>
-                                    <td><c:out value="${list.address}"/></td>
-                                    <td><c:out value="${list.addressDetail}"/></td>
-                                    <td><c:out value="${list.smsCheck}"/></td>
-                                    <td><c:out value="${list.createdAt}"/></td>
+                                    <td><c:out value="${list.itemDiscountRate}"/></td>
+                                    <td><c:out value="${list.itemPrice1}"/></td>
+                                    <td><c:out value="${list.itemPrice2}"/></td>
+                                    <td><c:out value="${list.itemDeliveryStatus}"/></td>
                                     <td><c:out value="${list.delNy}"/></td>
                                   </tr>
                                 </c:forEach>
