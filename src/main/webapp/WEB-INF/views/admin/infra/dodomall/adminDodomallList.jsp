@@ -177,7 +177,7 @@
           <div class="">
             <div class="page-title">
               <div class="title_left">
-                <h3>DodoMall <small>Data List</small></h3>
+                <h3>DodoMall <small>Item Data List</small></h3>
               </div>
 
               <div class="title_right">
@@ -198,7 +198,7 @@
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>User Data List<small>회원 데이터 조회</small></h2>
+                    <h2>Item Data List<small>상품 데이터 조회</small></h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>

@@ -1,0 +1,16 @@
+
+cWeb:DoctypePresenceCheck":Insert a <!DOCTYPE> declaration to before this <html> tag.(Óï´£úÿÿÿÿ
+NWeb:TableWithoutCaptionCheckÉ" Add a description to this table.(ôÎÖ¨ûÿÿÿÿ
+J	Web:S1827É"/Remove this deprecated "cellpadding" attribute.(ôÎÖ¨ûÿÿÿÿ
+J	Web:S1827É"/Remove this deprecated "cellspacing" attribute.(ôÎÖ¨ûÿÿÿÿ
+?	Web:S1827Ë")Remove this deprecated "width" attribute.(÷Úé•
+D	Web:S1827Ì")Remove this deprecated "width" attribute.(ªô›şÿÿÿÿ
+D	Web:S1827Í")Remove this deprecated "width" attribute.(–ÛÙãøÿÿÿÿ
+D	Web:S1827Î")Remove this deprecated "width" attribute.(ªô›şÿÿÿÿ
+m Web:TableHeaderHasIdOrScopeCheckÒ";Add either an 'id' or a 'scope' attribute to this <th> tag.(ª˜×Ìúÿÿÿÿ
+m Web:TableHeaderHasIdOrScopeCheckÓ";Add either an 'id' or a 'scope' attribute to this <th> tag.(° ¯àúÿÿÿÿ
+m Web:TableHeaderHasIdOrScopeCheckÔ";Add either an 'id' or a 'scope' attribute to this <th> tag.(›ÂÁûÿÿÿÿ
+m Web:TableHeaderHasIdOrScopeCheckÕ";Add either an 'id' or a 'scope' attribute to this <th> tag.(±æ€‹üÿÿÿÿ
+m Web:TableHeaderHasIdOrScopeCheckÚ";Add either an 'id' or a 'scope' attribute to this <th> tag.(âà„íûÿÿÿÿ
+g Web:TableHeaderHasIdOrScopeCheckà";Add either an 'id' or a 'scope' attribute to this <th> tag.(ÙØ´6
+OWeb:AvoidCommentedOutCodeCheckŒ"Remove this commented out code.(‹òá¤ıÿÿÿÿ

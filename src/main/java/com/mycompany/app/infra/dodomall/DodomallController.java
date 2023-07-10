@@ -2,7 +2,11 @@ package com.mycompany.app.infra.dodomall;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.util.List;
 
 @Controller
 public class DodomallController {
@@ -12,26 +16,31 @@ public class DodomallController {
 
     @RequestMapping("/adminDodomallList")
 
-    public String adminDodomallList(DodomallVo vo) {
+    public String adminDodomallList(@ModelAttribute("vo") DodomallVo vo, Model model) {
 
         vo.setShKeyword(vo.getShKeyword() == null ? "" : vo.getShKeyword());
         vo.setParamsPaging(service.selectOneCount(vo));
         if (vo.getTotalRows() > 0) {
-            service.selectList(vo);
+            List<Dodomall> list = service.selectList(vo);
+            model.addAttribute("list", list);
         } else {
-            //			by pass
+            //	by pass
         }
 
         return "admin/infra/dodomall/adminDodomallList";
 }
 
-    public String adminDodomallForm(DodomallVo vo) {
+@RequestMapping("/adminDodomallForm")
+    public String adminDodomallForm(DodomallVo vo, Model model) {
 
-        service.selectOne(vo);
+        Dodomall Dodomall = service.selectOne(vo);
+
+        model.addAttribute("item", Dodomall);
 
         return "admin/infra/dodomall/adminDodomallForm";
     }
 
+    @RequestMapping("/adminDodomallUpdt")
     public String adminDodomallUpdt(Dodomall dto) {
 
         service.update(dto);
@@ -39,6 +48,7 @@ public class DodomallController {
         return "redirect:/adminDodomallList";
     }
 
+    @RequestMapping("/adminDodomallDel")
     public String adminDodomallDelete(Dodomall dto) {
 
         service.delete(dto);
@@ -46,6 +56,7 @@ public class DodomallController {
         return "redirect:/adminDodomallList";
     }
 
+    @RequestMapping("/adminDodomallIns")
     public String adminDodomallInsert(Dodomall dto) {
 
         service.insert(dto);
@@ -53,6 +64,7 @@ public class DodomallController {
         return "redirect:/adminDodomallList";
     }
 
+    @RequestMapping("/adminDodomallUelete")
     public String adminDodomallUelete(Dodomall dto) {
 
         service.uelete(dto);

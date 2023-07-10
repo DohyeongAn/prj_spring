@@ -176,7 +176,7 @@
           <div class="">
             <div class="page-title">
               <div class="title_left">
-                <h3>DodoMall <small>Data Form</small></h3>
+                <h3>DodoMall <small>Item Data Form</small></h3>
               </div>
 
               <div class="title_right">
@@ -195,7 +195,7 @@
               <div class="col-md-12 col-sm-12 col다-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>User Data Form <small>회원 데이터 수정</small></h2>
+                    <h2>Item Data Form <small>상품 데이터 수정</small></h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -237,83 +237,58 @@
 
 
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="userName">userName <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="itemImageUrl">itemImageUrl <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="userName" id="userName" class="form-control col-md-7 col-xs-12" placeholder="userName" required value="<c:out value="${item.userName}"/>" >
+                          <input type="text" name="itemImageUrl" id="itemImageUrl" class="form-control col-md-7 col-xs-12" placeholder="itemImageUrl" required value="<c:out value="${item.itemImageUrl}"/>" >
                         </div>
                       </div>
 
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="phoneNumber">phoneNumber <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="itemDescription">itemDescription <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="phoneNumber" id="phoneNumber" class="form-control col-md-7 col-xs-12" placeholder="phoneNumber" required value="<c:out value="${item.phoneNumber}"/>" >
+                          <input type="text" name="itemDescription" id="itemDescription" class="form-control col-md-7 col-xs-12" placeholder="itemDescription" required value="<c:out value="${item.itemDescription}"/>" >
                         </div>
                       </div>
 
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="id">id <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="itemName">itemName <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="id" id="id" class="form-control col-md-7 col-xs-12" placeholder="id" required value="<c:out value="${item.id}"/>" >
+                          <input type="text" name="itemName" id="itemName" class="form-control col-md-7 col-xs-12" placeholder="itemName" required value="<c:out value="${item.itemName}"/>" >
                         </div>
                       </div>
 
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="nickName">nickName <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="itemDiscountRate">itemDiscountRate <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="nickName" id="nickName" class="form-control col-md-7 col-xs-12" placeholder="nickName" required value="<c:out value="${item.nickName}"/>" >
+                          <input type="text" name="itemDiscountRate" id="itemDiscountRate" class="form-control col-md-7 col-xs-12" placeholder="itemDiscountRate" required value="<c:out value="${item.itemDiscountRate}"/>" >
                         </div>
                       </div>
 
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="password">password <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="itemPrice1">itemPrice1 <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="password" id="password" class="form-control col-md-7 col-xs-12" placeholder="password" required value="<c:out value="${item.password}"/>" >
+                          <input type="text" name="itemPrice1" id="itemPrice1" class="form-control col-md-7 col-xs-12" placeholder="itemPrice1" required value="<c:out value="${item.itemPrice1}"/>" >
                         </div>
                       </div>
 
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="postalCode">postalCode <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="itemPrice2">itemPrice2 <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="postalCode" id="postalCode" class="form-control col-md-7 col-xs-12" placeholder="postalCode" required value="<c:out value="${item.postalCode}"/>" >
+                          <input type="text" name="itemPrice2" id="itemPrice2" class="form-control col-md-7 col-xs-12" placeholder="itemPrice2" required value="<c:out value="${item.itemPrice2}"/>" >
                         </div>
                       </div>
 
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="address">address <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="itemDeliveryStatus">itemDeliveryStatus <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="address" id="address" class="form-control col-md-7 col-xs-12" placeholder="address" required value="<c:out value="${item.address}"/>" >
-                        </div>
-                      </div>
-
-                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="addressDetail">addressDetail <span class="required">*</span>
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="addressDetail" id="addressDetail" class="form-control col-md-7 col-xs-12" placeholder="addressDetail" required value="<c:out value="${item.addressDetail}"/>" >
-                        </div>
-                      </div>
-
-
-                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="smsCheck">smsCheck <span class="required">*</span>
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="smsCheck" id="smsCheck" class="form-control col-md-7 col-xs-12" placeholder="smsCheck" required value="<c:out value="${item.smsCheck}"/>" >
-                        </div>
-                      </div>
-
-                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="createdAt">createdAt <span class="required">*</span>
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="createdAt" id="createdAt" class="form-control col-md-7 col-xs-12" placeholder="createdAt" readonly value="<c:out value="${item.createdAt}"/>" >
+                          <input type="text" name="itemDeliveryStatus" id="itemDeliveryStatus" class="form-control col-md-7 col-xs-12" placeholder="itemDeliveryStatus" required value="<c:out value="${item.itemDeliveryStatus}"/>" >
                         </div>
                       </div>
 
@@ -400,30 +375,30 @@
 
     $("#insertBtn").on("click", function(){
       alert("insert");
-      $("form[name=form]").attr("action","/adminMemberIns").submit();
+      $("form[name=form]").attr("action","/adminDodomallIns").submit();
     });
 
 
     $("#submitBtn").on("click", function(){
       alert("submit");
-      $("form[name=form]").attr("action","/adminMemberUpdt").submit();
+      $("form[name=form]").attr("action","/adminDodomallUpdt").submit();
     });
 
     $("#deleteBtn").on("click", function(){
       alert("delete");
-      $("form[name=form]").attr("action","/adminMemberDel").submit();
+      $("form[name=form]").attr("action","/adminDodomallDel").submit();
     });
 
 
 
 
     $("#cancel").on("click", function(){
-      location.href="/adminList";
+      location.href="/adminDodomallList";
     });
 
     $("#ueleteBtn").on("click", function(){
       alert("Use");
-      $("form[name=form]").attr("action","/adminMemberUelete").submit();
+      $("form[name=form]").attr("action","/adminDodomallUelete").submit();
     });
 
 
