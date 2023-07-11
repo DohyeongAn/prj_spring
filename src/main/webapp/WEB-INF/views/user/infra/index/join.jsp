@@ -130,7 +130,7 @@
           select {
             padding: 0.8em 0.5em;
             border: 1px solid #d7d7d7;
-            background: url("../../../../../resources/img/select_background.png") no-repeat 95%
+            /*background: url("../../../../../resources/img/select_background.png") no-repeat 95%*/
               50%;
             font-size: 14px;
             -webkit-appearance: none;
