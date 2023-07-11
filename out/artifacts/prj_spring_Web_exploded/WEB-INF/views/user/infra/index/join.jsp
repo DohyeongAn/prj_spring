@@ -130,7 +130,7 @@
           select {
             padding: 0.8em 0.5em;
             border: 1px solid #d7d7d7;
-            background: url("skin/demo/img/select_background.png") no-repeat 95%
+            background: url("../../../../../resources/img/select_background.png") no-repeat 95%
               50%;
             font-size: 14px;
             -webkit-appearance: none;
@@ -141,6 +141,7 @@
             font-size: 13px;
             color: #de1d5a;
             padding: 5px 0px;
+            display: none;
           }
 
           #mb_hp_msg {
@@ -323,7 +324,7 @@
             display: inline-flex;
             width: 20px;
             height: 20px;
-            background: url(img/basic_chack2.png);
+            background: url(../../../../../resources/img/basic_chack2.png);
             background-size: auto 100%;
             background-position: 0px 0px;
           }
@@ -424,7 +425,7 @@
                   required
                 />
               </div>
-              <p id="mb_name_msg" class="p_msg"></p>
+              <p id="mb_name_msg" class="p_msg">올바른 이름 형식이 아닙니다.</p>
 
               <div class="mb_join_row">
                 <input
@@ -437,7 +438,7 @@
                   required
                 />
               </div>
-              <p id="mb_hp_msg" class="p_msg"></p>
+              <p id="mb_hp_msg" class="p_msg">휴대폰번호는 숫자만 입력해 주세요.</p>
 
               <div id="mb_hp_asign">
                 <a id="asign_send_btn">인증번호전송</a>
@@ -474,7 +475,8 @@
                   placeholder="아이디"
                 />
               </div>
-              <p id="mb_id_msg" class="p_msg"></p>
+<%--              <p id="mb_id_msg" class="p_msg">영문 대소문자와 숫자로만 이루어진 6~16자로 입력해 주세요.</p>--%>
+              <p id="mb_id_msg" class="p_msg">영문 대소문자와 숫자로만 이루어진 4~12자로 입력해 주세요.</p>
 
               <div class="mb_join_row">
                 <input
@@ -486,7 +488,7 @@
                   placeholder="닉네임"
                 />
               </div>
-              <p id="mb_nick_msg" class="p_msg"></p>
+              <p id="mb_nick_msg" class="p_msg">영문 대소문자와 숫자로만 이루어진 2~12자로 입력해 주세요.</p>
 
               <div class="mb_join_row">
                 <input
@@ -499,8 +501,8 @@
                   placeholder="비밀번호"
                 />
               </div>
-              <p id="mb_password_msg" class="mb_row_p">
-                영문/숫자 또는 특수문자 조합 6~16자리로 입력해 주세요.
+              <p id="mb_password_msg" class="p_msg">
+                영문 대소문자와 숫자 또는 특수문자 조합 6~16자리로 입력해 주세요.
               </p>
 
               <div class="mb_join_row">
@@ -514,7 +516,7 @@
                   placeholder="비밀번호 확인"
                 />
               </div>
-              <p id="mb_password_confirm_msg" class="p_msg"></p>
+              <p id="mb_password_confirm_msg" class="p_msg">비밀번호와 동일하게 입력해 주세요.</p>
 
               <div class="mb_join_line"></div>
 
@@ -534,7 +536,7 @@
                   />
                   <a id="zipcode_btn">우편번호찾기</a>
                 </div>
-
+                <p id="mb_zipcode_msg" class="p_msg">우편번호는 숫자만 입력해 주세요.</p>
                 <input
                   type="text"
                   name="address"
@@ -552,6 +554,7 @@
                   class="form-control inppt"
                   placeholder="상세주소"
                 />
+                <p id="mb_addr2_msg" class="p_msg">상세주소를 입력해 주세요.</p>
                 <input type="hidden" name="mb_addr3" id="mb_addr3" value="" />
               </div>
 
@@ -680,6 +683,7 @@
                   />
                 </div>
 
+
                 <div class="mb_join_line"></div>
               </div>
 
@@ -698,6 +702,7 @@
                     SMS/전화를 통한 정보수신에 동의합니다.</label
                   >
                 </div>
+                <p id="mb_sms_msg" class="p_msg">SMS 수신여부를 선택해 주세요</p>
               </div>
 
               <button type="insertBtn" name="insertBtn" id="mb_join_btn">동의하고 회원가입</button>
@@ -744,134 +749,134 @@
           </div>
         </div>
 
-        <script>
-          $(document).on("click", "#asign_send_btn", function () {
-            var mb_hp = $("#mb_hp").val();
-            $.ajax({
-              type: "post",
-              data: "mode=hp_asign&mb_hp=" + mb_hp,
-              url: "json.php",
-              success: function (response) {
-                var json = $.parseJSON(response);
+<%--        <script>--%>
+<%--          $(document).on("click", "#asign_send_btn", function () {--%>
+<%--            var mb_hp = $("#mb_hp").val();--%>
+<%--            $.ajax({--%>
+<%--              type: "post",--%>
+<%--              data: "mode=hp_asign&mb_hp=" + mb_hp,--%>
+<%--              url: "json.php",--%>
+<%--              success: function (response) {--%>
+<%--                var json = $.parseJSON(response);--%>
 
-                if (json["result"] == "is_mb_hp") {
-                  if (confirm(json["msg"])) {
-                    location.href = "login.php";
-                  }
-                } else if (json["result"] == "ok") {
-                  $("#asign_send_btn").html("인증번호 재전송");
-                  alert(json["msg"]);
-                  $("#asign_input_div").show();
-                } else {
-                  alert(json["msg"]);
-                }
-              },
-            });
-          });
+<%--                if (json["result"] == "is_mb_hp") {--%>
+<%--                  if (confirm(json["msg"])) {--%>
+<%--                    location.href = "login.php";--%>
+<%--                  }--%>
+<%--                } else if (json["result"] == "ok") {--%>
+<%--                  $("#asign_send_btn").html("인증번호 재전송");--%>
+<%--                  alert(json["msg"]);--%>
+<%--                  $("#asign_input_div").show();--%>
+<%--                } else {--%>
+<%--                  alert(json["msg"]);--%>
+<%--                }--%>
+<%--              },--%>
+<%--            });--%>
+<%--          });--%>
 
-          $(document).on("click", "#asign_confirm", function () {
-            var mb_hp = $("#mb_hp").val();
-            var asign_number = $("#asign_number").val();
-            $.ajax({
-              type: "post",
-              data:
-                "mode=hp_asign_confirm&mb_hp=" +
-                mb_hp +
-                "&asign_number=" +
-                asign_number,
-              url: "json.php",
-              success: function (response) {
-                var json = $.parseJSON(response);
-                if (json["result"] == "ok") {
-                  alert(json["msg"]);
-                  $("#mb_hp_asign").hide();
-                  $("#asign_input_div").hide();
+<%--          $(document).on("click", "#asign_confirm", function () {--%>
+<%--            var mb_hp = $("#mb_hp").val();--%>
+<%--            var asign_number = $("#asign_number").val();--%>
+<%--            $.ajax({--%>
+<%--              type: "post",--%>
+<%--              data:--%>
+<%--                "mode=hp_asign_confirm&mb_hp=" +--%>
+<%--                mb_hp +--%>
+<%--                "&asign_number=" +--%>
+<%--                asign_number,--%>
+<%--              url: "json.php",--%>
+<%--              success: function (response) {--%>
+<%--                var json = $.parseJSON(response);--%>
+<%--                if (json["result"] == "ok") {--%>
+<%--                  alert(json["msg"]);--%>
+<%--                  $("#mb_hp_asign").hide();--%>
+<%--                  $("#asign_input_div").hide();--%>
 
-                  $("#mb_hp_msg").html("");
-                  $("#mb_hp").attr("readonly", "readonly").removeAttr("id");
-                } else {
-                  alert(json["msg"]);
-                }
-              },
-            });
-          });
+<%--                  $("#mb_hp_msg").html("");--%>
+<%--                  $("#mb_hp").attr("readonly", "readonly").removeAttr("id");--%>
+<%--                } else {--%>
+<%--                  alert(json["msg"]);--%>
+<%--                }--%>
+<%--              },--%>
+<%--            });--%>
+<%--          });--%>
 
-          $(document).on(
-            "click",
-            "#zipcode_btn, #mb_zipcode, #mb_addr1",
-            function () {
-              zipcode("mb_zipcode", "mb_addr1", "mb_addr2");
-            }
-          );
+<%--          $(document).on(--%>
+<%--            "click",--%>
+<%--            "#zipcode_btn, #mb_zipcode, #mb_addr1",--%>
+<%--            function () {--%>
+<%--              zipcode("mb_zipcode", "mb_addr1", "mb_addr2");--%>
+<%--            }--%>
+<%--          );--%>
 
-          $(document).on(
-            "click",
-            "#zipcode_cp_btn, #mb_cp_zipcode, #mb_cp_addr1",
-            function () {
-              zipcode("mb_cp_zipcode", "mb_cp_addr1", "mb_cp_addr2");
-            }
-          );
+<%--          $(document).on(--%>
+<%--            "click",--%>
+<%--            "#zipcode_cp_btn, #mb_cp_zipcode, #mb_cp_addr1",--%>
+<%--            function () {--%>
+<%--              zipcode("mb_cp_zipcode", "mb_cp_addr1", "mb_cp_addr2");--%>
+<%--            }--%>
+<%--          );--%>
 
-          $(document).on(
-            "blur",
-            "#mb_id, #mb_nick, #mb_email, #mb_password, #mb_name, #mb_tel, #mb_zipcode, #mb_addr1, #mb_addr2, #mb_mailling, #mb_sms, #mb_sex, #mb_birthday_type, #mb_birthday, #mb_friend, #mb_valid_date, #mb_bank_name, #mb_bank_account, #mb_cp_name, #mb_cp_ceo, #mb_cp_internet_number, #mb_cp_number, #mb_cp_type1, #mb_cp_type2, #mb_cp_zipcode, #mb_cp_addr1, #mb_cp_addr2, #mb_cp_bank_name, #mb_cp_bank_account, #mb_cp_bank_account_holder, #mb_birthday_1, #mb_birthday_2, #mb_birthday_3, #mb_password_confirm",
-            function () {
-              json_check(this.id);
-            }
-          );
+<%--          $(document).on(--%>
+<%--            "blur",--%>
+<%--            "#mb_id, #mb_nick, #mb_email, #mb_password, #mb_name, #mb_tel, #mb_zipcode, #mb_addr1, #mb_addr2, #mb_mailling, #mb_sms, #mb_sex, #mb_birthday_type, #mb_birthday, #mb_friend, #mb_valid_date, #mb_bank_name, #mb_bank_account, #mb_cp_name, #mb_cp_ceo, #mb_cp_internet_number, #mb_cp_number, #mb_cp_type1, #mb_cp_type2, #mb_cp_zipcode, #mb_cp_addr1, #mb_cp_addr2, #mb_cp_bank_name, #mb_cp_bank_account, #mb_cp_bank_account_holder, #mb_birthday_1, #mb_birthday_2, #mb_birthday_3, #mb_password_confirm",--%>
+<%--            function () {--%>
+<%--              json_check(this.id);--%>
+<%--            }--%>
+<%--          );--%>
 
-          $(document).on("click", "#mb_join_btn", function () {
-            $.ajax({
-              type: "post",
-              data: $("#member_join").serialize(),
-              url: "member_join.php",
-              success: function (response) {
-                console.log(response);
-                var json = $.parseJSON(response);
-                if (json["result"] == "ok") {
-                  if (json["msg"]) {
-                    alert(json["msg"]);
-                  }
-                  if (json["url"]) {
-                    location.href = json["url"];
-                  }
-                } else {
-                  if (json["msg"]) {
-                    alert(json["msg"]);
-                  }
-                  if (json["result"]) {
-                    $("#" + json["result"]).focus();
-                  }
-                }
-              },
-            });
-            event.preventDefault();
-          });
+<%--          $(document).on("click", "#mb_join_btn", function () {--%>
+<%--            $.ajax({--%>
+<%--              type: "post",--%>
+<%--              data: $("#member_join").serialize(),--%>
+<%--              url: "member_join.php",--%>
+<%--              success: function (response) {--%>
+<%--                console.log(response);--%>
+<%--                var json = $.parseJSON(response);--%>
+<%--                if (json["result"] == "ok") {--%>
+<%--                  if (json["msg"]) {--%>
+<%--                    alert(json["msg"]);--%>
+<%--                  }--%>
+<%--                  if (json["url"]) {--%>
+<%--                    location.href = json["url"];--%>
+<%--                  }--%>
+<%--                } else {--%>
+<%--                  if (json["msg"]) {--%>
+<%--                    alert(json["msg"]);--%>
+<%--                  }--%>
+<%--                  if (json["result"]) {--%>
+<%--                    $("#" + json["result"]).focus();--%>
+<%--                  }--%>
+<%--                }--%>
+<%--              },--%>
+<%--            });--%>
+<%--            event.preventDefault();--%>
+<%--          });--%>
 
-          $(document).on("click", ".tb_mmu", function () {
-            var mb_type = $(this).data("mb_type");
-            $("#mb_type").val(mb_type);
+<%--          $(document).on("click", ".tb_mmu", function () {--%>
+<%--            var mb_type = $(this).data("mb_type");--%>
+<%--            $("#mb_type").val(mb_type);--%>
 
-            $(".tb_mmu").removeClass("on");
-            $(this).addClass("on");
+<%--            $(".tb_mmu").removeClass("on");--%>
+<%--            $(this).addClass("on");--%>
 
-            if (mb_type == "2") {
-              $(".mb_type2_info").show();
-            } else {
-              $(".mb_type2_info").hide();
-            }
-          });
+<%--            if (mb_type == "2") {--%>
+<%--              $(".mb_type2_info").show();--%>
+<%--            } else {--%>
+<%--              $(".mb_type2_info").hide();--%>
+<%--            }--%>
+<%--          });--%>
 
-          $(document).on("click", "#address_copy", function () {
-            var mb_zipcode = $("#mb_zipcode").val();
-            var mb_addr1 = $("#mb_addr1").val();
-            var mb_addr2 = $("#mb_addr2").val();
+<%--          $(document).on("click", "#address_copy", function () {--%>
+<%--            var mb_zipcode = $("#mb_zipcode").val();--%>
+<%--            var mb_addr1 = $("#mb_addr1").val();--%>
+<%--            var mb_addr2 = $("#mb_addr2").val();--%>
 
-            $("#mb_cp_zipcode").val(mb_zipcode);
-            $("#mb_cp_addr1").val(mb_addr1);
-            $("#mb_cp_addr2").val(mb_addr2);
-          });
-        </script>
+<%--            $("#mb_cp_zipcode").val(mb_zipcode);--%>
+<%--            $("#mb_cp_addr1").val(mb_addr1);--%>
+<%--            $("#mb_cp_addr2").val(mb_addr2);--%>
+<%--          });--%>
+<%--        </script>--%>
       </div>
     </div>
   <%@ include file="footer.jsp" %>
@@ -965,58 +970,108 @@
 
   <script type="text/javascript">
     $("#mb_join_btn").on("click", function() {
+      var nameRegex = /^[가-힣]{2,}$/; // 한글 이름 정규식
+      var hpRegex = /^\d+$/; // 휴대폰 번호 숫자 정규식
+      var idRegex = /^[a-zA-Z0-9]{4,12}$/; // 아이디 정규식
+      var nickRegex = /^[a-zA-Z0-9]{2,12}$/; // 닉네임 정규식
+      var passwordRegex = /^(?=.*[a-zA-Z])(?=.*[0-9]).{6,12}$/; // 비밀번호 정규식
+      var zipcodeRegex = /^\d{5}$/; // 우편번호 정규식
+
+      // 초기화
+      $(".p_msg").hide();
+
       if ($("#mb_name").val() == "") {
-        alert("이름을 입력해주세요.");
+        $("#mb_name_msg").text("이름을 입력해주세요.").show();
+        $("#mb_name").focus();
+        return false;
+      } else if (!nameRegex.test($("#mb_name").val())) {
+        $("#mb_name_msg").text("올바른 이름 형식이 아닙니다.").show();
         $("#mb_name").focus();
         return false;
       } else if ($("#mb_hp").val() == "") {
-        alert("휴대폰번호를 입력해주세요.");
+        $("#mb_hp_msg").text("휴대폰번호를 입력해주세요.").show();
+        $("#mb_hp").focus();
+        return false;
+      } else if (!hpRegex.test($("#mb_hp").val())) {
+        $("#mb_hp_msg").text("휴대폰번호는 숫자만 입력해주세요.").show();
         $("#mb_hp").focus();
         return false;
       } else if ($("#mb_id").val() == "") {
-        alert("아이디를 입력해주세요.");
+        $("#mb_id_msg").text("아이디를 입력해주세요.").show();
+        $("#mb_id").focus();
+        return false;
+      } else if (!idRegex.test($("#mb_id").val())) {
+        $("#mb_id_msg").text("영문 대소문자와 숫자로만 이루어진 4~12자로 입력해 주세요.").show();
         $("#mb_id").focus();
         return false;
       } else if ($("#mb_nick").val() == "") {
-        alert("닉네임을 입력해주세요.");
+        $("#mb_nick_msg").text("닉네임을 입력해주세요.").show();
+        $("#mb_nick").focus();
+        return false;
+      } else if (!nickRegex.test($("#mb_nick").val())) {
+        $("#mb_nick_msg").text("영문 대소문자와 숫자로만 이루어진 2~12자로 입력해 주세요.").show();
         $("#mb_nick").focus();
         return false;
       } else if ($("#mb_password").val() == "") {
-        alert("비밀번호를 입력해주세요.");
+        $("#mb_password_msg").text("비밀번호를 입력해주세요.").show();
+        $("#mb_password").focus();
+        return false;
+      } else if (!passwordRegex.test($("#mb_password").val())) {
+        $("#mb_password_msg").text("영문 대소문자와 숫자 또는 특수문자 조합 6~16자리로 입력해 주세요.").show();
         $("#mb_password").focus();
         return false;
       } else if ($("#mb_password_confirm").val() == "") {
-        alert("비밀번호 확인을 입력해주세요.");
+        $("#mb_password_confirm_msg").text("비밀번호 확인을 입력해 주세요.").show();
         $("#mb_password_confirm").focus();
         return false;
       } else if ($("#mb_password").val() != $("#mb_password_confirm").val()) {
-        alert("비밀번호가 일치하지 않습니다.");
+        $("#mb_password_confirm_msg").text("비밀번호가 일치하지 않습니다.").show();
         $("#mb_password_confirm").focus();
         return false;
       } else if ($("#mb_zipcode").val() == "") {
-        alert("우편번호를 입력해주세요.");
+        $("#mb_zipcode_msg").text("우편번호찾기를 눌러주세요.").show();
+        $("#mb_zipcode").focus();
+        return false;
+      } else if (!zipcodeRegex.test($("#mb_zipcode").val())) {
+        $("#mb_zipcode_msg").text("올바른 우편번호 형식이 아닙니다.").show();
         $("#mb_zipcode").focus();
         return false;
       } else if ($("#mb_addr1").val() == "") {
-        alert("주소를 입력해주세요.");
+        $("#mb_addr1_msg").text("주소를 입력해주세요.").show();
         $("#mb_addr1").focus();
         return false;
       } else if ($("#mb_addr2").val() == "") {
-        alert("상세주소를 입력해주세요.");
+        $("#mb_addr2_msg").text("상세주소를 입력해주세요.").show();
         $("#mb_addr2").focus();
         return false;
       } else if ($("#mb_sms").is(":checked") == false) {
-        alert("SMS 수신여부를 선택해주세요.");
+        $("#mb_sms_msg").text("SMS 수신여부를 선택해주세요.").show();
         $("#mb_sms").focus();
         return false;
       } else {
         alert("회원가입이 완료되었습니다.");
-        $("form[name=form]").attr("action", "/adminMemberIns").submit();
+        $("form[name=form]").attr("action", "/login").submit();
       }
     });
 
 
 
+
+  </script>
+  <script type="text/javascript">
+              $(document).on("click", ".tb_mmu", function () {
+                var mb_type = $(this).data("mb_type");
+                $("#mb_type").val(mb_type);
+
+                $(".tb_mmu").removeClass("on");
+                $(this).addClass("on");
+
+                if (mb_type == "2") {
+                  $(".mb_type2_info").show();
+                } else {
+                  $(".mb_type2_info").hide();
+                }
+              });
   </script>
 
   </body>

@@ -9,36 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="관리자 페이지 상품 등록 목록 완료">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/effa3b8e-8f86-4263-aead-4e928f6d291a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/effa3b8e-8f86-4263-aead-4e928f6d291a.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/2/22b8d027f7e895c8a2835e887730328ed39179a7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/68d453416865746afd6017fcd5a71035d39138fe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/3/931030fdc87e5ae52708b1ada0bede87db087c1d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/3/a32447dba39281c143b3fbf4c06ef0819883c6dd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/3/a32447dba39281c143b3fbf4c06ef0819883c6dd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d933b0a5ea5c98829ef00dd91f09585bfbab7983" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/a/eada2d92abfff2ac5d062638eedd5d656fa73a6f" beforeDir="false" />
+    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="메인화면 상품등록 회원가입 벨리데이션 완료 정규표현식 작업예정">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/448452f452c43da7b352fc99b2375c2a87a30c80" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/2/22b8d027f7e895c8a2835e887730328ed39179a7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/8/68d453416865746afd6017fcd5a71035d39138fe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/3/931030fdc87e5ae52708b1ada0bede87db087c1d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/9/d933b0a5ea5c98829ef00dd91f09585bfbab7983" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/a/eada2d92abfff2ac5d062638eedd5d656fa73a6f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/4/448452f452c43da7b352fc99b2375c2a87a30c80" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/classes/com/mycompany/app/infra/codegroup/CodeGroupMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/classes/com/mycompany/app/infra/codegroup/CodeGroupMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/admin/infra/codegroup/adminForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/admin/infra/codegroup/adminForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/admin/infra/dodomall/adminDodomallForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/admin/infra/dodomall/adminDodomallForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/user/infra/index/dodomall.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/user/infra/index/dodomall.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/user/infra/index/join.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/user/infra/index/join.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/Dodomall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/Dodomall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/DodomallController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/DodomallController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/DodomallVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/DodomallVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/index/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/index/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/codegroup/adminForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/codegroup/adminForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/dodomall/adminDodomallForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/dodomall/adminDodomallForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/dodomall.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/dodomall.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/join.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/join.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -256,7 +233,7 @@
       <workItem from="1688966574492" duration="416000" />
       <workItem from="1688974501094" duration="67000" />
       <workItem from="1688977673989" duration="64000" />
-      <workItem from="1689034564406" duration="4643000" />
+      <workItem from="1689034564406" duration="8539000" />
     </task>
     <task id="LOCAL-00003" summary="0704">
       <option name="closed" value="true" />
@@ -346,7 +323,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688950293110</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="메인화면 상품등록 회원가입 벨리데이션 완료 정규표현식 작업예정">
+      <option name="closed" value="true" />
+      <created>1689040143994</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1689040143994</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,7 +363,8 @@
     <MESSAGE value="한정특가500오류" />
     <MESSAGE value="한정특가500오류, 관리자페이지 데이터 안들어감" />
     <MESSAGE value="관리자 페이지 상품 등록 목록 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="관리자 페이지 상품 등록 목록 완료" />
+    <MESSAGE value="메인화면 상품등록 회원가입 벨리데이션 완료 정규표현식 작업예정" />
+    <option name="LAST_COMMIT_MESSAGE" value="메인화면 상품등록 회원가입 벨리데이션 완료 정규표현식 작업예정" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -9,8 +9,6 @@ X
 (src/main/webapp/WEB-INF/root-context.xml,b/e/bee4914b3287c2660de63f745878aec30a17e6d2
 i
 9src/main/webapp/WEB-INF/views/user/infra/index/header.jsp,e/f/efdf44fb9910552015bf52938e5e3da633d40e31
-p
-@src/main/webapp/WEB-INF/views/user/infra/index/limited_price.jsp,4/4/448452f452c43da7b352fc99b2375c2a87a30c80
 i
 9src/main/webapp/WEB-INF/views/user/infra/index/footer.jsp,9/1/91c896256ca726e2e8144ac8c32c7b132135ef59
 T
