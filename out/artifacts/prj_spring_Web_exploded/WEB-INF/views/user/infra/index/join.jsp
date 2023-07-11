@@ -511,7 +511,7 @@
                   value=""
                   autocomplete="off"
                   class="form-control inppt"
-                  placeholder="비밀번호확인"
+                  placeholder="비밀번호 확인"
                 />
               </div>
               <p id="mb_password_confirm_msg" class="p_msg"></p>
@@ -964,11 +964,59 @@
 <%--  회원가입--%>
 
   <script type="text/javascript">
-
-    $("#mb_join_btn").on("click", function(){
-      alert("회원가입이 완료되었습니다.");
-      $("form[name=form]").attr("action","/adminMemberIns").submit();
+    $("#mb_join_btn").on("click", function() {
+      if ($("#mb_name").val() == "") {
+        alert("이름을 입력해주세요.");
+        $("#mb_name").focus();
+        return false;
+      } else if ($("#mb_hp").val() == "") {
+        alert("휴대폰번호를 입력해주세요.");
+        $("#mb_hp").focus();
+        return false;
+      } else if ($("#mb_id").val() == "") {
+        alert("아이디를 입력해주세요.");
+        $("#mb_id").focus();
+        return false;
+      } else if ($("#mb_nick").val() == "") {
+        alert("닉네임을 입력해주세요.");
+        $("#mb_nick").focus();
+        return false;
+      } else if ($("#mb_password").val() == "") {
+        alert("비밀번호를 입력해주세요.");
+        $("#mb_password").focus();
+        return false;
+      } else if ($("#mb_password_confirm").val() == "") {
+        alert("비밀번호 확인을 입력해주세요.");
+        $("#mb_password_confirm").focus();
+        return false;
+      } else if ($("#mb_password").val() != $("#mb_password_confirm").val()) {
+        alert("비밀번호가 일치하지 않습니다.");
+        $("#mb_password_confirm").focus();
+        return false;
+      } else if ($("#mb_zipcode").val() == "") {
+        alert("우편번호를 입력해주세요.");
+        $("#mb_zipcode").focus();
+        return false;
+      } else if ($("#mb_addr1").val() == "") {
+        alert("주소를 입력해주세요.");
+        $("#mb_addr1").focus();
+        return false;
+      } else if ($("#mb_addr2").val() == "") {
+        alert("상세주소를 입력해주세요.");
+        $("#mb_addr2").focus();
+        return false;
+      } else if ($("#mb_sms").is(":checked") == false) {
+        alert("SMS 수신여부를 선택해주세요.");
+        $("#mb_sms").focus();
+        return false;
+      } else {
+        alert("회원가입이 완료되었습니다.");
+        $("form[name=form]").attr("action", "/adminMemberIns").submit();
+      }
     });
+
+
+
   </script>
 
   </body>

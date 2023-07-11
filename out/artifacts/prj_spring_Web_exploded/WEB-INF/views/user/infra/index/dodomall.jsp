@@ -6,6 +6,11 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="rb" uri="http://www.springframework.org/tags" %>
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -133,36 +138,40 @@
       <div class="item_list_wrap">
         <div class="deal_list_type type_1">
           <ul>
+<c:choose>
+  <c:when test="${fn:length(list) eq 0}">
+  </c:when>
+  <c:otherwise>
+    <c:forEach items="${list}" var="list" varStatus="status">
             <li>
               <div class="border">
                 <a href="detail_1.html">
                   <div class="thumb">
                     <img
-                            src="https://4989farmer.co.kr/data/list/thumb/thumb-1669277984991028216_oHf3NQcS_EC8B9DED928822_300x300.png"
+                            src="<c:out value="${list.itemImageUrl}"/>"
                             class="it_img"
                             alt=""
                     />
                   </div>
                   <div class="it_info">
                     <p class="it_description">
-                      양념,무,밤 등을 첨가하면 더욱맛있는 원산지 :
-                      상품상세참조
+                      <c:out value="${list.itemDescription}"/>
                     </p>
-                    <p class="it_name">초이스등급 1855 소찜갈비 1kg(면)</p>
+                    <p class="it_name"><c:out value="${list.itemName}"></c:out></p>
                     <div class="it_price_info">
                           <span class="it_discount_rate">
-                            <strong>25</strong>
+                            <strong><c:out value="${list.itemDiscountRate}"/></strong>
                             <span>%</span>
                           </span>
                       <span class="it_price">
-                            <span class="it_price1">2,000<span>원</span></span>
-                            <span class="it_price2">1,500<span>원</span></span>
+                            <span class="it_price1"><c:out value="${list.itemPrice1}"/><span>원</span></span>
+                            <span class="it_price2"><c:out value="${list.itemPrice2}"/><span>원</span></span>
                           </span>
                     </div>
                   </div>
                 </a>
                 <div class="option">
-                  <span class="besong">무료배송</span>
+                  <span class="besong"><c:out value="${list.itemDeliveryStatus}"/></span>
                   <span class="it_sales_volume"> <b>0</b> 개 구매</span>
                   <div class="zzim">
                     <a class="btn_zzim"></a> <span></span>
@@ -170,6 +179,9 @@
                 </div>
               </div>
             </li>
+    </c:forEach>
+  </c:otherwise>
+</c:choose>
           </ul>
         </div>
         <div style="clear: both"></div>

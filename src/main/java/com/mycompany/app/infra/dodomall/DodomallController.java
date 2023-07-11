@@ -29,6 +29,60 @@ public class DodomallController {
 
         return "admin/infra/dodomall/adminDodomallList";
 }
+@RequestMapping("/dodomall")
+    public String dodomall(@ModelAttribute("vo") DodomallVo vo, Model model) {
+
+        vo.setShKeyword(vo.getShKeyword() == null ? "" : vo.getShKeyword());
+        vo.setParamsPaging(service.selectOneCount(vo));
+        if (vo.getTotalRows() > 0) {
+            List<Dodomall> list = service.selectList(vo);
+            model.addAttribute("list", list);
+        } else {
+            //	by pass
+        }
+
+        return "user/infra/index/dodomall";
+}
+
+    @RequestMapping("/adminDodomallView")
+    public String adminDodomallView(DodomallVo vo, Model model) {
+
+        Dodomall Dodomall = service.selectOne(vo);
+
+        model.addAttribute("item", Dodomall);
+
+        return "admin/infra/dodomall/adminDodomallView";
+    }
+
+    @RequestMapping("/adminDodomallUpdtForm")
+    public String adminDodomallUpdtForm(DodomallVo vo, Model model) {
+
+        Dodomall Dodomall = service.selectOne(vo);
+
+        model.addAttribute("item", Dodomall);
+
+        return "admin/infra/dodomall/adminDodomallUpdtForm";
+    }
+
+    @RequestMapping("/adminDodomallDelForm")
+    public String adminDodomallDelForm(DodomallVo vo, Model model) {
+
+        Dodomall Dodomall = service.selectOne(vo);
+
+        model.addAttribute("item", Dodomall);
+
+        return "admin/infra/dodomall/adminDodomallDelForm";
+    }
+
+    @RequestMapping("/adminDodomallInsForm")
+    public String adminDodomallInsForm(DodomallVo vo, Model model) {
+
+        Dodomall Dodomall = service.selectOne(vo);
+
+        model.addAttribute("item", Dodomall);
+
+        return "admin/infra/dodomall/adminDodomallInsForm";
+    }
 
 @RequestMapping("/adminDodomallForm")
     public String adminDodomallForm(DodomallVo vo, Model model) {

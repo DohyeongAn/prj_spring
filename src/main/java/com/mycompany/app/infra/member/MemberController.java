@@ -72,7 +72,7 @@ public class MemberController {
 
         service.insert(dto);
 
-        return "redirect:/adminMemberList";
+        return "redirect:/login";
     }
 
     @RequestMapping("/adminMemberUelete")

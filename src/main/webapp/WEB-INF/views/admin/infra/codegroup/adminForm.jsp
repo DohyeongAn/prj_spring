@@ -320,7 +320,24 @@
 	
   </body>
   <script type="text/javascript">
+
+    validationInst = function(){
+      if(validationUpdt() == false) return false;
+    }
+
+    validationUpdt = function(){
+      if($.trim($("#name").val()) == "" || $.trim($("#name").val()) == null){
+        alert("데이터를 입력해 주세요")
+        $("#name").focus();
+        return false;
+      } else {
+        return true;
+      }
+    }
+
+
     $("#submitBtn").on("click", function(){
+      if (validationUpdt() == false) return false;
       alert("submit");
       $("form[name=form]").attr("action","/adminUpdt").submit();
     });
@@ -331,6 +348,8 @@
     });
 
     $("#insertBtn").on("click", function(){
+      if (validationInst() == false) return false;
+
       alert("insert");
       $("form[name=form]").attr("action","/adminIns").submit();
     });

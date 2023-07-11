@@ -14,7 +14,7 @@ public class DodomallVo extends BaseVo {
     private Integer itemDiscountRate;
     private Integer itemPrice1;
     private Integer itemPrice2;
-    private Integer itemDeliveryStatus;
+    private String itemDeliveryStatus;
     private Integer delNy;
     //	-----
 
@@ -99,11 +99,11 @@ public class DodomallVo extends BaseVo {
         this.itemPrice2 = itemPrice2;
     }
 
-    public Integer getItemDeliveryStatus() {
+    public String getItemDeliveryStatus() {
         return itemDeliveryStatus;
     }
 
-    public void setItemDeliveryStatus(Integer itemDeliveryStatus) {
+    public void setItemDeliveryStatus(String itemDeliveryStatus) {
         this.itemDeliveryStatus = itemDeliveryStatus;
     }
 

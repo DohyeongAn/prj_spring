@@ -374,8 +374,15 @@
   <script type="text/javascript">
 
     $("#insertBtn").on("click", function(){
-      alert("insert");
-      $("form[name=form]").attr("action","/adminDodomallIns").submit();
+      if ($.trim($("#itemName").val()) == "" || $.trim($("#itemName").val()) == null) {
+        alert("데이터를 입력해주세요!");
+        $("#itemName").focus();
+      }else {
+        alert("insert");
+        $("form[name=form]").attr("action","/adminDodomallIns").submit();
+      }
+      // alert("insert");
+      // $("form[name=form]").attr("action","/adminDodomallIns").submit();
     });
 
 

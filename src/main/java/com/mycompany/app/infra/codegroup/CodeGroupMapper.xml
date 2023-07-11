@@ -64,7 +64,8 @@
 
     <update id="update">
         UPDATE codegroup
-        SET name = #{name}
+        SET name = #{name},
+            delNy = #{delNy}
         WHERE seq = #{seq}
     </update>
 
@@ -76,8 +77,9 @@
 
     <insert id="insert">
         INSERT INTO codegroup
-            (name)
-        VALUES (#{name})
+        (name, delNy)
+        VALUES
+        (#{name}, #{delNy})
 
     </insert>
 
