@@ -10,6 +10,8 @@ public interface MemberService {
 
     public Member selectOne(MemberVo vo);
 
+    public Member selectOneLogin(MemberVo vo);
+
     public int update(Member dto);
 
     public int delete(Member dto);
@@ -17,5 +19,7 @@ public interface MemberService {
     public int insert(Member dto);
 
     public int uelete(Member dto);
+
+
 
 }

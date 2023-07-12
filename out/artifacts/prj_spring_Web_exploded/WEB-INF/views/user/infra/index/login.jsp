@@ -383,7 +383,7 @@
                         <input type="hidden" name="mode" value="login" />
                         <input
                                 type="text"
-                                name="mb_id"
+                                name="id"
                                 id="mb_id"
                                 value=""
                                 class="form-control login_input"
@@ -393,7 +393,7 @@
                         <p id="mb_id_msg" class="p_msg"></p>
                         <input
                                 type="password"
-                                name="mb_password"
+                                name="password"
                                 id="mb_password"
                                 value=""
                                 autocomplete="off"
@@ -402,13 +402,14 @@
                                 placeholder="비밀번호"
                         />
                         <p id="mb_password_msg" class="p_msg"></p>
-                        <input
-                                type="submit"
-                                name="login_submit_btn"
-                                id="login_submit_btn"
-                                value="로그인"
-                                class="btn_submit"
-                        />
+<%--                        <input--%>
+<%--                                type="submit"--%>
+<%--                                name="login_submit_btn"--%>
+<%--                                id="login_submit_btn"--%>
+<%--                                value="로그인"--%>
+<%--                                class="btn_submit"--%>
+<%--                        />--%>
+                        <button type="button" name="login_submit_btn" id="login_submit_btn" class="btn_submit">로그인</button>
                         <div class="auto_login_wrap">
                             <label
                             ><input
@@ -637,6 +638,26 @@
         // 로그인 로직 구현
 
         // $("form[name=login]").submit(); // 로그인 로직 실행 시 사용
+        $.ajax({
+            async: true
+            ,cache: false
+            ,type: "post"
+            /* ,dataType:"json" */
+            ,url: "/selectOneLogin"
+            /* ,data : $("#formLogin").serialize() */
+            ,data : { "id" : $("#mb_id").val(), "password" : $("#mb_password").val()}
+            ,success: function(response) {
+                alert("조같넹")
+                if(response.rt == "success") {
+                    location.href = "/dodomall";
+                    } else {
+                    alert("회원없음");
+                }
+            }
+            ,error : function(jqXHR, textStatus, errorThrown){
+                alert("ajaxUpdate " + jqXHR.textStatus + " : " + jqXHR.errorThrown);
+            }
+        });
     });
 
 

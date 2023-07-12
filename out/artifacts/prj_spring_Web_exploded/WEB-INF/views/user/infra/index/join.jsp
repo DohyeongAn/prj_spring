@@ -1050,7 +1050,7 @@
         return false;
       } else {
         alert("회원가입이 완료되었습니다.");
-        $("form[name=form]").attr("action", "/login").submit();
+        $("form[name=form]").attr("action", "/adminMemberIns").submit();
       }
     });
 

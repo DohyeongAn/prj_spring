@@ -59,6 +59,22 @@
             seq = #{seq}
     </select>
 
+    <select id="selectOneLogin" resultMap="resultMapObj">
+
+        SELECT
+            seq,
+            id,
+            userName
+        FROM
+            member
+        WHERE 1=1
+        AND
+            id = #{id}
+        AND
+            password = #{password}
+
+    </select>
+
     <update id="update">
         UPDATE member
         SET
@@ -117,5 +133,8 @@
         SET delNy = #{delNy}
         WHERE seq = #{seq}
     </update>
+
+
+
 
 </mapper>

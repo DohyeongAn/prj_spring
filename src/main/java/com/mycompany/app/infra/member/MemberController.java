@@ -6,8 +6,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 public class MemberController {
@@ -79,6 +82,22 @@ public class MemberController {
     public String adminMemberUelete(Member dto) {
         service.uelete(dto);
         return "redirect:/adminMemberList";
+    }
+
+    @ResponseBody
+    @RequestMapping("/selectOneLogin")
+    public Map<String, Object> selectOneLogin(MemberVo vo) {
+        Map<String, Object> returnMap = new HashMap<String, Object>();
+
+        Member rtMember = service.selectOneLogin(vo);
+
+        if(rtMember != null) {
+            returnMap.put("rtMember", rtMember);
+            returnMap.put("rt", "success");
+        } else {
+            returnMap.put("rt", "fail");
+        }
+        return returnMap;
     }
 
 }

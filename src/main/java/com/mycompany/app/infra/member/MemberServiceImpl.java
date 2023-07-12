@@ -20,6 +20,10 @@ public class MemberServiceImpl implements MemberService {
     @Override
     public Member selectOne(MemberVo vo) { return dao.selectOne(vo); }
 
+
+    @Override
+    public Member selectOneLogin(MemberVo vo) { return dao.selectOneLogin(vo); }
+
     @Override
     public int update(Member dto) { return dao.update(dto); }
 
@@ -31,8 +35,6 @@ public class MemberServiceImpl implements MemberService {
 
     @Override
     public int uelete(Member dto) { return dao.uelete(dto); }
-
-
 
 
 }

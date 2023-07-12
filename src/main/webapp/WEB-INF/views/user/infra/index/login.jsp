@@ -383,7 +383,7 @@
                         <input type="hidden" name="mode" value="login" />
                         <input
                                 type="text"
-                                name="mb_id"
+                                name="id"
                                 id="mb_id"
                                 value=""
                                 class="form-control login_input"
@@ -393,7 +393,7 @@
                         <p id="mb_id_msg" class="p_msg"></p>
                         <input
                                 type="password"
-                                name="mb_password"
+                                name="password"
                                 id="mb_password"
                                 value=""
                                 autocomplete="off"
@@ -402,13 +402,14 @@
                                 placeholder="비밀번호"
                         />
                         <p id="mb_password_msg" class="p_msg"></p>
-                        <input
-                                type="submit"
-                                name="login_submit_btn"
-                                id="login_submit_btn"
-                                value="로그인"
-                                class="btn_submit"
-                        />
+<%--                        <input--%>
+<%--                                type="submit"--%>
+<%--                                name="login_submit_btn"--%>
+<%--                                id="login_submit_btn"--%>
+<%--                                value="로그인"--%>
+<%--                                class="btn_submit"--%>
+<%--                        />--%>
+                        <button type="button" name="login_submit_btn" id="login_submit_btn" class="btn_submit">로그인</button>
                         <div class="auto_login_wrap">
                             <label
                             ><input
@@ -642,17 +643,14 @@
             ,cache: false
             ,type: "post"
             /* ,dataType:"json" */
-            ,url: "/member/loginProc"
+            ,url: "/selectOneLogin"
             /* ,data : $("#formLogin").serialize() */
-            ,data : { "id" : $("#ifmmId").val(), "Password" : $("#ifmmPassword").val(), "autoLogin" : $("#autoLogin").is(":checked")}
+            ,data : { "id" : $("#mb_id").val(), "password" : $("#mb_password").val()}
             ,success: function(response) {
+                alert("조같넹")
                 if(response.rt == "success") {
-                    if(response.changePwd == "true") {
-                        location.href = URL_CHANGE_PWD_FORM;
+                    location.href = "/dodomall";
                     } else {
-                        location.href = URL_INDEX_ADMIN;
-                    }
-                } else {
                     alert("회원없음");
                 }
             }

@@ -143,4 +143,5 @@ public class MemberVo extends BaseVo {
         this.delNy = delNy;
     }
 
+
 }

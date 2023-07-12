@@ -116,4 +116,5 @@ public class Member {
     public void setDelNy(Integer delNy) {
         this.delNy = delNy;
     }
+
 }
