@@ -9,14 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="메인화면 상품등록 회원가입 벨리데이션 완료 정규표현식 작업예정">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/448452f452c43da7b352fc99b2375c2a87a30c80" beforeDir="false" />
+    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="회원가입정규표현식완료 판매자회원 할까말까 고민중">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/4/448452f452c43da7b352fc99b2375c2a87a30c80" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/user/infra/index/join.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/user/infra/index/join.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/join.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/join.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/user/infra/index/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_Web_exploded/WEB-INF/views/user/infra/index/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,7 +232,8 @@
       <workItem from="1688966574492" duration="416000" />
       <workItem from="1688974501094" duration="67000" />
       <workItem from="1688977673989" duration="64000" />
-      <workItem from="1689034564406" duration="8539000" />
+      <workItem from="1689034564406" duration="10331000" />
+      <workItem from="1689121066834" duration="3307000" />
     </task>
     <task id="LOCAL-00003" summary="0704">
       <option name="closed" value="true" />
@@ -331,7 +331,23 @@
       <option name="project" value="LOCAL" />
       <updated>1689040143994</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="회원가입정규표현식완료 판매자회원 할까말까 고민중">
+      <option name="closed" value="true" />
+      <created>1689044424218</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1689044424218</updated>
+    </task>
+    <task id="LOCAL-00016" summary="회원가입정규표현식완료 판매자회원 할까말까 고민중">
+      <option name="closed" value="true" />
+      <created>1689044642151</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1689044642151</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,7 +380,8 @@
     <MESSAGE value="한정특가500오류, 관리자페이지 데이터 안들어감" />
     <MESSAGE value="관리자 페이지 상품 등록 목록 완료" />
     <MESSAGE value="메인화면 상품등록 회원가입 벨리데이션 완료 정규표현식 작업예정" />
-    <option name="LAST_COMMIT_MESSAGE" value="메인화면 상품등록 회원가입 벨리데이션 완료 정규표현식 작업예정" />
+    <MESSAGE value="회원가입정규표현식완료 판매자회원 할까말까 고민중" />
+    <option name="LAST_COMMIT_MESSAGE" value="회원가입정규표현식완료 판매자회원 할까말까 고민중" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

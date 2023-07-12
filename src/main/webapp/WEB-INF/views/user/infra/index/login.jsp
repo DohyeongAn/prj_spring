@@ -14,6 +14,12 @@
 <div class="layout_frame" style="background: #fafafa">
     <div class="layout_frame_inner">
         <style>
+            .p_msg {
+                font-size: 13px;
+                color: #de1d5a;
+                padding: 5px 0px;
+                display: none;
+            }
             .login_wrap {
                 width: 530px;
                 margin: 40px auto;
@@ -375,7 +381,6 @@
                 <div class="login_commnon login">
                     <form name="login" id="login" method="post" autocomplete="off">
                         <input type="hidden" name="mode" value="login" />
-                        <input type="hidden" name="url" id="url" value="%2Flogin.php" />
                         <input
                                 type="text"
                                 name="mb_id"
@@ -385,6 +390,7 @@
                                 tabindex="1"
                                 placeholder="아이디 또는 휴대폰번호"
                         />
+                        <p id="mb_id_msg" class="p_msg"></p>
                         <input
                                 type="password"
                                 name="mb_password"
@@ -395,6 +401,7 @@
                                 tabindex="2"
                                 placeholder="비밀번호"
                         />
+                        <p id="mb_password_msg" class="p_msg"></p>
                         <input
                                 type="submit"
                                 name="login_submit_btn"
@@ -415,6 +422,7 @@
                             >
                         </div>
                     </form>
+
 
                     <div class="member_confirm_line"></div>
 
@@ -479,70 +487,70 @@
             </div>
         </div>
 
-        <script>
-            $(document).on("click", "#login_submit_btn", function () {
-                $.ajax({
-                    type: "post",
-                    data: $("#login").serialize(),
-                    url: "login.php",
-                    success: function (response) {
-                        var json = $.parseJSON(response);
-                        if (json["result"] == "ok") {
-                            if (json["url"]) {
-                                location.href = json["url"];
-                            }
-                        } else {
-                            if (json["msg"]) {
-                                alert(json["msg"]);
-                            }
-                            if (json["result"]) {
-                                $("#" + json["result"]).focus();
-                            }
-                            if (json["url"]) {
-                                location.href = json["url"];
-                            }
-                        }
-                    },
-                });
-                event.preventDefault();
-            });
+<%--        <script>--%>
+        <%--    $(document).on("click", "#login_submit_btn", function () {--%>
+        <%--        $.ajax({--%>
+        <%--            type: "post",--%>
+        <%--            data: $("#login").serialize(),--%>
+        <%--            url: "login.php",--%>
+        <%--            success: function (response) {--%>
+        <%--                var json = $.parseJSON(response);--%>
+        <%--                if (json["result"] == "ok") {--%>
+        <%--                    if (json["url"]) {--%>
+        <%--                        location.href = json["url"];--%>
+        <%--                    }--%>
+        <%--                } else {--%>
+        <%--                    if (json["msg"]) {--%>
+        <%--                        alert(json["msg"]);--%>
+        <%--                    }--%>
+        <%--                    if (json["result"]) {--%>
+        <%--                        $("#" + json["result"]).focus();--%>
+        <%--                    }--%>
+        <%--                    if (json["url"]) {--%>
+        <%--                        location.href = json["url"];--%>
+        <%--                    }--%>
+        <%--                }--%>
+        <%--            },--%>
+        <%--        });--%>
+        <%--        event.preventDefault();--%>
+        <%--    });--%>
 
-            $(document).on("click", "#order_submit_btn", function () {
-                $.ajax({
-                    type: "post",
-                    data: $("#order_login").serialize(),
-                    url: "login.php",
-                    success: function (response) {
-                        var json = $.parseJSON(response);
-                        if (json["result"] == "ok") {
-                            if (json["url"]) {
-                                location.href = json["url"];
-                            }
-                        } else {
-                            if (json["msg"]) {
-                                alert(json["msg"]);
-                            }
-                            if (json["result"]) {
-                                $("#" + json["result"]).focus();
-                            }
-                        }
-                    },
-                });
-                event.preventDefault();
-            });
+        <%--    $(document).on("click", "#order_submit_btn", function () {--%>
+        <%--        $.ajax({--%>
+        <%--            type: "post",--%>
+        <%--            data: $("#order_login").serialize(),--%>
+        <%--            url: "login.php",--%>
+        <%--            success: function (response) {--%>
+        <%--                var json = $.parseJSON(response);--%>
+        <%--                if (json["result"] == "ok") {--%>
+        <%--                    if (json["url"]) {--%>
+        <%--                        location.href = json["url"];--%>
+        <%--                    }--%>
+        <%--                } else {--%>
+        <%--                    if (json["msg"]) {--%>
+        <%--                        alert(json["msg"]);--%>
+        <%--                    }--%>
+        <%--                    if (json["result"]) {--%>
+        <%--                        $("#" + json["result"]).focus();--%>
+        <%--                    }--%>
+        <%--                }--%>
+        <%--            },--%>
+        <%--        });--%>
+        <%--        event.preventDefault();--%>
+        <%--    });--%>
 
-            $(document).on("click", ".login-divide-pannel", function () {
-                $(".login-divide-pannel").removeClass("on");
-                $(this).addClass("on");
-                if ($(this).index() == "1") {
-                    $(".login_commnon").hide();
-                    $(".order_login").show();
-                } else {
-                    $(".login_commnon").hide();
-                    $(".login").show();
-                }
-            });
-        </script>
+        <%--    $(document).on("click", ".login-divide-pannel", function () {--%>
+        <%--        $(".login-divide-pannel").removeClass("on");--%>
+        <%--        $(this).addClass("on");--%>
+        <%--        if ($(this).index() == "1") {--%>
+        <%--            $(".login_commnon").hide();--%>
+        <%--            $(".order_login").show();--%>
+        <%--        } else {--%>
+        <%--            $(".login_commnon").hide();--%>
+        <%--            $(".login").show();--%>
+        <%--        }--%>
+        <%--    });--%>
+        <%--</script>--%>
     </div>
 </div>
 
@@ -589,6 +597,74 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"
 ></script>
+<%--로그인--%>
+<script type="text/javascript">
+    $("#login_submit_btn").on("click", function(e) {
+        e.preventDefault(); // 기본 동작 방지
+
+        // 정규표현식
+        var idRegex = /^[a-zA-Z0-9]{4,12}$/; // 아이디 정규식
+        var passwordRegex = /^(?=.*[a-zA-Z])(?=.*[0-9]).{6,12}$/; // 비밀번호 정규식
+
+        // 초기화
+        $(".p_msg").text("");
+
+        var id = $("#mb_id").val();
+        var password = $("#mb_password").val();
+
+        if (id.trim() === "") {
+            $("#mb_id_msg").text("아이디 또는 휴대폰번호를 입력해주세요.").show();
+            return false;
+        }
+
+        if (!idRegex.test(id)) {
+            $("#mb_id_msg").text("영문 대소문자와 숫자로만 이루어진 4~12자로 입력해 주세요.").show();
+            return false;
+        }
+
+        if (password.trim() === "") {
+            $("#mb_password_msg").text("비밀번호를 입력해주세요.").show();
+            return false;
+        }
+
+        if (!passwordRegex.test(password)) {
+            $("#mb_password_msg").text("영문 대소문자와 숫자를 포함한 6~12자리로 입력해 주세요.").show();
+            return false;
+        }
+
+        // 유효성 검사 통과한 경우 로그인 로직 실행
+        // ...
+        // 로그인 로직 구현
+
+        // $("form[name=login]").submit(); // 로그인 로직 실행 시 사용
+        $.ajax({
+            async: true
+            ,cache: false
+            ,type: "post"
+            /* ,dataType:"json" */
+            ,url: "/member/loginProc"
+            /* ,data : $("#formLogin").serialize() */
+            ,data : { "id" : $("#ifmmId").val(), "Password" : $("#ifmmPassword").val(), "autoLogin" : $("#autoLogin").is(":checked")}
+            ,success: function(response) {
+                if(response.rt == "success") {
+                    if(response.changePwd == "true") {
+                        location.href = URL_CHANGE_PWD_FORM;
+                    } else {
+                        location.href = URL_INDEX_ADMIN;
+                    }
+                } else {
+                    alert("회원없음");
+                }
+            }
+            ,error : function(jqXHR, textStatus, errorThrown){
+                alert("ajaxUpdate " + jqXHR.textStatus + " : " + jqXHR.errorThrown);
+            }
+        });
+    });
+
+
+
+</script>
 </body>
 </html>
 
