@@ -24,6 +24,8 @@ public class MemberDao {
         return member;
     }
 
+    public int selectOneCheckId(MemberVo vo) { return sqlSession.selectOne(namespace + ".selectOneCheckId", vo); }
+
     public Member selectOneLogin(MemberVo vo) { return sqlSession.selectOne(namespace + ".selectOneLogin", vo); }
 
     public int selectOneCount(MemberVo vo) { return sqlSession.selectOne(namespace + ".selectOneCount", vo); }

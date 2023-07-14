@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpSession;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -99,5 +100,31 @@ public class MemberController {
         }
         return returnMap;
     }
+
+    @ResponseBody
+    @RequestMapping("/checkIdProc")
+    public Map<String, Object> checkIdProc(MemberVo vo) {
+        Map<String, Object> returnMap = new HashMap<String, Object>();
+
+        int rtNum = service.selectOneCheckId(vo);
+
+        if(rtNum == 0) {
+            returnMap.put("rt", "available");
+        } else {
+            returnMap.put("rt", "unavailable");
+        }
+        return returnMap;
+    }
+
+    @ResponseBody
+    @RequestMapping("/logoutUsrProc")
+    public Map<String, Object> logoutUsrFrom(HttpSession httpSession){
+        Map<String,Object> returnMap = new HashMap<String, Object>();
+        //
+        httpSession.invalidate();
+        returnMap.put("rt", "success");
+        return returnMap;
+    }
+
 
 }

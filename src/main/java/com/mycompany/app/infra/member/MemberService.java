@@ -12,6 +12,7 @@ public interface MemberService {
 
     public Member selectOneLogin(MemberVo vo);
 
+    public int selectOneCheckId(MemberVo vo);
     public int update(Member dto);
 
     public int delete(Member dto);

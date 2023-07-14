@@ -705,7 +705,7 @@
                 <p id="mb_sms_msg" class="p_msg">SMS 수신여부를 선택해 주세요</p>
               </div>
 
-              <button type="insertBtn" name="insertBtn" id="mb_join_btn">동의하고 회원가입</button>
+              <button type="button" name="insertBtn" id="mb_join_btn">동의하고 회원가입</button>
 
               <div class="mb_join_line"></div>
 
@@ -966,9 +966,46 @@
     });
   </script>
 
+
+<%-- 중복체크 --%>
+  <script type="text/javascript">
+
+    $("#mb_id").on("blur", function() {
+      var obj = $(this);
+      $.ajax({
+        async: true,
+        cache: false,
+        type: "POST",
+        url: "/checkIdProc",
+        data: { "id": $("#mb_id").val() },
+        success: function(response) {
+          if (response.rt == "available") {
+            alert("사용 가능한 아이디입니다.");
+          } else {
+            alert("이미 사용중인 아이디입니다.");
+          }
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+          var errorMessage = "에러 발생~~";
+          if (jqXHR.status === 0) {
+            errorMessage += "서버 연결이 종료되었습니다.";
+          } else if (jqXHR.status === 404) {
+            errorMessage += "요청된 URL을 찾을 수 없습니다.";
+          } else if (jqXHR.status === 500) {
+            errorMessage += "내부 서버 오류가 발생했습니다.";
+          } else {
+            errorMessage += "알 수 없는 오류가 발생했습니다.";
+          }
+          alert(errorMessage);
+        }
+      });
+    });
+
+  </script>
 <%--  회원가입--%>
 
   <script type="text/javascript">
+
     $("#mb_join_btn").on("click", function() {
       var nameRegex = /^[가-힣]{2,}$/; // 한글 이름 정규식
       var hpRegex = /^\d+$/; // 휴대폰 번호 숫자 정규식

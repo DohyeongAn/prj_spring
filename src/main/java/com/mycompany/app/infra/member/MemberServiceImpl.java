@@ -25,6 +25,9 @@ public class MemberServiceImpl implements MemberService {
     public Member selectOneLogin(MemberVo vo) { return dao.selectOneLogin(vo); }
 
     @Override
+    public int selectOneCheckId(MemberVo vo) { return dao.selectOneCheckId(vo); }
+
+    @Override
     public int update(Member dto) { return dao.update(dto); }
 
     @Override

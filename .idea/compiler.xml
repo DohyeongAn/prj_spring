@@ -10,5 +10,8 @@
         <module name="prj_spring" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="project01" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -134,7 +134,16 @@
         WHERE seq = #{seq}
     </update>
 
-
+   <select id="selectOneCheckId" resultType="Integer">
+       SELECT
+           count(seq)
+         FROM
+              member
+            WHERE
+                1=1
+            AND
+              id = #{id}
+   </select>
 
 
 </mapper>
