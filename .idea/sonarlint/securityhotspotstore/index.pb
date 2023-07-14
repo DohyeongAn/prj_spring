@@ -69,3 +69,7 @@ i
 9src/main/webapp/WEB-INF/views/user/infra/index/header.jsp,e/f/efdf44fb9910552015bf52938e5e3da633d40e31
 r
 Bsrc/main/java/com/mycompany/app/infra/member/MemberController.java,7/c/7c3387e524712e6b1754a41ccbac0c13698ad4a4
+k
+;src/main/java/com/mycompany/app/infra/member/MemberDao.java,5/1/51885e86bc32f973df154aa34d95a45ce86abb7b
+7
+pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec

@@ -965,48 +965,10 @@
       });
     });
   </script>
-
-
-<%-- 중복체크 --%>
   <script type="text/javascript">
 
-    $("#mb_id").on("blur", function() {
-      var obj = $(this);
-      $.ajax({
-        async: true,
-        cache: false,
-        type: "POST",
-        url: "/checkIdProc",
-        data: { "id": $("#mb_id").val() },
-        success: function(response) {
-          if (response.rt == "available") {
-            alert("사용 가능한 아이디입니다.");
-          } else {
-            alert("이미 사용중인 아이디입니다.");
-          }
-        },
-        error: function(jqXHR, textStatus, errorThrown) {
-          var errorMessage = "에러 발생~~";
-          if (jqXHR.status === 0) {
-            errorMessage += "서버 연결이 종료되었습니다.";
-          } else if (jqXHR.status === 404) {
-            errorMessage += "요청된 URL을 찾을 수 없습니다.";
-          } else if (jqXHR.status === 500) {
-            errorMessage += "내부 서버 오류가 발생했습니다.";
-          } else {
-            errorMessage += "알 수 없는 오류가 발생했습니다.";
-          }
-          alert(errorMessage);
-        }
-      });
-    });
-
-  </script>
-<%--  회원가입--%>
-
-  <script type="text/javascript">
-
-    $("#mb_join_btn").on("click", function() {
+    // 정규식 검사 함수
+    function validateInput() {
       var nameRegex = /^[가-힣]{2,}$/; // 한글 이름 정규식
       var hpRegex = /^\d+$/; // 휴대폰 번호 숫자 정규식
       var idRegex = /^[a-zA-Z0-9]{4,12}$/; // 아이디 정규식
@@ -1017,85 +979,162 @@
       // 초기화
       $(".p_msg").hide();
 
+      var isValid = true;
+
+      // 이름 검사
       if ($("#mb_name").val() == "") {
         $("#mb_name_msg").text("이름을 입력해주세요.").show();
         $("#mb_name").focus();
-        return false;
+        isValid = false;
       } else if (!nameRegex.test($("#mb_name").val())) {
         $("#mb_name_msg").text("올바른 이름 형식이 아닙니다.").show();
         $("#mb_name").focus();
-        return false;
-      } else if ($("#mb_hp").val() == "") {
+        isValid = false;
+      }
+
+      // 휴대폰번호 검사
+      if ($("#mb_hp").val() == "") {
         $("#mb_hp_msg").text("휴대폰번호를 입력해주세요.").show();
         $("#mb_hp").focus();
-        return false;
+        isValid = false;
       } else if (!hpRegex.test($("#mb_hp").val())) {
         $("#mb_hp_msg").text("휴대폰번호는 숫자만 입력해주세요.").show();
         $("#mb_hp").focus();
-        return false;
-      } else if ($("#mb_id").val() == "") {
+        isValid = false;
+      }
+
+      // 아이디 검사
+      var id = $("#mb_id").val();
+      if (id == "") {
         $("#mb_id_msg").text("아이디를 입력해주세요.").show();
         $("#mb_id").focus();
-        return false;
-      } else if (!idRegex.test($("#mb_id").val())) {
+        isValid = false;
+      } else if (!idRegex.test(id)) {
         $("#mb_id_msg").text("영문 대소문자와 숫자로만 이루어진 4~12자로 입력해 주세요.").show();
         $("#mb_id").focus();
-        return false;
-      } else if ($("#mb_nick").val() == "") {
+        isValid = false;
+      }
+
+      // 중복 체크와 정규식 검사
+      if (isValid) {
+        $.ajax({
+          async: false,
+          cache: false,
+          type: "POST",
+          url: "/checkIdProc",
+          data: { "id": id },
+          success: function(response) {
+            if (response.rt == "available") {
+              if (!idRegex.test(id)) {
+                $("#mb_id_msg").text("영문 대소문자와 숫자로만 이루어진 4~12자로 입력해 주세요.").show();
+                $("#mb_id").focus();
+                isValid = false;
+              }
+            } else {
+              $("#mb_id_msg").text("이미 사용중인 아이디입니다.").show();
+              isValid = false;
+            }
+          },
+          error: function(jqXHR, textStatus, errorThrown) {
+            var errorMessage = "에러 발생~~";
+            if (jqXHR.status === 0) {
+              errorMessage += "서버 연결이 종료되었습니다.";
+            } else if (jqXHR.status === 404) {
+              errorMessage += "요청된 URL을 찾을 수 없습니다.";
+            } else if (jqXHR.status === 500) {
+              errorMessage += "내부 서버 오류가 발생했습니다.";
+            } else {
+              errorMessage += "알 수 없는 오류가 발생했습니다.";
+            }
+            alert(errorMessage);
+          }
+        });
+      }
+
+      // 닉네임 검사
+      if ($("#mb_nick").val() == "") {
         $("#mb_nick_msg").text("닉네임을 입력해주세요.").show();
         $("#mb_nick").focus();
-        return false;
+        isValid = false;
       } else if (!nickRegex.test($("#mb_nick").val())) {
         $("#mb_nick_msg").text("영문 대소문자와 숫자로만 이루어진 2~12자로 입력해 주세요.").show();
         $("#mb_nick").focus();
-        return false;
-      } else if ($("#mb_password").val() == "") {
+        isValid = false;
+      }
+
+      // 비밀번호 검사
+      if ($("#mb_password").val() == "") {
         $("#mb_password_msg").text("비밀번호를 입력해주세요.").show();
         $("#mb_password").focus();
-        return false;
+        isValid = false;
       } else if (!passwordRegex.test($("#mb_password").val())) {
-        $("#mb_password_msg").text("영문 대소문자와 숫자 또는 특수문자 조합 6~16자리로 입력해 주세요.").show();
+        $("#mb_password_msg").text("영문 대소문자와 숫자 또는 특수문자 조합 6~12자리로 입력해 주세요.").show();
         $("#mb_password").focus();
-        return false;
-      } else if ($("#mb_password_confirm").val() == "") {
+        isValid = false;
+      }
+
+      // 비밀번호 확인 검사
+      if ($("#mb_password_confirm").val() == "") {
         $("#mb_password_confirm_msg").text("비밀번호 확인을 입력해 주세요.").show();
         $("#mb_password_confirm").focus();
-        return false;
+        isValid = false;
       } else if ($("#mb_password").val() != $("#mb_password_confirm").val()) {
         $("#mb_password_confirm_msg").text("비밀번호가 일치하지 않습니다.").show();
         $("#mb_password_confirm").focus();
-        return false;
-      } else if ($("#mb_zipcode").val() == "") {
+        isValid = false;
+      }
+
+      // 우편번호 검사
+      if ($("#mb_zipcode").val() == "") {
         $("#mb_zipcode_msg").text("우편번호찾기를 눌러주세요.").show();
         $("#mb_zipcode").focus();
-        return false;
+        isValid = false;
       } else if (!zipcodeRegex.test($("#mb_zipcode").val())) {
         $("#mb_zipcode_msg").text("올바른 우편번호 형식이 아닙니다.").show();
         $("#mb_zipcode").focus();
-        return false;
-      } else if ($("#mb_addr1").val() == "") {
+        isValid = false;
+      }
+
+      // 주소 검사
+      if ($("#mb_addr1").val() == "") {
         $("#mb_addr1_msg").text("주소를 입력해주세요.").show();
         $("#mb_addr1").focus();
-        return false;
-      } else if ($("#mb_addr2").val() == "") {
+        isValid = false;
+      }
+
+      // 상세주소 검사
+      if ($("#mb_addr2").val() == "") {
         $("#mb_addr2_msg").text("상세주소를 입력해주세요.").show();
         $("#mb_addr2").focus();
-        return false;
-      } else if ($("#mb_sms").is(":checked") == false) {
+        isValid = false;
+      }
+
+      // SMS 수신여부 검사
+      if ($("#mb_sms").is(":checked") == false) {
         $("#mb_sms_msg").text("SMS 수신여부를 선택해주세요.").show();
         $("#mb_sms").focus();
-        return false;
-      } else {
+        isValid = false;
+      }
+
+      return isValid;
+    }
+
+    // 회원가입 처리
+    $("#mb_join_btn").on("click", function() {
+      var isValid = validateInput(); // 정규식 검사 수행
+
+      if (isValid) {
         alert("회원가입이 완료되었습니다.");
         $("form[name=form]").attr("action", "/adminMemberIns").submit();
       }
     });
 
-
-
-
   </script>
-  <script type="text/javascript">
+
+
+
+
+    <script type="text/javascript">
               $(document).on("click", ".tb_mmu", function () {
                 var mb_type = $(this).data("mb_type");
                 $("#mb_type").val(mb_type);
