@@ -965,6 +965,8 @@
       });
     });
   </script>
+
+<%--  회원가입--%>
   <script type="text/javascript">
 
     // 정규식 검사 함수
