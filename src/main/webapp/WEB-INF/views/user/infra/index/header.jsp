@@ -1,5 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="rb" uri="http://www.springframework.org/tags" %>
 <!-- 구글 폰트 -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,15 +43,35 @@
         <a href="#">즐겨찾기</a>
       </div>
       <div id="fnb_right">
-        <a href="login">로그인</a>
-        <a href="join">회원가입</a>
+        <c:choose>
+          <c:when test="${not empty id}">
+            <!-- 로그인된 상태 -->
+            <a href="#" class="">
+              <span class="user-profile-name"><c:out value="${id}" /></span>
+            </a>
+            <a href="javaScript:void();" >
+                <button type="button" id="btnLogout" class=""><span>로그아웃</span></button>
+            </a>
+
+          </c:when>
+          <c:otherwise>
+            <!-- 로그인되지 않은 상태 -->
+            <a href="login">
+              <span>로그인</span>
+            </a>
+            <a href="join">
+              <span>회원가입</span>
+            </a>
+          </c:otherwise>
+        </c:choose>
         <a href="#">고객센터 <i class="fa-solid fa-caret-down"></i></a>
         <a href="#">마이페이지 <i class="fa-solid fa-caret-down"></i></a>
-        <a href="basket.html"
-          ><i class="fa-regular fa-cart-shopping"></i> 장바구니
-          <div id="cart_count">0</div></a
-        >
+        <a href="basket.html">
+          <i class="fa-regular fa-cart-shopping"></i> 장바구니
+          <div id="cart_count">0</div>
+        </a>
       </div>
+
     </div>
   </div>
   <div id="header_main">
@@ -194,6 +218,25 @@
         $("#category").removeClass("border_active");
       });
     });
+  </script>
+  <script>
+
+    $("#btnLogout").on("click", function(){
+      $.ajax({
+        async: true,
+        cache: false,
+        type: "post",
+        url: "/logoutProc",
+        data: { },
+        success: function(response){
+          location.href = "/dodomall"
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+          alert("ajaxUpdate " + jqXHR.textStatus + " : " + jqXHR.errorThrown);
+        }
+      });
+    });
+
   </script>
   
 </header>

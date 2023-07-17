@@ -9,17 +9,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="로그4J 설정완료 로그인 설정완료 로그아웃 구현필요">
+    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="회원가입 설정 완벽">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/effa3b8e-8f86-4263-aead-4e928f6d291a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/effa3b8e-8f86-4263-aead-4e928f6d291a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/2/22b8d027f7e895c8a2835e887730328ed39179a7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d933b0a5ea5c98829ef00dd91f09585bfbab7983" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/f/efdf44fb9910552015bf52938e5e3da633d40e31" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/2/22b8d027f7e895c8a2835e887730328ed39179a7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/9/d933b0a5ea5c98829ef00dd91f09585bfbab7983" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/f/efdf44fb9910552015bf52938e5e3da633d40e31" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/join.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/join.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/web/web/WEB-INF/web.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -36,6 +51,9 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="JspContextManager">
+    <jsp-to-context jsp-file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/header.jsp" context-file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/join.jsp" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -62,35 +80,35 @@
     <option name="autoscrollFromSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/andohyeong/IdeaProjects/prj_spring/src/main/webapp/WEB-INF/views/admin/infra/codegroup/dodomall&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.5264368&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;3ad503640ba1ec29e8f1d4e4707c8a39&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "false",
+    "WebServerToolWindowFactoryState": "false",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/andohyeong/IdeaProjects/prj_spring/src/main/webapp/WEB-INF/views/admin/infra/codegroup/dodomall",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "모듈",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.5264368",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "project.propCompiler",
+    "spring.configuration.checksum": "3ad503640ba1ec29e8f1d4e4707c8a39",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/codegroup/dodomall" />
@@ -108,12 +126,17 @@
       <command value="mvn clean install" />
     </option>
   </component>
+  <component name="RunDashboard">
+    <option name="excludedTypes">
+      <set>
+        <option value="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" />
+      </set>
+    </option>
+  </component>
   <component name="RunManager">
-    <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.76" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="11">
-      <option name="COMMON_VM_ARGUMENTS" value="-Dorg.slf4j.simpleLogger.defaultLogLevel=debug " />
+    <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.76" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <deployment>
         <artifact name="prj_spring:war exploded">
           <settings>
@@ -122,7 +145,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="9a894ab3-7d82-4ecf-9f57-f02c7cdc6b7e" />
+        <option name="BASE_DIRECTORY_NAME" value="ca6a01b3-30e3-4cd6-96e8-ac7c4e916f72" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -130,7 +153,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="51527" />
+        <option name="DEBUG_PORT" value="53229" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -242,7 +265,8 @@
       <workItem from="1689121066834" duration="11897000" />
       <workItem from="1689207667907" duration="16019000" />
       <workItem from="1689293606713" duration="3622000" />
-      <workItem from="1689298451435" duration="5082000" />
+      <workItem from="1689298451435" duration="5223000" />
+      <workItem from="1689553094005" duration="8518000" />
     </task>
     <task id="LOCAL-00003" summary="0704">
       <option name="closed" value="true" />
@@ -380,7 +404,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689295613002</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="회원가입 설정 완벽">
+      <option name="closed" value="true" />
+      <created>1689310542556</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1689310542556</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,7 +449,8 @@
     <MESSAGE value="로그인 벨리데이션 아작스시작전" />
     <MESSAGE value="로그인기능 아작스이용해서 연동완료" />
     <MESSAGE value="로그4J 설정완료 로그인 설정완료 로그아웃 구현필요" />
-    <option name="LAST_COMMIT_MESSAGE" value="로그4J 설정완료 로그인 설정완료 로그아웃 구현필요" />
+    <MESSAGE value="회원가입 설정 완벽" />
+    <option name="LAST_COMMIT_MESSAGE" value="회원가입 설정 완벽" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

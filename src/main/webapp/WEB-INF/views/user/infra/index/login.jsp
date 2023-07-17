@@ -385,7 +385,7 @@
                                 type="text"
                                 name="id"
                                 id="mb_id"
-                                value=""
+                                value="admin"
                                 class="form-control login_input"
                                 tabindex="1"
                                 placeholder="아이디 또는 휴대폰번호"
@@ -395,8 +395,8 @@
                                 type="password"
                                 name="password"
                                 id="mb_password"
-                                value=""
-                                autocomplete="off"
+                                value="12345a"
+                                autocomplete="on"
                                 class="form-control login_input"
                                 tabindex="2"
                                 placeholder="비밀번호"
@@ -647,11 +647,10 @@
             /* ,data : $("#formLogin").serialize() */
             ,data : { "id" : $("#mb_id").val(), "password" : $("#mb_password").val()}
             ,success: function(response) {
-                alert("조같넹")
                 if(response.rt == "success") {
                     location.href = "/dodomall";
                     } else {
-                    alert("회원없음");
+                    alert("아이디 또는 비밀번호를 잘못 입력하셨습니다");
                 }
             }
             ,error : function(jqXHR, textStatus, errorThrown){

@@ -85,21 +85,7 @@ public class MemberController {
         return "redirect:/adminMemberList";
     }
 
-    @ResponseBody
-    @RequestMapping("/selectOneLogin")
-    public Map<String, Object> selectOneLogin(MemberVo vo) {
-        Map<String, Object> returnMap = new HashMap<String, Object>();
 
-        Member rtMember = service.selectOneLogin(vo);
-
-        if(rtMember != null) {
-            returnMap.put("rtMember", rtMember);
-            returnMap.put("rt", "success");
-        } else {
-            returnMap.put("rt", "fail");
-        }
-        return returnMap;
-    }
 
     @ResponseBody
     @RequestMapping("/checkIdProc")
@@ -117,7 +103,27 @@ public class MemberController {
     }
 
     @ResponseBody
-    @RequestMapping("/logoutUsrProc")
+    @RequestMapping("/selectOneLogin")
+    public Map<String, Object> selectOneLogin(MemberVo vo, HttpSession httpSession) {
+        Map<String, Object> returnMap = new HashMap<String, Object>();
+
+        Member rtMember = service.selectOneLogin(vo);
+
+        if(rtMember != null) {
+            // 로그인 성공 시 세션에 사용자 정보 저장
+            httpSession.setMaxInactiveInterval(60*60); //60min
+            httpSession.setAttribute("id", vo.getId());
+
+            returnMap.put("rtMember", rtMember);
+            returnMap.put("rt", "success");
+        } else {
+            returnMap.put("rt", "fail");
+        }
+        return returnMap;
+    }
+
+    @ResponseBody
+    @RequestMapping("/logoutProc")
     public Map<String, Object> logoutUsrFrom(HttpSession httpSession){
         Map<String,Object> returnMap = new HashMap<String, Object>();
         //

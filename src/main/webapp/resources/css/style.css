@@ -26,6 +26,12 @@ header {
   height: 250px;
 }
 
+#btnLogout{
+  background-color: transparent!important;
+  font-weight: lighter!important;
+  color: #6b6b6b!important;
+}
+
 #fnb {
   width: 100%;
   height: 41px;
