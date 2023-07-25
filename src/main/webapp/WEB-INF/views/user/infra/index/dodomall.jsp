@@ -145,7 +145,7 @@
     <c:forEach items="${list}" var="list" varStatus="status">
             <li>
               <div class="border">
-                <a href="detail_1.html">
+                <a href="/detail?seq=<c:out value="${list.seq}"/>">
                   <div class="thumb">
                     <img
                             src="<c:out value="${list.itemImageUrl}"/>"

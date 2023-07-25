@@ -21,4 +21,26 @@
     <!-- 프로젝트 패키지이름 확인 -->
     <context:component-scan base-package="com.mycompany.app" />
 
+
+    <!-- session interceptor s 2022.03.13 for logincheck -->
+
+        <interceptors>
+            <interceptor>
+                <mapping path="/**"/>
+                <exclude-mapping path="/resources/**" />
+                <exclude-mapping path="/" />
+                <exclude-mapping path="/imited_price" />
+                <exclude-mapping path="/join" />
+                <exclude-mapping path="/header" />
+                <exclude-mapping path="/footer" />
+                <exclude-mapping path="/dodomall" />
+                <exclude-mapping path="/login" />
+                <exclude-mapping path="/selectOneLogin" />
+                <exclude-mapping path="/detail" />
+
+                <beans:bean id="checkLoginSessionInterception" class="com.mycompany.app.common.interceptor.CheckLoginSessionInterception"/>
+            </interceptor>
+        </interceptors>
+
+<!--     session interceptor e 2022.03.13 for logincheck-->
 </beans:beans>

@@ -44,6 +44,20 @@ public class DodomallController {
         return "user/infra/index/dodomall";
 }
 
+
+
+
+
+    @RequestMapping("/detail")
+    public String detail(DodomallVo vo, Model model) {
+
+        Dodomall Dodomall = service.selectOne(vo);
+
+        model.addAttribute("item", Dodomall);
+
+        return "user/infra/index/detail";
+    }
+
     @RequestMapping("/adminDodomallView")
     public String adminDodomallView(DodomallVo vo, Model model) {
 
@@ -125,4 +139,5 @@ public class DodomallController {
 
         return "redirect:/adminDodomallList";
     }
+
 }
