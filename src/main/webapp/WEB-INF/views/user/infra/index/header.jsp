@@ -53,6 +53,13 @@
                 <button type="button" id="btnLogout" class=""><span>로그아웃</span></button>
             </a>
 
+            <!-- 관리자 페이지 버튼 -->
+            <c:if test="${id eq 'admin'}">
+              <a href="/adminList">
+                <span>관리자 페이지</span>
+              </a>
+            </c:if>
+
           </c:when>
           <c:otherwise>
             <!-- 로그인되지 않은 상태 -->

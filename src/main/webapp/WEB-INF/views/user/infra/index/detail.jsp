@@ -189,7 +189,7 @@
                 width: 15px;
                 height: 18px;
                 margin: 0px 4px 0 0;
-                background: url(img/sns_gong.png) no-repeat;
+                background: url(../../../../../resources/img/sns_gong.png) no-repeat;
                 vertical-align: top;
             }
 
@@ -1091,24 +1091,24 @@
                         <!-- //공유하기 팝업 -->
                     </div>
                     <div class="pro_title">
-                <span class="itdes">
-                   <c:out value="${item.itemDescription}"/>
-                </span>
-                        <span class="itname"><c:out value="${item.itemName}"></c:out></span>
+        <span class="itdes">
+            <c:out value="${item.itemDescription}" />
+        </span>
+                        <span class="itname"><c:out value="${item.itemName}" /></span>
                     </div>
                     <div class="p_info">
                         <h3 class="tit_align_left">판매가격</h3>
                         <div class="ct">
-                            <p class="price1"><c:out value="${item.itemPrice1}"/></p>
+                            <p class="price1"><c:out value="${item.itemPrice1}" /></p>
                             <br />
-                            <p class="price2"><c:out value="${item.itemPrice2}"/><span class="won">원</span></p>
-                            <p class="itdisco"><c:out value="${item.itemDiscountRate}"/><span>%</span></p>
+                            <p class="price2"><c:out value="${item.itemPrice2}" /><span class="won">원</span></p>
+                            <p class="itdisco"><c:out value="${item.itemDiscountRate}" /><span>%</span></p>
                         </div>
                     </div>
                     <div class="p_info">
                         <h3 class="tit_align_left">배송정보</h3>
                         <div class="ct">
-                            <p class="del"><c:out value="${item.itemDeliveryStatus}"/></p>
+                            <p class="del"><c:out value="${item.itemDeliveryStatus}" /></p>
                         </div>
                     </div>
 
@@ -1119,88 +1119,117 @@
                         </div>
                     </div>
 
-                    <div></div>
+                    <div style="margin: 20px 0px;">
+                        <div class="opt_popup">
+                            <form name="item_frm" id="item_frm" method="post" action="cart.php">
+                                <input type="hidden" name="it_id" value="1669277971">
+                                <input type="hidden" name="mode" value="insert">
+                                <input type="hidden" name="move" id="move">
+                                <div class="opt_cal_list" id="it_id_1669277971">
+                                    <div class="append_box append_box616575">
+                                        <input type="hidden" name="opt_id[]" class="opt_id basic" value="616575">
+                                        <p class="append_opt_name">상품명</p>
+                                        <p class="append_count">
+                                            <a class="count_minus"></a>
+                                            <input type="number" pattern="[0-9]*" name="opt_cnt[]" value="1" class="opt_cnt"
+                                                   data-it_buy_qty_min="1" data-it_buy_qty_max="9999999" data-opt_id="616575"
+                                                   data-price="<c:out value="${item.itemPrice2}" />" data-stock="19" data-it_opt_cnt="0" data-it_gp_cnt="1"
+                                                   data-it_buy_qty_type="1" data-it_stock_type="2" data-it_id="1669277971">
+                                            <a class="count_plus"></a>
+                                        </p>
+                                        <p class="append_price_del">
+                                            <span class="append_price"><b>원</b></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </form>
+                            <div></div>
+                            <div class="opt_cal_total">
+                                <div class="total_price">
+                                    <div class="tit">총구매금액</div>
+                                    <div class="t_price">
+                                        <span class="opt_cal_total_span"><c:out value="${item.itemPrice2}" /></span><span>원</span>
+                                    </div>
+                                </div>
+                            </div>
 
-<%--                    <div style="margin: 20px 0px">--%>
-<%--&lt;%&ndash;                        <div class="opt_popup">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                            <form&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                    name="item_frm"&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                    id="item_frm"&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                    method="post"&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                    action="cart.php"&ndash;%&gt;--%>
-<%--&lt;%&ndash;                            >&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                <input type="hidden" name="it_id" value="1669277971" />&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                <input type="hidden" name="mode" value="insert" />&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                <input type="hidden" name="move" id="move" />&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                <div class="opt_cal_list" id="it_id_1669277971">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                    <div class="append_box append_box616575">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                        <input&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                                type="hidden"&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                                name="opt_id[]"&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                                class="opt_id basic"&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                                value="616575"&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                        />&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                        <p class="append_opt_name">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                            초이스등급 1855 소찜갈비 1kg(면)&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                        </p>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                        <p class="append_count">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                            <a class="count_minus"></a>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                            <input&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                                    type="number"&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                                    pattern="[0-9]*"&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                                    name="opt_cnt[]"&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                                    value="1"&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                                    class="opt_cnt"&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                                    data-it_buy_qty_min="1"&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                                    data-it_buy_qty_max="9999999"&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                                    data-opt_id="616575"&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                                    data-price="1500"&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                                    data-stock="19"&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                                    data-it_opt_cnt="0"&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                                    data-it_gp_cnt="1"&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                                    data-it_buy_qty_type="1"&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                                    data-it_stock_type="2"&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                                    data-it_id="1669277971"&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                            />&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                            <a class="count_plus"></a>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                        </p>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                        <p class="append_price_del">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                            <span class="append_price">1,500<b>원</b></span>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                        </p>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                    </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                            </form>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                        </div>&ndash;%&gt;--%>
-<%--                    </div>--%>
-
-                    <div class="opt_cal_total">
-                        <div class="total_price">
-                            <div class="tit">총구매금액</div>
-                            <div class="t_price">
-                                <span class="opt_cal_total_span">1,500</span><span>원</span>
+                            <div class="button_wrap">
+                                <a class="item_btn btn_zzim" data-it_id="1669277971">
+                                    <span class="txt">0</span>
+                                </a>
+                                <div class="opt_cart_order_btn on">
+                                    <ul>
+                                        <li>
+                                            <a class="item_btn item_btn_cart opt_cart_btn">장바구니</a>
+                                        </li>
+                                        <li>
+                                            <a class="item_btn item_btn_buy opt_order_btn">구매하기</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="button_wrap">
-                        <a class="item_btn btn_zzim" data-it_id="1669277971"
-                        ><span class="txt">0</span></a
-                        >
-                        <div class="opt_cart_order_btn on">
-                            <ul>
-                                <li>
-                                    <a class="item_btn item_btn_cart opt_cart_btn"
-                                    >장바구니</a
-                                    >
-                                </li>
-                                <li>
-                                    <a class="item_btn item_btn_buy opt_order_btn"
-                                    >구매하기</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    <!-- Add your JavaScript code here -->
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <script>
+                        // 페이지 로드 후 실행할 함수 호출
+                        $(document).ready(function () {
+                            cal_total();
+                        });
+
+                        // 총구매금액계산
+                        function cal_total() {
+                            var opt_cal_total_span = 0;
+                            var ea_price = 0;
+                            var itemPrice2 = parseInt("<c:out value='${item.itemPrice2}' />");
+
+                            $(".opt_cal_list:eq(0) .opt_cnt").each(function () {
+                                ea_price = parseInt($(this).data("price")) * parseInt($(this).val());
+                                opt_cal_total_span += ea_price;
+                                $(".append_box" + $(this).data("opt_id") + " .append_price").html(number_format(ea_price) + "<b>원</b>");
+                            });
+                            $(".opt_cal_total_span").html(number_format(opt_cal_total_span + itemPrice2));
+                            if (!$(".append_box").length) {
+                                $(".opt_cal_total").addClass("hide");
+                                $(".opt_cart_order_btn").removeClass("on");
+                            } else {
+                                $(".opt_cal_total").removeClass("hide");
+                                $(".opt_cart_order_btn").addClass("on");
+                                $(".opt_cal_list").show();
+                            }
+                        }
+
+                        // 숫자를 천 단위로 끊어주는 함수
+                        function number_format(num) {
+                            return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                        }
+
+                        // // + 버튼 클릭 시 수량 증가
+                        // $(".count_plus").on("click", function () {
+                        //     var inputElement = $(this).siblings("input.opt_cnt");
+                        //     var currentValue = parseInt(inputElement.val());
+                        //     var maxQuantity = parseInt(inputElement.attr("data-it_buy_qty_max"));
+                        //     if (currentValue < maxQuantity) {
+                        //         inputElement.val(currentValue + 1);
+                        //         cal_total();
+                        //     }
+                        // });
+                        //
+                        // // - 버튼 클릭 시 수량 감소
+                        // $(".count_minus").on("click", function () {
+                        //     var inputElement = $(this).siblings("input.opt_cnt");
+                        //     var currentValue = parseInt(inputElement.val());
+                        //     var minQuantity = parseInt(inputElement.attr("data-it_buy_qty_min"));
+                        //     if (currentValue > minQuantity) {
+                        //         inputElement.val(currentValue - 1);
+                        //         cal_total();
+                        //     }
+                        // });
+                    </script>
+
+
 
                     <br />
                 </div>
@@ -1226,8 +1255,8 @@
 
         <div class="deals_container">
             <div id="tab1" class="tab-cont">
-                <p>abc</p>
-                <p>def</p>
+                <p><c:out value="${item.itemDescription}"/></p>
+
             </div>
 
             <div id="tab2" class="tab-cont pa30">
@@ -2532,7 +2561,7 @@
                             <div class="total_price">
                                 <div class="tit">총구매금액</div>
                                 <div class="t_price">
-                      <span class="opt_cal_total_span">1,500</span
+                      <span class="opt_cal_total_span"><c:out value="${item.itemPrice2}"/></span
                       ><span>원</span>
                                 </div>
                             </div>
@@ -3127,6 +3156,8 @@
 <%--            </div>--%>
 <%--        </script>--%>
 
+
+
         <style>
             .opt_popup {
                 box-sizing: border-box;
@@ -3162,19 +3193,20 @@
                 vertical-align: top;
                 appearance: none;
                 border: none;
+                font-size: 11px;
             }
             .append_count .opt_cnt:focus {
                 outline: none;
             }
-            /*.append_count .count_plus {*/
-            /*    display: inline-block;*/
-            /*    cursor: pointer;*/
-            /*    width: 24px;*/
-            /*    height: 24px;*/
-            /*    background-color: #fff;*/
-            /*    background: url(img/pl_mi.png) no-repeat;*/
-            /*    background-position: -24px -0px;*/
-            /*}*/
+            .append_count .count_plus {
+                display: inline-block;
+                cursor: pointer;
+                width: 24px;
+                height: 24px;
+                background-color: #fff;
+                background: url(../../../../../resources/img/pl_mi.png) no-repeat;
+                background-position: -24px -0px;
+            }
             .append_count .count_plus:after {
                 content: "+";
                 display: block;
@@ -3182,15 +3214,15 @@
                 font-size: 12px;
                 color: #fff;
             }
-            /*.append_count .count_minus {*/
-            /*    display: inline-block;*/
-            /*    cursor: pointer;*/
-            /*    width: 24px;*/
-            /*    height: 24px;*/
-            /*    background-color: #fff;*/
-            /*    background: url(img/pl_mi.png) no-repeat;*/
-            /*    background-position: -0px -0px;*/
-            /*}*/
+            .append_count .count_minus {
+                display: inline-block;
+                cursor: pointer;
+                width: 24px;
+                height: 24px;
+                background-color: #fff;
+                background: url(../../../../../resources/img/pl_mi.png) no-repeat;
+                background-position: -0px -0px;
+            }
             .append_count .count_minus:after {
                 content: "-";
                 display: block;

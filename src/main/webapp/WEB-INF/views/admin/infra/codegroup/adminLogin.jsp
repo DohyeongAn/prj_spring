@@ -39,10 +39,10 @@
             <form>
               <h1>Admin Login</h1>
               <div>
-                <input type="text" class="form-control" placeholder="Username" required="" />
+                <input type="text" class="form-control" placeholder="Username" required="" value="admin"/>
               </div>
               <div>
-                <input type="password" class="form-control" placeholder="Password" required="" />
+                <input type="password" class="form-control" placeholder="Password" required="" value="12345a"/>
               </div>
               <div>
                 <a class="btn btn-default submit" href="adminList">Log in</a>

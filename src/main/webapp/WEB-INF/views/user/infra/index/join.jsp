@@ -100,8 +100,8 @@
           #zipcode_cp_btn {
             cursor: pointer;
             position: absolute;
-            right: -12px;
-            top: 8px;
+            right: 9px;
+            top: 0px;
             font-size: 14px;
             font-weight: 400;
             height: 43px;
