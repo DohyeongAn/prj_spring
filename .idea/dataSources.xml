@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="dodo" uuid="effa3b8e-8f86-4263-aead-4e928f6d291a">
+    <data-source source="LOCAL" name="dodomall" uuid="21450afa-e05a-42e2-bb01-c31796c93d35">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
