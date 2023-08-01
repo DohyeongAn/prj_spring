@@ -37,6 +37,7 @@
                 <exclude-mapping path="/login" />
                 <exclude-mapping path="/selectOneLogin" />
                 <exclude-mapping path="/detail" />
+                <exclude-mapping path="/publicCorona1List" />
 
                 <beans:bean id="checkLoginSessionInterception" class="com.mycompany.app.common.interceptor.CheckLoginSessionInterception"/>
             </interceptor>
