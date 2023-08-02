@@ -25,6 +25,7 @@
 </section>
 <div id="project">
     <h1>indivisual project</h1>
+    <p> 개인프로젝트 </p>
 </div>
 
 <section id="section2" class="section">
