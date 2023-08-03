@@ -1,6 +1,7 @@
 package com.mycompany.app.infra.codegroup;
 
 import com.mycompany.app.infra.common.base.BaseVo;
+import lombok.Getter;
 
 public class CodeGroupVo extends BaseVo {
 
@@ -8,6 +9,10 @@ public class CodeGroupVo extends BaseVo {
     private String shKeyword;
     private String seq;
     private Integer delNy;
+    private int totalRows;
+    private String ifmmSeq;
+    private String groupName;
+
     //	-----
     public Integer getShOption() {
         return shOption;
@@ -36,4 +41,21 @@ public class CodeGroupVo extends BaseVo {
         this.delNy = delNy;
     }
 
+    @Override
+    public int getTotalRows() {
+        return totalRows;
+    }
+
+    @Override
+    public void setTotalRows(int totalRows) {
+        this.totalRows = totalRows;
+    }
+
+    public void setIfmmSeq(String setifmmSeq) {
+        this.ifmmSeq = ifmmSeq;
+    }
+
+    public void setGroupName(String groupName) {
+        this.groupName = groupName;
+    }
 }

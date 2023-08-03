@@ -3,8 +3,6 @@ i
 9src/main/webapp/WEB-INF/views/user/infra/index/footer.jsp,9/1/91c896256ca726e2e8144ac8c32c7b132135ef59
 T
 $src/main/webapp/resources/js/shop.js,5/6/5604c50f69a824b6b28cd8980485763d43348f42
-W
-'src/main/webapp/WEB-INF/views/index.jsp,3/0/305b3bb8194d08e1e32b17ac5f1d53c1cf0118c1
 a
 1src/main/webapp/WEB-INF/views/include/sidebar.jsp,0/b/0ba3d5c0d7c4aad89fe6f8ce1b795c20abef10eb
 n
@@ -99,3 +97,5 @@ x
 Hsrc/main/webapp/WEB-INF/views/admin/infra/dodomall/adminDodomallForm.jsp,0/c/0c83c16bbd12483b62d5c1424cac72009b4980ce
 7
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+W
+'src/main/webapp/WEB-INF/views/index.jsp,3/0/305b3bb8194d08e1e32b17ac5f1d53c1cf0118c1

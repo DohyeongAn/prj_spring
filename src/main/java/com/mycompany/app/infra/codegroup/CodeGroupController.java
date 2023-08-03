@@ -1,10 +1,14 @@
 package com.mycompany.app.infra.codegroup;
 
+import com.mycompany.app.infra.common.base.BaseController;
+import com.mycompany.app.infra.member.Member;
+import com.mycompany.app.infra.member.MemberVo;
+import com.mycompany.app.infra.member.MemberServiceImpl;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -65,6 +69,7 @@ public class CodeGroupController {
 
         return "redirect:/adminList";
     }
+
     @RequestMapping("/adminIns")
     public String adminIns(CodeGroup dto) {
         System.out.println("adminIns");
@@ -80,5 +85,46 @@ public class CodeGroupController {
         return "redirect:/adminList";
     }
 
+    @RestController
+    @RequestMapping("/rest/member")
+    public class MemberRestController extends BaseController {
+
+        @Autowired
+        MemberServiceImpl service;
+
+        @RequestMapping(value = "", method = RequestMethod.GET)
+//	@GetMapping("")
+        public List<Member> selectList(MemberVo vo) throws Exception {
+            List<Member> list = service.selectList(vo);
+            return list;
+        }
+
+
+        @RequestMapping(value = "/{seq}", method = RequestMethod.GET)
+//	@GetMapping("/{seq}")
+        public Member selectOne(@PathVariable String seq, MemberVo vo) throws Exception {
+            vo.setIfmmSeq(seq);
+            Member item = service.selectOne(vo);
+            return item;
+        }
+
+
+        @RequestMapping(value = "", method = RequestMethod.POST)
+//	@PostMapping("")
+        public String insert(@RequestBody Member dto) throws Exception {
+            service.insert(dto);
+            return dto.getIfmmSeq();
+        }
+
+
+        @RequestMapping(value = "/{seq}", method = RequestMethod.PUT)
+//	@PatchMapping("/{seq}")
+//	@PutMapping("/{seq}")
+        public void update(@PathVariable String seq, @RequestBody Member dto) throws Exception {
+            dto.setIfmmSeq(seq);
+            service.update(dto);
+        }
+
+    }
 }
 

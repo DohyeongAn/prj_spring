@@ -15,6 +15,7 @@ public class Member {
     private Integer smsCheck;
     private String createdAt;
     private Integer delNy;
+    private String ifmmSeq;
 
     //    -----
 
@@ -117,4 +118,11 @@ public class Member {
         this.delNy = delNy;
     }
 
+    public String getIfmmSeq() {
+        return ifmmSeq;
+    }
+
+    public void setIfmmSeq(String ifmmSeq) {
+        this.ifmmSeq = ifmmSeq;
+    }
 }

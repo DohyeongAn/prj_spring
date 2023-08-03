@@ -9,14 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="0731 dateil 자동 옵션 구현">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/index/Home.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/publicCorona1List.jsp" afterDir="false" />
+    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="0802 m2 맥 변경 후 적용푸시">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/index/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/index/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/servlet-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/MemberVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/MemberVo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +43,9 @@
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///prj_spring-effective-pom.xml" root0="SKIP_INSPECTION" />
+  </component>
   <component name="JspContextManager">
     <jsp-to-context jsp-file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/header.jsp" context-file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/join.jsp" />
   </component>
@@ -54,6 +58,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -77,16 +84,16 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/andohyeong/IdeaProjects/prj_spring/src/main/webapp/WEB-INF/views/admin/infra/codegroup/dodomall&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/andohyeong/IdeaProjects/prj_spring&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;아티팩트&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.5264368&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.other&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;f299b778dc0a0ce23b6d5345f8f2b08a&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -121,7 +128,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.76" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.76" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="11">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
@@ -272,7 +279,35 @@
       <workItem from="1690781737730" duration="1490000" />
       <workItem from="1690850048541" duration="4178000" />
       <workItem from="1690867395708" duration="419000" />
-      <workItem from="1690867826032" duration="3597000" />
+      <workItem from="1690867826032" duration="4283000" />
+      <workItem from="1690891696417" duration="213000" />
+      <workItem from="1690891923231" duration="30000" />
+      <workItem from="1690891966639" duration="48000" />
+      <workItem from="1690892801807" duration="910000" />
+      <workItem from="1690904700192" duration="9000" />
+      <workItem from="1690904711533" duration="1000" />
+      <workItem from="1690904714892" duration="1000" />
+      <workItem from="1690904835251" duration="42000" />
+      <workItem from="1690905048715" duration="366000" />
+      <workItem from="1690905505024" duration="507000" />
+      <workItem from="1690906036216" duration="97000" />
+      <workItem from="1690906141432" duration="1095000" />
+      <workItem from="1690907273466" duration="26000" />
+      <workItem from="1690907319841" duration="88000" />
+      <workItem from="1690907577261" duration="25000" />
+      <workItem from="1690907722844" duration="5000" />
+      <workItem from="1690907805056" duration="1000" />
+      <workItem from="1690907809776" duration="33000" />
+      <workItem from="1690907857774" duration="64000" />
+      <workItem from="1690908465140" duration="16000" />
+      <workItem from="1690935692223" duration="1303000" />
+      <workItem from="1690945547799" duration="2000" />
+      <workItem from="1690945684443" duration="1292000" />
+      <workItem from="1690953450786" duration="12000" />
+      <workItem from="1690954522892" duration="3891000" />
+      <workItem from="1690965490457" duration="332000" />
+      <workItem from="1690973819858" duration="465000" />
+      <workItem from="1691025321695" duration="5296000" />
     </task>
     <task id="LOCAL-00003" summary="0704">
       <option name="closed" value="true" />
@@ -458,7 +493,23 @@
       <option name="project" value="LOCAL" />
       <updated>1690780733045</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="0801 api 연습">
+      <option name="closed" value="true" />
+      <created>1690874353485</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1690874353485</updated>
+    </task>
+    <task id="LOCAL-00027" summary="0802 m2 맥 변경 후 적용푸시">
+      <option name="closed" value="true" />
+      <created>1690953416900</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1690953416900</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -500,7 +551,9 @@
     <MESSAGE value="0725 디테일 페이지 데이터 들어가긴함 하지만 수정필요" />
     <MESSAGE value="0726 dateil 자동 옵션 구현" />
     <MESSAGE value="0731 dateil 자동 옵션 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="0731 dateil 자동 옵션 구현" />
+    <MESSAGE value="0801 api 연습" />
+    <MESSAGE value="0802 m2 맥 변경 후 적용푸시" />
+    <option name="LAST_COMMIT_MESSAGE" value="0802 m2 맥 변경 후 적용푸시" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -509,6 +562,11 @@
           <url>file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/join.jsp</url>
           <line>969</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupVo.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

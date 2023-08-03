@@ -1,6 +1,4 @@
 
-W
-'src/main/webapp/WEB-INF/views/index.jsp,3/0/305b3bb8194d08e1e32b17ac5f1d53c1cf0118c1
 i
 9src/main/webapp/WEB-INF/views/user/infra/index/footer.jsp,9/1/91c896256ca726e2e8144ac8c32c7b132135ef59
 T
@@ -99,3 +97,5 @@ X
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
 x
 Hsrc/main/webapp/WEB-INF/views/admin/infra/dodomall/adminDodomallForm.jsp,0/c/0c83c16bbd12483b62d5c1424cac72009b4980ce
+W
+'src/main/webapp/WEB-INF/views/index.jsp,3/0/305b3bb8194d08e1e32b17ac5f1d53c1cf0118c1

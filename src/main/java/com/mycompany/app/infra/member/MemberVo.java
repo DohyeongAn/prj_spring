@@ -144,4 +144,6 @@ public class MemberVo extends BaseVo {
     }
 
 
+    public void setIfmmSeq(String seq) {
+    }
 }
