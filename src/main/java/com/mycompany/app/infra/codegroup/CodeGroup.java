@@ -8,7 +8,6 @@ public class CodeGroup {
     private String seq;
     private String name;
     private Integer delNy;
-    private String ifmmSeq;
     private String groupName;
 
     //    -----
@@ -36,13 +35,6 @@ public class CodeGroup {
         this.delNy = delNy;
     }
 
-    public String getIfmmSeq() {
-        return ifmmSeq;
-    }
-
-    public void setIfmmSeq(String ifmmSeq) {
-        this.ifmmSeq = ifmmSeq;
-    }
 
     public String getGroupName() {
         return groupName;

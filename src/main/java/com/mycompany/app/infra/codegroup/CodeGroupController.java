@@ -103,7 +103,7 @@ public class CodeGroupController {
         @RequestMapping(value = "/{seq}", method = RequestMethod.GET)
 //	@GetMapping("/{seq}")
         public Member selectOne(@PathVariable String seq, MemberVo vo) throws Exception {
-            vo.setIfmmSeq(seq);
+            vo.setSeq(seq);
             Member item = service.selectOne(vo);
             return item;
         }
@@ -113,7 +113,7 @@ public class CodeGroupController {
 //	@PostMapping("")
         public String insert(@RequestBody Member dto) throws Exception {
             service.insert(dto);
-            return dto.getIfmmSeq();
+            return dto.getSeq();
         }
 
 
@@ -121,7 +121,7 @@ public class CodeGroupController {
 //	@PatchMapping("/{seq}")
 //	@PutMapping("/{seq}")
         public void update(@PathVariable String seq, @RequestBody Member dto) throws Exception {
-            dto.setIfmmSeq(seq);
+            dto.setSeq(seq);
             service.update(dto);
         }
 

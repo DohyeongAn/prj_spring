@@ -9,15 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="0802 m2 맥 변경 후 적용푸시">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="0803 rest 사용하여 api 생성데이터 만듬">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/MemberVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/member/MemberVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/servlet-context.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +37,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DohyeongAn&quot;
+  }
+}</component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="3e154f2b-45a1-42a3-b2f8-1ac1c5b79790" />
+        <option name="url" value="https://github.com/DohyeongAn/prj_spring.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///prj_spring-effective-pom.xml" root0="SKIP_INSPECTION" />
@@ -93,7 +104,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.5264368&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;f299b778dc0a0ce23b6d5345f8f2b08a&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -307,7 +318,8 @@
       <workItem from="1690954522892" duration="3891000" />
       <workItem from="1690965490457" duration="332000" />
       <workItem from="1690973819858" duration="465000" />
-      <workItem from="1691025321695" duration="5296000" />
+      <workItem from="1691025321695" duration="6665000" />
+      <workItem from="1691033259367" duration="267000" />
     </task>
     <task id="LOCAL-00003" summary="0704">
       <option name="closed" value="true" />
@@ -509,7 +521,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690953416900</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="0803 rest 사용하여 api 생성데이터 만듬">
+      <option name="closed" value="true" />
+      <created>1691032255795</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1691032255795</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -553,7 +573,8 @@
     <MESSAGE value="0731 dateil 자동 옵션 구현" />
     <MESSAGE value="0801 api 연습" />
     <MESSAGE value="0802 m2 맥 변경 후 적용푸시" />
-    <option name="LAST_COMMIT_MESSAGE" value="0802 m2 맥 변경 후 적용푸시" />
+    <MESSAGE value="0803 rest 사용하여 api 생성데이터 만듬" />
+    <option name="LAST_COMMIT_MESSAGE" value="0803 rest 사용하여 api 생성데이터 만듬" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -565,7 +586,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupVo.java</url>
-          <line>40</line>
+          <line>39</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

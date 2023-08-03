@@ -10,7 +10,6 @@ public class CodeGroupVo extends BaseVo {
     private String seq;
     private Integer delNy;
     private int totalRows;
-    private String ifmmSeq;
     private String groupName;
 
     //	-----
@@ -51,9 +50,6 @@ public class CodeGroupVo extends BaseVo {
         this.totalRows = totalRows;
     }
 
-    public void setIfmmSeq(String setifmmSeq) {
-        this.ifmmSeq = ifmmSeq;
-    }
 
     public void setGroupName(String groupName) {
         this.groupName = groupName;
