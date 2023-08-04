@@ -111,7 +111,7 @@ public class CodeGroupController {
 
         @RequestMapping(value = "", method = RequestMethod.POST)
 //	@PostMapping("")
-        public String insert(@RequestBody Member dto) throws Exception {
+        public String insert( Member dto) throws Exception {
             service.insert(dto);
             return dto.getSeq();
         }
@@ -120,7 +120,7 @@ public class CodeGroupController {
         @RequestMapping(value = "/{seq}", method = RequestMethod.PUT)
 //	@PatchMapping("/{seq}")
 //	@PutMapping("/{seq}")
-        public void update(@PathVariable String seq, @RequestBody Member dto) throws Exception {
+        public void update(@PathVariable String seq, Member dto) throws Exception {
             dto.setSeq(seq);
             service.update(dto);
         }
