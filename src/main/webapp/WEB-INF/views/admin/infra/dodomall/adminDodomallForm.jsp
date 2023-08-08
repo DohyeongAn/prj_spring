@@ -304,7 +304,7 @@
 
 
 
-<%--                      <!-- 프로필 -->--%>
+                      <!-- 프로필 -->
 <%--                      <div class="form-group">--%>
 <%--                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="uploadImgProfile">프로필</label>--%>
 <%--                        <div class="col-md-6 col-sm-6 col-xs-12">--%>
@@ -324,30 +324,30 @@
 <%--                        </div>--%>
 <%--                      </div>--%>
 
-<%--                      <!-- 이미지첨부 -->--%>
-<%--                      <div class="form-group">--%>
-<%--                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="uploadImg">이미지첨부</label>--%>
-<%--                        <div class="col-md-6 col-sm-6 col-xs-12">--%>
-<%--                          <div class="row">--%>
-<%--                            <div class="col-md-6 col-sm-6 col-xs-12">--%>
-<%--                              <c:set var="type" value="2"/> <!-- #-> -->--%>
-<%--                              <c:set var="name" value="uploadImg"/> <!-- #-> -->--%>
-<%--                              <input type="hidden" id="<c:out value="${name }"/>Type" name="<c:out value="${name }"/>Type" value="<c:out value="${type }"/>"/>--%>
-<%--                              <input type="hidden" id="<c:out value="${name }"/>MaxNumber" name="<c:out value="${name }"/>MaxNumber" value="0"/>--%>
-<%--                              <input type="hidden" id="<c:out value="${name }"/>DeleteSeq" name="<c:out value="${name }"/>DeleteSeq"/>--%>
-<%--                              <input type="hidden" id="<c:out value="${name }"/>DeletePathFile" name="<c:out value="${name }"/>DeletePathFile"/>--%>
-<%--                              <label for="<c:out value="${name }"/>" class="form-label input-file-button btn btn-primary">이미지첨부</label>--%>
-<%--                              <input class="form-control form-control-sm d-none" id="<c:out value="${name }"/>" name="<c:out value="${name }"/>" type="file" multiple="multiple" onChange="upload('<c:out value="${name }"/>', <c:out value="${type }"/>, 0, 1, 0, 0, 1);">--%>
-<%--                              <div id="<c:out value="${name }"/>Preview" class="addScroll">--%>
-<%--                                <!-- 기존에 업로드된 이미지를 표시하는 코드 -->--%>
-<%--                                <!-- ... -->--%>
-<%--                              </div>--%>
-<%--                            </div>--%>
-<%--                          </div>--%>
-<%--                        </div>--%>
-<%--                      </div>--%>
+                      <!-- 이미지첨부 -->
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="uploadImg">이미지첨부</label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <c:set var="type" value="2"/> <!-- #-> -->
+                              <c:set var="name" value="uploadImg"/> <!-- #-> -->
+                              <input type="hidden" id="<c:out value="${name }"/>Type" name="<c:out value="${name }"/>Type" value="<c:out value="${type }"/>"/>
+                              <input type="hidden" id="<c:out value="${name }"/>MaxNumber" name="<c:out value="${name }"/>MaxNumber" value="0"/>
+                              <input type="hidden" id="<c:out value="${name }"/>DeleteSeq" name="<c:out value="${name }"/>DeleteSeq"/>
+                              <input type="hidden" id="<c:out value="${name }"/>DeletePathFile" name="<c:out value="${name }"/>DeletePathFile"/>
+                              <label for="<c:out value="${name }"/>" class="form-label input-file-button btn btn-primary">이미지첨부</label>
+                              <input class="form-control form-control-sm d-none" id="<c:out value="${name }"/>" name="<c:out value="${name }"/>" type="file" multiple="multiple" onChange="upload('<c:out value="${name }"/>', <c:out value="${type }"/>, 0, 1, 0, 0, 1);">
+                              <div id="<c:out value="${name }"/>Preview" class="addScroll">
+                                <!-- 기존에 업로드된 이미지를 표시하는 코드 -->
+                                <!-- ... -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
-<%--                      <!-- 파일첨부 -->--%>
+                      <!-- 파일첨부 -->
 <%--                      <div class="form-group">--%>
 <%--                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="uploadFile">파일첨부</label>--%>
 <%--                        <div class="col-md-6 col-sm-6 col-xs-12">--%>
@@ -370,17 +370,17 @@
 <%--                        </div>--%>
 <%--                      </div>--%>
 
-<%--                      <div class="ln_solid"></div>--%>
-<%--                      <div class="form-group">--%>
-<%--                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">--%>
-<%--                          <button id="insertBtn" type="button" class="btn btn-success">Insert</button>--%>
-<%--                          <button id="cancel" class="btn btn-primary" type="button">Cancel</button>--%>
-<%--                          <button class="btn btn-primary" type="reset">Reset</button>--%>
-<%--                          <button id="submitBtn" type="submit" class="btn btn-success">Update</button>--%>
-<%--                          <button id="ueleteBtn" type="button" class="btn btn-danger">Use / Not Used</button>--%>
-<%--                          <button id="deleteBtn" type="button" class="btn btn-danger">Delete</button>--%>
-<%--                        </div>--%>
-<%--                      </div>--%>
+                      <div class="ln_solid"></div>
+                      <div class="form-group">
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                          <button id="insertBtn" type="button" class="btn btn-success">Insert</button>
+                          <button id="cancel" class="btn btn-primary" type="button">Cancel</button>
+                          <button class="btn btn-primary" type="reset">Reset</button>
+                          <button id="submitBtn" type="submit" class="btn btn-success">Update</button>
+                          <button id="ueleteBtn" type="button" class="btn btn-danger">Use / Not Used</button>
+                          <button id="deleteBtn" type="button" class="btn btn-danger">Delete</button>
+                        </div>
+                      </div>
                     </form>
 
                   </div>
