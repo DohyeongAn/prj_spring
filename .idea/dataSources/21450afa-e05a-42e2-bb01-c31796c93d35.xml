@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="dodomall">
   <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.49">
-    <root id="1"/>
+    <root id="1">
+      <DefaultEngine>InnoDB</DefaultEngine>
+      <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
+      <ServerVersion>8.0.33</ServerVersion>
+    </root>
     <collation id="2" parent="1" name="armscii8_general_ci">
       <Charset>armscii8</Charset>
       <DefaultForCharset>1</DefaultForCharset>
@@ -908,8 +912,8 @@
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="290" parent="1" name="dodomall">
-      <IntrospectionTimestamp>2023-07-31.10:29:55</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-07-31.01:29:55</LocalIntrospectionTimestamp>
+      <IntrospectionTimestamp>2023-08-22.18:52:15</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-08-22.09:52:15</LocalIntrospectionTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="291" parent="1" name="information_schema">
@@ -1001,7 +1005,7 @@
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="313" parent="302" name="seq">
-      <AutoIncrement>10</AutoIncrement>
+      <AutoIncrement>9</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1130,12 +1134,16 @@
       <DasType>int|0s</DasType>
       <Position>13</Position>
     </column>
-    <index id="343" parent="304" name="PRIMARY">
+    <column id="343" parent="304" name="email">
+      <DasType>varchar(45)|0s</DasType>
+      <Position>14</Position>
+    </column>
+    <index id="344" parent="304" name="PRIMARY">
       <ColNames>seq</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="344" parent="304" name="PRIMARY">
+    <key id="345" parent="304" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
