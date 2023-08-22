@@ -11,21 +11,28 @@
         FROM
             member
         WHERE
-            name=#{nickname} AND
+            userName=#{nickname} AND
+            nickname=#{nickname} AND
             email=#{email} AND
-            id = #{id}
+            id=#{id}
     </select>
 
     <!-- 정보 저장 -->
     <insert id="kakaoInsert" parameterType="java.util.HashMap">
         INSERT INTO member (
+                defaultNy,
                 userName,
+                phoneNumber,
+                nickname,
                 email,
                 id
         ) VALUES (
+                  '0',
                   #{nickname},
+                  #{nickname},
+                  "kakao",
                   #{email},
-                  #{id}
+                  #{email}
                  )
     </insert>
 

@@ -26,7 +26,6 @@ public class KakaoController {
         System.out.println("#########" + code);
 
         String access_Token = ms.getAccessToken(code);
-        System.out.println("###test   token#### : " + access_Token);
         Kakao userInfo = ms.getUserInfo(access_Token);
         System.out.println("###access_Token#### : " + access_Token);
         System.out.println("###nickname#### : " + userInfo.getNickname());
@@ -42,7 +41,7 @@ public class KakaoController {
         // jsp에서 ${sessionScope.kakaoN} 이런 형식으로 사용할 수 있다.
 
 
-        return "/dodomall";
+        return "redirect:/dodomall"; // 리다이렉트할 페이지 지정
     }
 }
 

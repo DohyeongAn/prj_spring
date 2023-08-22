@@ -14,13 +14,13 @@ public class KakaoDao {
 
     // 정보 저장
     public void kakaoinsert(HashMap<String, Object> userInfo) {
-        sql.insert("KakaoMapper.kakaoInsert",userInfo);
+        sql.insert("com.mycompany.app.infra.kakao.KakaoMapper.kakaoInsert", userInfo);
     }
 
     // 정보 확인
     public Kakao findkakao(HashMap<String, Object> userInfo) {
-        System.out.println("RN:"+userInfo.get("nickname"));
-        System.out.println("RE:"+userInfo.get("email"));
-        return sql.selectOne("KakaoMapper.findKakao", userInfo);
+        System.out.println("RN:" + userInfo.get("nickname"));
+        System.out.println("RE:" + userInfo.get("email"));
+        return sql.selectOne("com.mycompany.app.infra.kakao.KakaoMapper.findKakao", userInfo);
     }
 }
