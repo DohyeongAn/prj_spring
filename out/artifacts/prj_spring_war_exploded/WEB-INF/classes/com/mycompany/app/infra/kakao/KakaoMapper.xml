@@ -12,9 +12,7 @@
             member
         WHERE
             userName=#{nickname} AND
-            nickname=#{nickname} AND
-            email=#{email} AND
-            id=#{id}
+            email=#{email}
     </select>
 
     <!-- 정보 저장 -->
@@ -28,9 +26,9 @@
                 id
         ) VALUES (
                   '0',
-                  #{id},
                   #{nickname},
                   "kakao",
+                  #{nickname},
                   #{email},
                   #{email}
                  )
