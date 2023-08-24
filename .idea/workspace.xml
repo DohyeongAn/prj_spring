@@ -9,11 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="로그인 채팅 관련.. 서버업로드시 수정사항 chat.jsp, KakaoServiceImpl,login.jsp">
-      <change beforePath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/WEB-INF/views/user/infra/index/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/WEB-INF/views/user/infra/index/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/kakao/KakaoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/kakao/KakaoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/chat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/chat.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/login.jsp" afterDir="false" />
+    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="로그인 채팅 관련.. 서버업로드시 수정사항 chat.jsp, KakaoServiceImpl,login.jsp&#10;이거는작업용">
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/WEB-INF/views/user/infra/index/chat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/WEB-INF/views/user/infra/index/chat.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -384,7 +381,7 @@
       <workItem from="1692770625360" duration="136000" />
       <workItem from="1692840325279" duration="6000000" />
       <workItem from="1692846670137" duration="6293000" />
-      <workItem from="1692858382132" duration="6692000" />
+      <workItem from="1692858382132" duration="6744000" />
     </task>
     <task id="LOCAL-00003" summary="0704">
       <option name="closed" value="true" />
@@ -650,7 +647,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692869860462</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="로그인 채팅 관련.. 서버업로드시 수정사항 chat.jsp, KakaoServiceImpl,login.jsp&#10;이거는작업용">
+      <option name="closed" value="true" />
+      <created>1692870207888</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1692870207888</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -671,7 +676,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="0705 멤버리스트 완료 폼은해야합니다" />
     <MESSAGE value="0707 럭키 세븐 드디어 오류수정" />
     <MESSAGE value="회원가입완료" />
     <MESSAGE value="메인화면 삽입" />
@@ -696,7 +700,8 @@
     <MESSAGE value="진짜 진짜 힘들었다 로그인 구현완료찐" />
     <MESSAGE value="폼 미쳤다 채팅구현 완료" />
     <MESSAGE value="로그인 채팅 관련.. 서버업로드시 수정사항 chat.jsp, KakaoServiceImpl,login.jsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="로그인 채팅 관련.. 서버업로드시 수정사항 chat.jsp, KakaoServiceImpl,login.jsp" />
+    <MESSAGE value="로그인 채팅 관련.. 서버업로드시 수정사항 chat.jsp, KakaoServiceImpl,login.jsp&#10;이거는작업용" />
+    <option name="LAST_COMMIT_MESSAGE" value="로그인 채팅 관련.. 서버업로드시 수정사항 chat.jsp, KakaoServiceImpl,login.jsp&#10;이거는작업용" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

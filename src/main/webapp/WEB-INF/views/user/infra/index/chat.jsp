@@ -35,7 +35,7 @@
     </script>
     <div class="inputMsg">
         <input id="txtMessage" placeholder="✏️ + ↵"/>
-        <i class="fa-regular fa-paper-plane"></i>
+        <i id="planeBtn" class="fa-regular fa-paper-plane"></i>
     </div>
 </div>
 
