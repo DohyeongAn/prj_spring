@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="prj_spring:war" />
       <artifact name="prj_spring:war exploded" />
     </artifacts-to-build>
   </component>
@@ -11,6 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="로그인 채팅 관련.. 서버업로드시 수정사항 chat.jsp, KakaoServiceImpl,login.jsp">
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/WEB-INF/views/user/infra/index/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/WEB-INF/views/user/infra/index/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/kakao/KakaoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/kakao/KakaoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/chat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/chat.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -382,7 +384,7 @@
       <workItem from="1692770625360" duration="136000" />
       <workItem from="1692840325279" duration="6000000" />
       <workItem from="1692846670137" duration="6293000" />
-      <workItem from="1692858382132" duration="6371000" />
+      <workItem from="1692858382132" duration="6692000" />
     </task>
     <task id="LOCAL-00003" summary="0704">
       <option name="closed" value="true" />
@@ -640,7 +642,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692869820810</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="로그인 채팅 관련.. 서버업로드시 수정사항 chat.jsp, KakaoServiceImpl,login.jsp">
+      <option name="closed" value="true" />
+      <created>1692869860462</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1692869860462</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
