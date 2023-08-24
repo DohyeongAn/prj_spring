@@ -9,34 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="진짜 진짜 힘들었다 로그인 구현완료찐">
-      <change afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/WEB-INF/classes/com/mycompany/app/infra/chat/ChatMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/WEB-INF/views/user/infra/index/chat.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/resources/css/chat.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/resources/js/chat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/chat/ChatController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/chat/ChatDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/chat/ChatHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/chat/ChatMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/chat/ChatRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/chat.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/chatWrap.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/chat.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/21450afa-e05a-42e2-bb01-c31796c93d35.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/21450afa-e05a-42e2-bb01-c31796c93d35.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/21450afa-e05a-42e2-bb01-c31796c93d35/storage_v2/_src_/schema/dodomall.ag29NA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/21450afa-e05a-42e2-bb01-c31796c93d35/storage_v2/_src_/schema/dodomall.ag29NA.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="폼 미쳤다 채팅구현 완료">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/WEB-INF/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/WEB-INF/classes/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/WEB-INF/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/WEB-INF/servlet-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/WEB-INF/views/user/infra/index/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/WEB-INF/views/user/infra/index/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/DodomallController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/DodomallController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/servlet-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/header.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -406,7 +380,8 @@
       <workItem from="1692754575418" duration="819000" />
       <workItem from="1692770625360" duration="136000" />
       <workItem from="1692840325279" duration="6000000" />
-      <workItem from="1692846670137" duration="5770000" />
+      <workItem from="1692846670137" duration="6293000" />
+      <workItem from="1692858382132" duration="323000" />
     </task>
     <task id="LOCAL-00003" summary="0704">
       <option name="closed" value="true" />
@@ -640,7 +615,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692710359820</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="폼 미쳤다 채팅구현 완료">
+      <option name="closed" value="true" />
+      <created>1692858328508</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1692858328508</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -661,7 +644,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="0704 페이지내이션완료" />
     <MESSAGE value="0705 페이지내이션 멤버" />
     <MESSAGE value="0705 멤버리스트 완료 폼은해야합니다" />
     <MESSAGE value="0707 럭키 세븐 드디어 오류수정" />
@@ -686,7 +668,8 @@
     <MESSAGE value="외부연결" />
     <MESSAGE value="진짜힘들었다...kakao로그인 연동 90프로 완료" />
     <MESSAGE value="진짜 진짜 힘들었다 로그인 구현완료찐" />
-    <option name="LAST_COMMIT_MESSAGE" value="진짜 진짜 힘들었다 로그인 구현완료찐" />
+    <MESSAGE value="폼 미쳤다 채팅구현 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="폼 미쳤다 채팅구현 완료" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

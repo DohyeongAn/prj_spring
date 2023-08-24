@@ -136,6 +136,12 @@
     $("#chat").on("click",function(){
       curtain.fadeToggle();
       frame.fadeToggle();
+      var chatRecord = $(".chatRecord")[0];
+      chatRecord.scrollTo({
+        top: chatRecord.scrollHeight
+      });
+
+
     });
   });
 </script>

@@ -168,6 +168,10 @@
         chatRecord.scrollTo({
             top: chatRecord.scrollHeight,
             behavior: 'smooth' // Set behavior to 'smooth' for smooth scrolling
+
+        //       var chatRecord = $(".chatRecord")[0];
+        //     chatRecord.scrollTo({
+        //         top: chatRecord.scrollHeight
         });
     }
 
