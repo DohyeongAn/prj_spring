@@ -477,7 +477,7 @@
             <!-- <div class="social_line">SNS 계정으로 간편하게 회원가입/로그인 하세요.</div> -->
             <div class="wrap_btn">
                 <a href="#"><img src="../../../../../resources/img/btnG_완성형.png" alt="" /></a>
-                <a href="https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=6b4cc63a82c5df0d0745f8c7e135a319&redirect_uri=http://3.36.75.118:8081/login/kakao&response_type=code">
+                <a href="https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=6b4cc63a82c5df0d0745f8c7e135a319&redirect_uri=http://3.36.75.118/login/kakao&response_type=code">
 <%--            <a href="https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=6b4cc63a82c5df0d0745f8c7e135a319&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Flogin/kakao&response_type=code">--%>
                 <img src="../../../../../resources/img/kakao_login_large_narrow.png" alt=""
                 /></a>
