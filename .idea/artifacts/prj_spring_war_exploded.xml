@@ -41,6 +41,11 @@
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.13.0" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.13.0" />
           <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.8.8" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:4.1.0.RELEASE" />
+          <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:4.1.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:4.1.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-websocket:4.1.7.RELEASE" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="prj_spring/web/Web" />

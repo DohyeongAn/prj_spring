@@ -65,7 +65,7 @@
     getList();
 
     // 웹소캣 생성
-    var sock = new SockJS("http://localhost:8080/echo/");
+    var sock = new SockJS("http://3.36.75.118/echo/");
     sock.onmessage = onMessage;
     console.log(sock);
     sock.onopen = function(event) {
@@ -98,6 +98,33 @@
         })
     })
 
+    $("#planeBtn").on('click', function(e){
+        e.preventDefault();
+        var message = $("#txtMessage").val();
+        if (message == "") {
+            alert("메시지를 입력하세요.");
+            $("#txtMessage").focus();
+            return;
+        }
+        // 서버로 메시지 보내기
+        sock.send(uid + "|" + message);
+        $("#txtMessage").val("");
+
+        // DB로 데이터 보내기
+        $.ajax({
+            async:"true",
+            cache:"false",
+            type:'post',
+            url:'/chat/insert',
+            data:{
+                sender:uid,
+                message:message,
+            },
+            success:function(data){
+                sock.send(uid + "|" + message+"|"+data);
+            }
+        })//ajax
+    })
 
     $("#txtMessage").on("keypress", function(e) {
         if (e.keyCode == 13 && !e.shiftKey) {

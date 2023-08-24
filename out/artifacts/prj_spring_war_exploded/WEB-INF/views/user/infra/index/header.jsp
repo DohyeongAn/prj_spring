@@ -31,15 +31,13 @@
 <link rel="stylesheet" href="../../../../../resources/css/swiper-bundle.css">
 <!-- 메인 css -->
 <link rel="stylesheet" href="../../../../../resources/css/style.css" />
-<!-- 채팅 css -->
-<link rel="stylesheet" href="../../../../../resources/css/chat.css" />
+
 
 <!-- 쿼리 -->
 <script src="../../../../../resources/js/jquery.min.js"></script>
 <!-- 메인 js -->
 <script src="../../../../../resources/js/shop.js"></script>'
-<%--chat--%>
-<script src="../../../../../resources/js/chat.js"></script>
+
 <header>
   <div id="fnb">
     <div class="wrap">
@@ -127,7 +125,7 @@
           </div>
           Live 쇼핑
         </a>
-        <a href="/chat" id="chat" title="채팅">채팅</a>
+        <a href="/chatWrap" id="chat" title="채팅">채팅</a>
       </div>
       <div class="category_popup">
         <ul class="all_menu_wrap">
