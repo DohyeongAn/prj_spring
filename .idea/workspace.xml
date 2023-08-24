@@ -9,10 +9,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="진짜힘들었다...kakao로그인 연동 90프로 완료">
+    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="진짜 진짜 힘들었다 로그인 구현완료찐">
+      <change afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/WEB-INF/classes/com/mycompany/app/infra/chat/ChatMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/WEB-INF/views/user/infra/index/chat.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/resources/css/chat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/resources/js/chat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/chat/ChatController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/chat/ChatDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/chat/ChatHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/chat/ChatMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/chat/ChatRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/chat.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/chatWrap.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/chat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/21450afa-e05a-42e2-bb01-c31796c93d35.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/21450afa-e05a-42e2-bb01-c31796c93d35.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/21450afa-e05a-42e2-bb01-c31796c93d35/storage_v2/_src_/schema/dodomall.ag29NA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/21450afa-e05a-42e2-bb01-c31796c93d35/storage_v2/_src_/schema/dodomall.ag29NA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/WEB-INF/classes/com/mycompany/app/infra/kakao/KakaoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/WEB-INF/classes/com/mycompany/app/infra/kakao/KakaoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/kakao/KakaoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/kakao/KakaoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/WEB-INF/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/WEB-INF/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/WEB-INF/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/WEB-INF/servlet-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/WEB-INF/views/user/infra/index/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded/WEB-INF/views/user/infra/index/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/DodomallController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/dodomall/DodomallController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/servlet-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/header.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,10 +49,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Interface" />
         <option value="AnnotationType" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -91,20 +115,25 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
     &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/andohyeong/IdeaProjects/prj_spring&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/andohyeong/IdeaProjects/prj_spring/src/main/webapp/resources/js&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;아티팩트&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;라이브러리&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.5264368&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;f299b778dc0a0ce23b6d5345f8f2b08a&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;74cfd4a86cc975c35f0e72793c46a8bd&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -118,12 +147,14 @@
       <recent name="com.mycompany.app.infra.kakao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/kakao1" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/codegroup/dodomall" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/codegroup" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/js" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/css" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/chat" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/member" />
@@ -147,7 +178,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat 서버.Tomcat 9.0.76">
+  <component name="RunManager" selected="Smart Tomcat.Tomcat">
     <configuration name="Tomcat 9.0.76" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.76" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
@@ -370,6 +401,12 @@
       <workItem from="1692681865652" duration="13607000" />
       <workItem from="1692698096100" duration="730000" />
       <workItem from="1692699180826" duration="4996000" />
+      <workItem from="1692750101234" duration="4103000" />
+      <workItem from="1692754221558" duration="6000" />
+      <workItem from="1692754575418" duration="819000" />
+      <workItem from="1692770625360" duration="136000" />
+      <workItem from="1692840325279" duration="6000000" />
+      <workItem from="1692846670137" duration="5770000" />
     </task>
     <task id="LOCAL-00003" summary="0704">
       <option name="closed" value="true" />
@@ -595,7 +632,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692699982383</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="진짜 진짜 힘들었다 로그인 구현완료찐">
+      <option name="closed" value="true" />
+      <created>1692710359820</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1692710359820</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -616,7 +661,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="0704" />
     <MESSAGE value="0704 페이지내이션완료" />
     <MESSAGE value="0705 페이지내이션 멤버" />
     <MESSAGE value="0705 멤버리스트 완료 폼은해야합니다" />
@@ -641,7 +685,8 @@
     <MESSAGE value="0803 rest 사용하여 api 생성데이터 만듬" />
     <MESSAGE value="외부연결" />
     <MESSAGE value="진짜힘들었다...kakao로그인 연동 90프로 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="진짜힘들었다...kakao로그인 연동 90프로 완료" />
+    <MESSAGE value="진짜 진짜 힘들었다 로그인 구현완료찐" />
+    <option name="LAST_COMMIT_MESSAGE" value="진짜 진짜 힘들었다 로그인 구현완료찐" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

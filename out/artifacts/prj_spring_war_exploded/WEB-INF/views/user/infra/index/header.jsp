@@ -31,11 +31,15 @@
 <link rel="stylesheet" href="../../../../../resources/css/swiper-bundle.css">
 <!-- 메인 css -->
 <link rel="stylesheet" href="../../../../../resources/css/style.css" />
+<!-- 채팅 css -->
+<link rel="stylesheet" href="../../../../../resources/css/chat.css" />
 
 <!-- 쿼리 -->
 <script src="../../../../../resources/js/jquery.min.js"></script>
 <!-- 메인 js -->
-<script src="../../../../../resources/js/shop.js"></script>
+<script src="../../../../../resources/js/shop.js"></script>'
+<%--chat--%>
+<script src="../../../../../resources/js/chat.js"></script>
 <header>
   <div id="fnb">
     <div class="wrap">
@@ -117,10 +121,13 @@
         <a href="limited_price">한정특가</a>
         <a href="best.html">베스트</a>
         <a href="new.html">신상품</a>
-        <a href="livetv.html"
-          ><div id="live_stream"><img src="../../../../../resources/img/live_stream.gif" alt="" /></div>
+        <a href="livetv.html">
+          <div id="live_stream">
+            <img src="../../../../../resources/img/live_stream.gif" alt="" />
+          </div>
           Live 쇼핑
         </a>
+        <a href="/chat" id="chat" title="채팅">채팅</a>
       </div>
       <div class="category_popup">
         <ul class="all_menu_wrap">
@@ -245,5 +252,13 @@
     });
 
   </script>
+
+<%--  <script>--%>
+<%--    $("#chat").on('click',function(e){--%>
+<%--      e.preventDefault();--%>
+<%--      window.open("/chat","chat","width=500, height=800, top=200, left=200");--%>
+<%--      // 경로, 파일, 너비, 높이, 위치 지정--%>
+<%--    })--%>
+<%--  </script>--%>
   
 </header>

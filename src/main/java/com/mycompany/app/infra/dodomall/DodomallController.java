@@ -57,6 +57,17 @@ public class DodomallController {
 
         return "user/infra/index/detail";
     }
+    @RequestMapping("/chatWrap")
+    public String chatWrap(DodomallVo vo, Model model) {
+
+        Dodomall Dodomall = service.selectOne(vo);
+
+        model.addAttribute("item", Dodomall);
+
+        return "user/infra/index/chatWrap";
+    }
+
+
 
     @RequestMapping("/adminDodomallView")
     public String adminDodomallView(DodomallVo vo, Model model) {

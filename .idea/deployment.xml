@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="dodo" remoteFilesAllowedToDisappearOnAutoupload="false" />
+  <component name="PublishConfigData" serverName="dodo" remoteFilesAllowedToDisappearOnAutoupload="false" compareModeInSync="TEXT">
+    <serverData>
+      <paths name="dodo">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/factory/was/apache-tomcat-9.0.78/webapps/prj_spring_war_exploded" local="$PROJECT_DIR$/out/artifacts/prj_spring_war_exploded" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
 </project>
