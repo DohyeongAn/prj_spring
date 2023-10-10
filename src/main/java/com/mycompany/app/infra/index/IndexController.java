@@ -47,6 +47,19 @@ public class IndexController {
         return "user/infra/biography/biographyUserView";
     }
 
+    @RequestMapping(value = "/jqueryStudy")
+    public String jqueryStudy(){
+
+        return "user/infra/index/jqueryStudy";
+    }
+
+    @RequestMapping(value = "/javaStudy")
+    public String javaStudy(){
+
+        return "user/infra/index/javaStudy";
+    }
+
+
     @RequestMapping(value = "/login")
     public String login() {
         // 여기에서 서버단에 필요한 작업을 수행한다.

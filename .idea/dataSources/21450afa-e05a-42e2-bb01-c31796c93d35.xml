@@ -1015,8 +1015,8 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="290" parent="1" name="dodomall">
-      <IntrospectionTimestamp>2023-08-24.15:17:02</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-08-24.06:17:02</LocalIntrospectionTimestamp>
+      <IntrospectionTimestamp>2023-10-10.12:42:09</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-10-10.03:42:09</LocalIntrospectionTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="291" parent="1" name="information_schema">
@@ -1069,7 +1069,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
     <column id="305" parent="300" name="seq">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>144</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1139,7 +1139,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="319" parent="302" name="seq">
-      <AutoIncrement>9</AutoIncrement>
+      <AutoIncrement>10</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1215,7 +1215,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="336" parent="304" name="seq">
-      <AutoIncrement>28</AutoIncrement>
+      <AutoIncrement>30</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
