@@ -61,7 +61,7 @@
         (
         #{writer},
         #{writing},
-        #{regdate},
+        NOW(),
         #{title}
         )
     </insert>

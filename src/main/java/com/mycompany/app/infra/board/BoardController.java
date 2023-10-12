@@ -33,6 +33,18 @@ public class BoardController {
         }
         return service.selectList(vo);
     }
+    @GetMapping("boardList/boardWrite")
+    public String board_insert()
+    {
+        return "user/infra/index/boardWrite";
+    }
 
+    @ResponseBody
+    @RequestMapping("bordList/boardWrite/boardIns")
+    public String board_insert(Board dto) {
 
+        service.insert(dto);
+
+        return "redirect:/boardList";
+    }
 }

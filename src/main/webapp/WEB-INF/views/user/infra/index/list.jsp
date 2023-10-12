@@ -163,7 +163,7 @@
     </table>
     <!-- footer content -->
     <footer style="margin-left: 0" >
-      <a href="/boardWrite" id="btnInsert" class=" form-control undefined input-sm" style="width: 100px; float: right; text-align: center; " >글쓰기</a>
+      <a href="boardList/boardWrite" id="btnInsert" class=" form-control undefined input-sm" style="width: 100px; float: right; text-align: center; " >글쓰기</a>
 
     </footer>
     <!-- /footer content -->
