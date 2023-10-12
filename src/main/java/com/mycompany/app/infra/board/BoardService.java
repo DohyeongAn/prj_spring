@@ -8,9 +8,9 @@ public interface BoardService {
 
     public int selectOneCount(BoardVo vo);
 
-    public List<Board> selectList(BoardVo vo);
+    public List<BoardVo> selectList(BoardVo vo);
 
-    public Board selectOne(BoardVo vo);
+    public BoardVo selectOne(BoardVo vo);
 
-    public int insert(Board dto);
+    public int insert(BoardVo dto);
 }

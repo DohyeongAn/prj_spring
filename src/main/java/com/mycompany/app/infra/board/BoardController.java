@@ -20,11 +20,11 @@ public class BoardController {
 
     @ResponseBody
     @RequestMapping(value = "/boardListData")
-    public List<Board> getBoardListData(@ModelAttribute("vo") BoardVo vo, Model model) {
+    public List<BoardVo> getBoardListData(@ModelAttribute("vo") BoardVo vo, Model model) {
         vo.setShKeyword(vo.getShKeyword() == null ? "" : vo.getShKeyword());
         vo.setParamsPaging(service.selectOneCount(vo));
         if (vo.getTotalRows() > 0) {
-            List<Board> list = service.selectList(vo);
+            List<BoardVo> list = service.selectList(vo);
             model.addAttribute("list", list);
             System.out.println("List in controller: " + list);
 
@@ -41,7 +41,7 @@ public class BoardController {
 
     @ResponseBody
     @RequestMapping("bordList/boardWrite/boardIns")
-    public String board_insert(Board dto) {
+    public String board_insert(BoardVo dto) {
 
         service.insert(dto);
 
