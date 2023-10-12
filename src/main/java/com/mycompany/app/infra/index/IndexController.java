@@ -148,8 +148,15 @@ public class IndexController {
         model.addAllAttributes(body);
         return "user/publicCorona1List";
     }
+//
+//    @RequestMapping(value = "/boardList")
+//    public String list() {
+//        return "user/infra/index/list";
+//    }
 
-
-
+    @RequestMapping(value = "/boardWrite")
+    public String boardWrite() {
+        return "user/infra/index/boardWrite";
+    }
 
 }

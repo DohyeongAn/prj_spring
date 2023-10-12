@@ -126,6 +126,7 @@
           Live 쇼핑
         </a>
         <a href="/chatWrap" id="chat" title="채팅">채팅</a>
+        <a href="/boardList" id="board" title="게시판">게시판</a>
       </div>
       <div class="category_popup">
         <ul class="all_menu_wrap">

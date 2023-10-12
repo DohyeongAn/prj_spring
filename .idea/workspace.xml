@@ -9,13 +9,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="로그인 채팅 관련.. 서버업로드시 수정사항 chat.jsp, KakaoServiceImpl,login.jsp&#10;이거는작업용">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/javaStudy.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/jqueryStudy.jsp" afterDir="false" />
+    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="자바공부">
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/boardWrite.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/21450afa-e05a-42e2-bb01-c31796c93d35.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/21450afa-e05a-42e2-bb01-c31796c93d35.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/21450afa-e05a-42e2-bb01-c31796c93d35/storage_v2/_src_/schema/dodomall.ag29NA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/21450afa-e05a-42e2-bb01-c31796c93d35/storage_v2/_src_/schema/dodomall.ag29NA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/21450afa-e05a-42e2-bb01-c31796c93d35/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/index/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/index/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/dodomall.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/dodomall.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,10 +43,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="AnnotationType" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -111,7 +126,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.5264368&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;database.query.execution&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;74cfd4a86cc975c35f0e72793c46a8bd&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -395,6 +410,10 @@
       <workItem from="1696582476104" duration="145000" />
       <workItem from="1696898226842" duration="21000" />
       <workItem from="1696909142005" duration="216000" />
+      <workItem from="1696909367137" duration="208000" />
+      <workItem from="1696909578730" duration="218000" />
+      <workItem from="1696909857779" duration="15317000" />
+      <workItem from="1696982552006" duration="19906000" />
     </task>
     <task id="LOCAL-00003" summary="0704">
       <option name="closed" value="true" />
@@ -668,7 +687,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692870207888</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="자바공부">
+      <option name="closed" value="true" />
+      <created>1696909521468</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1696909521468</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -689,7 +716,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="0707 럭키 세븐 드디어 오류수정" />
     <MESSAGE value="회원가입완료" />
     <MESSAGE value="메인화면 삽입" />
     <MESSAGE value="한정특가500오류" />
@@ -714,7 +740,8 @@
     <MESSAGE value="폼 미쳤다 채팅구현 완료" />
     <MESSAGE value="로그인 채팅 관련.. 서버업로드시 수정사항 chat.jsp, KakaoServiceImpl,login.jsp" />
     <MESSAGE value="로그인 채팅 관련.. 서버업로드시 수정사항 chat.jsp, KakaoServiceImpl,login.jsp&#10;이거는작업용" />
-    <option name="LAST_COMMIT_MESSAGE" value="로그인 채팅 관련.. 서버업로드시 수정사항 chat.jsp, KakaoServiceImpl,login.jsp&#10;이거는작업용" />
+    <MESSAGE value="자바공부" />
+    <option name="LAST_COMMIT_MESSAGE" value="자바공부" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

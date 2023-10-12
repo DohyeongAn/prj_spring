@@ -5,10 +5,12 @@
       <map>
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/codegroup/adminList.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/codegroup" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/dodomall/adminDodomallList.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/infra/dodomall" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/boardWrite.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/detail.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/dodomall.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/header.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/join.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/list.html" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index" />
       </map>
     </option>
   </component>
