@@ -9,12 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="디테일 시작">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/boardView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="데이터가 boardViewData 로 요청이 넘어감 근데 seq 를 못잡는듯 스크립트 수정 필요">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/boardWrite.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/boardWrite.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/boardView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/boardView.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -707,7 +704,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697159064334</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="데이터가 boardViewData 로 요청이 넘어감 근데 seq 를 못잡는듯 스크립트 수정 필요">
+      <option name="closed" value="true" />
+      <created>1697163580821</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1697163580821</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -728,7 +733,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="한정특가500오류" />
     <MESSAGE value="한정특가500오류, 관리자페이지 데이터 안들어감" />
     <MESSAGE value="관리자 페이지 상품 등록 목록 완료" />
     <MESSAGE value="메인화면 상품등록 회원가입 벨리데이션 완료 정규표현식 작업예정" />
@@ -753,7 +757,8 @@
     <MESSAGE value="자바공부" />
     <MESSAGE value="insert 구현완료" />
     <MESSAGE value="디테일 시작" />
-    <option name="LAST_COMMIT_MESSAGE" value="디테일 시작" />
+    <MESSAGE value="데이터가 boardViewData 로 요청이 넘어감 근데 seq 를 못잡는듯 스크립트 수정 필요" />
+    <option name="LAST_COMMIT_MESSAGE" value="데이터가 boardViewData 로 요청이 넘어감 근데 seq 를 못잡는듯 스크립트 수정 필요" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

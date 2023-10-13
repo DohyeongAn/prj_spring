@@ -135,7 +135,7 @@
     </table>
     <!-- footer content -->
     <footer style="margin-left: 0" >
-      <a href="boardList/boardWrite" id="btnInsert" class=" form-control undefined input-sm" style="width: 100px; float: right; text-align: center; " >글쓰기</a>
+<%--      <a href="boardList/boardWrite" id="btnInsert" class=" form-control undefined input-sm" style="width: 100px; float: right; text-align: center; " >글쓰기</a>--%>
 
     </footer>
     <!-- /footer content -->
@@ -173,25 +173,28 @@
 
 
 <script>
-new Vue({
-  el: '.container',
-  data:{
-    //array
-    item: [],
-    seq: 1,
-  },
-    mounted: function(){
-    let _this=this;
-    axios.get("/boardViewData",{
-      parame:{
-        seq: _this.seq
-      }
-      //요청처리 결과값 읽기 => 데이터값만 변경(상태 변경)
-    }).then(function (result){
-      _this.item=result.data;
-    })
-  }
-})
+  new Vue({
+    el: '.container', // Vue 인스턴스가 적용될 DOM 요소를 지정합니다.
+    data:{
+      item: [], // item 배열을 초기화합니다. 이 배열은 게시글 정보를 담을 예정입니다.
+      seq: null, // 초기에 seq는 null로 설정합니다. 나중에 게시물의 seq 값을 받아올 것입니다.
+    },
+    mounted: function(){ // Vue 인스턴스가 DOM에 마운트된 후 실행될 함수입니다.
+      let _this=this; // Vue 인스턴스를 _this 변수에 할당합니다.
+      const urlParams = new URLSearchParams(window.location.search); // 현재 URL에서 매개변수를 가져옵니다.
+      const seq = urlParams.get('seq'); // URL에서 'seq' 매개변수의 값을 가져옵니다.
+      _this.seq = seq; // 가져온 seq 값을 데이터에 할당합니다.
+
+      axios.get("/boardViewData", { // axios를 사용하여 서버로 GET 요청을 보냅니다.
+        params: { // GET 요청의 매개변수로 seq 값을 전달합니다.
+          seq: _this.seq
+        }
+      }).then(function (response){ // GET 요청이 성공하면 이 함수가 실행됩니다.
+        _this.item = response.data; // 서버로부터 받은 데이터를 item에 할당합니다.
+      })
+    }
+  })
+
 </script>
 
 </body>
