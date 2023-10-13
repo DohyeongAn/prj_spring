@@ -9,9 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="데이터가 boardViewData 로 요청이 넘어감 근데 seq 를 못잡는듯 스크립트 수정 필요">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/boardView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/boardView.jsp" afterDir="false" />
+    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="디테일 페이지 수정완">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/boardWrite.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/boardWrite.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +109,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.5264368&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;database.query.execution&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.externalDependencies&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;74cfd4a86cc975c35f0e72793c46a8bd&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -407,6 +409,8 @@
       <workItem from="1696909578730" duration="218000" />
       <workItem from="1696909857779" duration="15317000" />
       <workItem from="1696982552006" duration="19906000" />
+      <workItem from="1697168528536" duration="179000" />
+      <workItem from="1697168741824" duration="1883000" />
     </task>
     <task id="LOCAL-00003" summary="0704">
       <option name="closed" value="true" />
@@ -712,7 +716,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697163580821</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="디테일 페이지 수정완">
+      <option name="closed" value="true" />
+      <created>1697168288639</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1697168288639</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -733,7 +745,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="한정특가500오류, 관리자페이지 데이터 안들어감" />
     <MESSAGE value="관리자 페이지 상품 등록 목록 완료" />
     <MESSAGE value="메인화면 상품등록 회원가입 벨리데이션 완료 정규표현식 작업예정" />
     <MESSAGE value="회원가입정규표현식완료 판매자회원 할까말까 고민중" />
@@ -758,7 +769,8 @@
     <MESSAGE value="insert 구현완료" />
     <MESSAGE value="디테일 시작" />
     <MESSAGE value="데이터가 boardViewData 로 요청이 넘어감 근데 seq 를 못잡는듯 스크립트 수정 필요" />
-    <option name="LAST_COMMIT_MESSAGE" value="데이터가 boardViewData 로 요청이 넘어감 근데 seq 를 못잡는듯 스크립트 수정 필요" />
+    <MESSAGE value="디테일 페이지 수정완" />
+    <option name="LAST_COMMIT_MESSAGE" value="디테일 페이지 수정완" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

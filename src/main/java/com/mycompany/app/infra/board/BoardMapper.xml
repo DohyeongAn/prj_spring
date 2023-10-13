@@ -69,4 +69,17 @@
         )
     </insert>
 
+    <!-- 게시글 수정 쿼리 -->
+    <update id="update">
+        UPDATE
+        board
+        SET
+        writer = #{writer},
+        writing = #{writing},
+        title = #{title}
+        WHERE
+        seq = #{seq}
+    </update>
+
+
 </mapper>

@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Controller
@@ -39,7 +40,9 @@ public class BoardController {
 
     // 3. 게시글 작성 페이지에 접근하는 요청을 처리하는 핸들러 메서드입니다.
     @GetMapping("boardList/boardWrite")
-    public String board_insert() {
+    public String board_insert(HttpSession session, Model model) {
+        String writer = (String) session.getAttribute("id"); // 세션에서 id 값을 읽어옵니다.
+        model.addAttribute("writer", writer); // writer를 모델에 추가하여 뷰에 전달합니다.
         // 뷰의 이름을 반환합니다. 여기서는 "user/infra/index/boardWrite"로 설정되어 있습니다.
         return "user/infra/index/boardWrite";
     }

@@ -95,7 +95,7 @@
                       <tr>
                         <th width=20% class="text-right">이름</th>
                         <td width=80%>
-                          <input type=text v-model="writer" size=20 class="input-sm" ref="writer">
+                          <input type="text" v-model="writer" size="20" class="input-sm" ref="writer" readonly>
                         </td>
                       </tr>
                       <tr>
@@ -181,10 +181,10 @@
   new Vue({
     el:'.container',
     data:{
-      writer:'',
+      writer: '${writer}', // 서버에서 전달한 값으로 초기화됩니다.
       writing:'',
       regdate:'',
-      title:''
+      title:'',
     },
     methods:{
       boardWrite:function(){
@@ -210,7 +210,6 @@
           params:{
             writer:this.writer,
             writing:this.writing,
-            // regdate:this.regdate,
             title:this.title
           }
         }).then(function(result){
@@ -219,6 +218,13 @@
       }
     }
   })
+
+
+
+
+
+
+
 </script>
 </body>
 
