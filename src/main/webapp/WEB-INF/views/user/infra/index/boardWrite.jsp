@@ -203,14 +203,9 @@
           this.$refs.writing.focus();
           return;
         }
-        // if(this.regdate.trim()=="") {
-        //   this.$refs.regdate.focus();
-        //   return;
-        // }
-
 
         //전송
-        axios.get("http://localhost:8080/bordList/boardWrite/boardIns",{
+        axios.get("http://localhost:8080/boradList/boardWrite/boardIns",{
           //값 채워주기
           params:{
             writer:this.writer,
