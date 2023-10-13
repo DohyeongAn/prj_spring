@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <title>General Form | Dodomall</title>
+    <title>Update</title>
 
 
     <!-- Bootstrap -->

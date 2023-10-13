@@ -14,7 +14,8 @@
                 writer,
                 writing,
                 regdate,
-                title
+                title,
+                delNy
     </sql>
 
     <!-- 게시판 목록 조회의 공통 조건을 담은 SQL 코드 조각 정의 -->
@@ -38,6 +39,7 @@
         <include refid="abc" />
         FROM
         board
+        WHERE delNy = "0"
         ORDER BY regdate DESC
     </select>
 
@@ -60,14 +62,16 @@
         writer,
         writing,
         regdate,
-        title
+        title,
+        delNy
         )
         VALUES
         (
         #{writer},
         #{writing},
         NOW(), <!-- 현재 날짜 및 시간 사용 -->
-        #{title}
+        #{title},
+         "0"
         )
     </insert>
 
@@ -84,10 +88,12 @@
 
 
     <!-- 게시글 삭제 쿼리 -->
-    <delete id="delete">
-        DELETE FROM
+    <update id="delete">
+        UPDATE
         board
+        SET
+        delNy = "1"
         WHERE
         seq = #{seq}
-    </delete>
+    </update>
 </mapper>

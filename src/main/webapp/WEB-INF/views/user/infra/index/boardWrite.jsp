@@ -15,7 +15,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>General Form | Dodomall</title>
+  <title>Write</title>
 
 
   <!-- Bootstrap -->
@@ -185,6 +185,7 @@
       writing:'',
       regdate:'',
       title:'',
+      delNy:''
     },
     methods:{
       boardWrite:function(){
@@ -210,7 +211,7 @@
           params:{
             writer:this.writer,
             writing:this.writing,
-            title:this.title
+            title:this.title,
           }
         }).then(function(result){
           location.href="../boardList";

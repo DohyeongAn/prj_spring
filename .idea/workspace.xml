@@ -9,14 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="update 끝 &#10;컬럼 추가하고 deleteNy 만들던지해서 &#10;삭제기능 만들어야함">
+    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="delete까지 완료함 근데 그냥 db에서 삭제하는 방식으로함">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/21450afa-e05a-42e2-bb01-c31796c93d35.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/21450afa-e05a-42e2-bb01-c31796c93d35.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/21450afa-e05a-42e2-bb01-c31796c93d35/storage_v2/_src_/schema/dodomall.ag29NA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/21450afa-e05a-42e2-bb01-c31796c93d35/storage_v2/_src_/schema/dodomall.ag29NA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/boardUpdate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/boardUpdate.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/boardView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/boardView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/boardWrite.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/boardWrite.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -413,7 +415,7 @@
       <workItem from="1696909857779" duration="15317000" />
       <workItem from="1696982552006" duration="19906000" />
       <workItem from="1697168528536" duration="179000" />
-      <workItem from="1697168741824" duration="13026000" />
+      <workItem from="1697168741824" duration="15382000" />
     </task>
     <task id="LOCAL-00003" summary="0704">
       <option name="closed" value="true" />
@@ -751,7 +753,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697179260286</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="delete까지 완료함 근데 그냥 db에서 삭제하는 방식으로함">
+      <option name="closed" value="true" />
+      <created>1697182691257</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1697182691257</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -772,7 +782,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="로그인 벨리데이션 아작스시작전" />
     <MESSAGE value="로그인기능 아작스이용해서 연동완료" />
     <MESSAGE value="로그4J 설정완료 로그인 설정완료 로그아웃 구현필요" />
     <MESSAGE value="회원가입 설정 완벽" />
@@ -797,7 +806,8 @@
     <MESSAGE value="boardWrite에 로그인 세션값을 넣어서 작성자를 고정시킴" />
     <MESSAGE value="update전 커밋" />
     <MESSAGE value="update 끝 &#10;컬럼 추가하고 deleteNy 만들던지해서 &#10;삭제기능 만들어야함" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 끝 &#10;컬럼 추가하고 deleteNy 만들던지해서 &#10;삭제기능 만들어야함" />
+    <MESSAGE value="delete까지 완료함 근데 그냥 db에서 삭제하는 방식으로함" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete까지 완료함 근데 그냥 db에서 삭제하는 방식으로함" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
