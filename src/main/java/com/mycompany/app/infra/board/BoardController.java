@@ -57,7 +57,9 @@ public class BoardController {
         return "redirect:/boardList";
     }
     @RequestMapping("boardList/boardView")
-    public String boardView() {
+    public String boardView(HttpSession session, Model model) {
+        String writer = (String) session.getAttribute("id"); // 세션에서 id 값을 읽어옵니다.
+        model.addAttribute("writer", writer); // writer를 모델에 추가하여 뷰에 전달합니다.
         return "user/infra/index/boardView";
     }
 
