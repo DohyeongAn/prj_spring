@@ -76,7 +76,6 @@
         UPDATE
         board
         SET
-        writer = #{writer},
         writing = #{writing},
         title = #{title}
         WHERE

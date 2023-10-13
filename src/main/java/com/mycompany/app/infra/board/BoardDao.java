@@ -27,5 +27,6 @@ public class BoardDao {
 
     public int insert(BoardVo dto) { return sqlSession.insert(namespace + ".insert", dto); }
 
+    public int update(BoardVo dto) { return sqlSession.update(namespace + ".update", dto); }
 
 }

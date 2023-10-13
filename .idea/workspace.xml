@@ -9,9 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="boardWrite에 로그인 세션값을 넣어서 작성자를 고정시킴">
+    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="update전 커밋">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/boardUpdate.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/boardView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/boardView.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -408,7 +414,7 @@
       <workItem from="1696909857779" duration="15317000" />
       <workItem from="1696982552006" duration="19906000" />
       <workItem from="1697168528536" duration="179000" />
-      <workItem from="1697168741824" duration="3091000" />
+      <workItem from="1697168741824" duration="9698000" />
     </task>
     <task id="LOCAL-00003" summary="0704">
       <option name="closed" value="true" />
@@ -730,7 +736,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697171274410</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="update전 커밋">
+      <option name="closed" value="true" />
+      <created>1697172511029</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1697172511029</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -751,7 +765,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="메인화면 상품등록 회원가입 벨리데이션 완료 정규표현식 작업예정" />
     <MESSAGE value="회원가입정규표현식완료 판매자회원 할까말까 고민중" />
     <MESSAGE value="로그인 벨리데이션 아작스시작전" />
     <MESSAGE value="로그인기능 아작스이용해서 연동완료" />
@@ -776,7 +789,8 @@
     <MESSAGE value="데이터가 boardViewData 로 요청이 넘어감 근데 seq 를 못잡는듯 스크립트 수정 필요" />
     <MESSAGE value="디테일 페이지 수정완" />
     <MESSAGE value="boardWrite에 로그인 세션값을 넣어서 작성자를 고정시킴" />
-    <option name="LAST_COMMIT_MESSAGE" value="boardWrite에 로그인 세션값을 넣어서 작성자를 고정시킴" />
+    <MESSAGE value="update전 커밋" />
+    <option name="LAST_COMMIT_MESSAGE" value="update전 커밋" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

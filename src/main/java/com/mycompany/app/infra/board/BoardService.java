@@ -13,4 +13,6 @@ public interface BoardService {
     public BoardVo selectOne(BoardVo vo);
 
     public int insert(BoardVo dto);
+
+    public int update(BoardVo dto);
 }
