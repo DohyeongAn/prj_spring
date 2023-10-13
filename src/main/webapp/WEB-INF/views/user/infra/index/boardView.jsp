@@ -79,73 +79,45 @@
               <div class="x_title">
                 <h2>게시판<small>vue.js 를 이용한 게시판 프로젝트</small></h2>
                 <ul class="nav navbar-right">
-                  <li><a href="/dodomall"><i class="fa fa-close"></i></a></li>
+                  <li><a href="/boardList"><i class="fa fa-close"></i></a></li>
                 </ul>
                 <div class="clearfix"></div>
               </div>
-              <form name=formList>
-<%--                <input type="hidden" name="thisPage" value="<c:out value="${vo.thisPage}" default="1"/>">--%>
-<%--                <input type="hidden" name="rowNumToShow" value="<c:out value="${vo.rowNumToShow}"/>">--%>
-                <div id="datatable_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="dataTables_length" id="datatable_length">
-                        <label
-                        >Show
-                          <select name="datatable_length" aria-controls="datatable" class="form-control input-sm">
-                            <option value="10">10</option>
-                            <option value="25">25</option>
-                            <option value="50">50</option>
-                            <option value="100">100</option>
-                          </select>
-                          entries</label>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div id="datatable_filter" class="dataTables_filter">
-                        <label>Search:<select name="shOption" class="form-control undefined">
-                          <option value="" selected>제목</option>
-                          <option value="">작성자</option>
-                          <option value="">작성일</option>
-                        </select>
-<%--                          <input type="text" name="shKeyword" value="<c:out value="${vo.shKeyword}"/>" class="form-control input-sm" placeholder="" aria-controls="datatable"/>--%>
-                          <button id="btnSearch" class="form-control undefined input-sm" >Go</button>
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <table id="" class="table table-striped table-bordered">
-                        <thead>
-                        <tr>
-                          <th width="60%">제목</th>
-                          <th>작성자</th>
-                          <th>작성일</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr v-if="list.length === 0">
-                          <td colspan="3">데이터가 없습니다.</td>
-                        </tr>
-                        <tr v-else v-for="item in list" :key="item.seq">
-                          <td width="70%"><a :href="'../boardList/boardView?seq='+item.seq">{{ item.title }}</a></td>
-                          <td>{{ item.writer }}</td>
-                          <td>{{ item.regdate }}</td>
-                        </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                  <!-- pagination s -->
-<%--                  <%@include file="../../../include/pagination.jsp"%>--%>
-
-                  <!-- pagination e -->
-
+              <div class="container">
+                <h1>상세보기</h1>
+                <div class="row row1">
+                  <table class="table">
+                    <tr>
+                      <th width=20% class="text-center warning">번호</th>
+                      <td width=30% class="text-center">{{item.seq}}</td>
+                      <th width=20% class="text-center warning">작성일</th>
+                      <td width=30% class="text-center">{{item.regdate}}</td>
+                    </tr>
+                    <tr>
+                      <th width=20% class="text-center warning">이름</th>
+                      <td width=30% class="text-center">{{item.writer}}</td>
+                      <th width=20% class="text-center warning">조회수</th>
+                      <td width=30% class="text-center"></td>
+                    </tr>
+                    <tr>
+                      <th width=20% class="text-center warning">제목</th>
+                      <td colspan="3">{{item.title}}</td>
+                    </tr>
+                    <tr>
+                      <td colspan="4" class="text-left" valign="top" height="200">
+                        <pre style="white-space: pre-wrap;border:none;background-color: white;">{{item.writing}}</pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="4" class="text-right">
+                        <a href="#" class="btn btn-xs btn-info">수정</a>
+                        <a href="#" class="btn btn-xs btn-warning">삭제</a>
+                        <a href="../boardList" class="btn btn-xs btn-success">목록</a>
+                      </td>
+                    </tr>
+                  </table>
                 </div>
-
-
-              </form>
+              </div>
             </div>
           </div>
         </div>
@@ -154,11 +126,11 @@
     <!-- /page content -->
     <table class="table">
       <tr>
-<%--        <td class="text-center">--%>
-<%--          <input type=button value="이전" class="btn btn-sm btn-danger">--%>
-<%--          {{curpage}} page / {{totalpage}} pages--%>
-<%--          <input type=button value="다음" class="btn btn-sm btn-danger">--%>
-<%--        </td>--%>
+        <%--        <td class="text-center">--%>
+        <%--          <input type=button value="이전" class="btn btn-sm btn-danger">--%>
+        <%--          {{curpage}} page / {{totalpage}} pages--%>
+        <%--          <input type=button value="다음" class="btn btn-sm btn-danger">--%>
+        <%--        </td>--%>
       </tr>
     </table>
     <!-- footer content -->
@@ -199,27 +171,28 @@
 
 
 
+
 <script>
-  new Vue({
-    el: '.container',
-    data: {
-      list: [],
-    },
-    mounted() {
-      axios.get('/boardListData')
-              .then(response => {
-                console.log(response.data);
-                this.list = response.data;
-              })
-              .catch(error => {
-                console.error('Error fetching data:', error);
-              });
-    }
-  });
-
+new Vue({
+  el: '.container',
+  data:{
+    //array
+    item: [],
+    seq: 1,
+  },
+    mounted: function(){
+    let _this=this;
+    axios.get("/boardViewData",{
+      parame:{
+        seq: _this.seq
+      }
+      //요청처리 결과값 읽기 => 데이터값만 변경(상태 변경)
+    }).then(function (result){
+      _this.item=result.data;
+    })
+  }
+})
 </script>
-
-
 
 </body>
 </html>

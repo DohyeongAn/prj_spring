@@ -46,11 +46,36 @@ public class BoardController {
 
     // 4. 게시글을 작성하는 요청을 처리하는 핸들러 메서드입니다.
     @ResponseBody
-    @RequestMapping("boradList/boardWrite/boardIns")
+    @RequestMapping("boardList/boardWrite/boardIns")
     public String board_insert(BoardVo dto) {
         // 게시글을 데이터베이스에 저장합니다.
         service.insert(dto);
         // 게시판 목록 페이지로 리다이렉트합니다.
         return "redirect:/boardList";
     }
+    @RequestMapping("boardList/boardView")
+    public String boardView() {
+        return "user/infra/index/boardView";
+    }
+
+    // 5. 게시글 내용을 보여주는 페이지에 접근하는 요청을 처리하는 핸들러 메서드입니다.
+    @ResponseBody
+    @RequestMapping("/boardViewData")
+    public BoardVo boardViewData(BoardVo vo, Model model) {
+        // 게시글 번호를 이용하여 게시글 데이터를 가져옵니다.
+        BoardVo board = service.selectOne(vo);
+        // 뷰에 전달하기 위해 모델에 데이터를 추가합니다.
+        model.addAttribute("board", board);
+        // 뷰의 이름을 반환합니다. 여기서는 "user/infra/index/boardView"로 설정되어 있습니다.
+        return service.selectOne(vo);
+    }
+
+
+
+
+
+
+
+
+
 }

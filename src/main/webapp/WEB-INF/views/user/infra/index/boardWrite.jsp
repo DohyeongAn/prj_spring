@@ -205,7 +205,7 @@
         }
 
         //전송
-        axios.get("http://localhost:8080/boradList/boardWrite/boardIns",{
+        axios.get("http://localhost:8080/boardList/boardWrite/boardIns",{
           //값 채워주기
           params:{
             writer:this.writer,
