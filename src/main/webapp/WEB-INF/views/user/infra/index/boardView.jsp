@@ -111,7 +111,7 @@
                     <tr>
                       <td colspan="4" class="text-right">
                         <a href="#" class="btn btn-xs btn-info" @click="handleEditClick">수정</a>
-                        <a href="#" class="btn btn-xs btn-warning">삭제</a>
+                        <a href="#" class="btn btn-xs btn-warning" @click="handleDeleteClick">삭제</a>
                         <a href="../boardList" class="btn btn-xs btn-success">목록</a>
                       </td>
                     </tr>
@@ -209,6 +209,17 @@
 
         }else {
           alert("작성자만 수정할 수 있습니다.");
+        }
+      },handleDeleteClick() {
+        // "삭제" 버튼을 클릭했을 때 실행될 메소드입니다.
+        if (this.sessionId === this.item.writer) {
+          // 세션의 id와 작성자가 같을 경우에만 동작합니다.
+          alert("삭제 작업을 시작합니다.");
+          confirm("정말 삭제하시겠습니까? 삭제된 데이터는 복구할 수 없습니다.");
+          // 삭제 작업
+          location.href = '../boardList/boardView/boardDelete?seq=' + this.item.seq;
+        }else {
+          alert("작성자만 삭제할 수 있습니다.");
         }
       }
     }

@@ -29,4 +29,6 @@ public class BoardDao {
 
     public int update(BoardVo dto) { return sqlSession.update(namespace + ".update", dto); }
 
+    public int delete(BoardVo dto) { return sqlSession.delete(namespace + ".delete", dto); }
+
 }

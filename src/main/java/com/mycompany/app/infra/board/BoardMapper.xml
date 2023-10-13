@@ -83,4 +83,11 @@
     </update>
 
 
+    <!-- 게시글 삭제 쿼리 -->
+    <delete id="delete">
+        DELETE FROM
+        board
+        WHERE
+        seq = #{seq}
+    </delete>
 </mapper>
