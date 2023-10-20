@@ -110,7 +110,7 @@
                             <option value="1">작성자</option>
                             <option value="2">작성일</option>
                           </select>
-                          <input type="text" v-model="shKeyword" name="shKeyword" @keyup.enter="searchBtn(shKeyword)" class="form-control input-sm" placeholder="검색어 입력"/>
+                          <input type="text" v-model="shKeyword" name="shKeyword" @keyup.enter="searchBtn(shKeyword)" class="form-control input-sm" placeholder="검색어 입력" autocomplete="off"/>
                           <button id="btnSearch" class="form-control undefined input-sm" v-on:click="searchBtn(shKeyword)">Go</button>
                         </label>
                       </div>
@@ -127,7 +127,7 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr v-if="list.length === 0 && shKeyword !== ''">
+                        <tr v-if="this.totalRows === 0 && shKeyword !== ''">
                           <td colspan="3">검색 결과가 없습니다.</td>
                         </tr>
                         <tr v-else v-for="item in list" :key="item.seq">
@@ -216,14 +216,20 @@
       totalRows: 0,
       totalPages: 0,
       shKeyword: '',
-      shOption: '0'
+      shOption: '0',
+      timeout: null, // 딜레이를 위한 타임아웃 변수
     },
     mounted() {
       this.fetchData();
     },
     watch: {
       shKeyword: function(newKeyword) {
-        this.fetchData(); // 키워드가 변경될 때마다 fetchData() 호출
+        if(this.totalRows != 0){
+        clearTimeout(this.timeout); // 이전 타임아웃 제거
+        this.timeout = setTimeout(() => {
+          this.fetchData(); // 키워드가 변경되고 입력이 멈춘 후 fetchData() 호출
+        }, 300);// 300ms 딜레이
+        }
       }
     },
     methods: {
@@ -252,7 +258,6 @@
           console.log("shOption : " + this.shOption);
         }).catch(error => {
           console.error('데이터를 가져오는 중 오류가 발생했습니다:', error);
-          alert("ddd")
         });
       },
       goToPage(page) {

@@ -9,14 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="딜리트 삭제 Ny컬럼만들어서 함">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/boardView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/boardView.jsp" afterDir="false" />
+    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="실시간 검색 가능">
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -423,7 +416,7 @@
       <workItem from="1697444803402" duration="3039000" />
       <workItem from="1697447858129" duration="11000" />
       <workItem from="1697503363018" duration="9686000" />
-      <workItem from="1697766968641" duration="6473000" />
+      <workItem from="1697766968641" duration="8971000" />
     </task>
     <task id="LOCAL-00003" summary="0704">
       <option name="closed" value="true" />
@@ -769,7 +762,31 @@
       <option name="project" value="LOCAL" />
       <updated>1697182691257</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="검색 페이징 완료">
+      <option name="closed" value="true" />
+      <created>1697778450177</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1697778450177</updated>
+    </task>
+    <task id="LOCAL-00047" summary="작업전커밋">
+      <option name="closed" value="true" />
+      <created>1697778779966</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1697778779966</updated>
+    </task>
+    <task id="LOCAL-00048" summary="실시간 검색 가능">
+      <option name="closed" value="true" />
+      <created>1697779646035</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1697779646035</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -790,9 +807,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="로그인기능 아작스이용해서 연동완료" />
-    <MESSAGE value="로그4J 설정완료 로그인 설정완료 로그아웃 구현필요" />
-    <MESSAGE value="회원가입 설정 완벽" />
     <MESSAGE value="로그인 로그아웃 구현완료" />
     <MESSAGE value="0725 디테일 페이지 데이터 들어가긴함 하지만 수정필요" />
     <MESSAGE value="0726 dateil 자동 옵션 구현" />
@@ -815,7 +829,10 @@
     <MESSAGE value="update전 커밋" />
     <MESSAGE value="update 끝 &#10;컬럼 추가하고 deleteNy 만들던지해서 &#10;삭제기능 만들어야함" />
     <MESSAGE value="delete까지 완료함 근데 그냥 db에서 삭제하는 방식으로함" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete까지 완료함 근데 그냥 db에서 삭제하는 방식으로함" />
+    <MESSAGE value="검색 페이징 완료" />
+    <MESSAGE value="작업전커밋" />
+    <MESSAGE value="실시간 검색 가능" />
+    <option name="LAST_COMMIT_MESSAGE" value="실시간 검색 가능" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
