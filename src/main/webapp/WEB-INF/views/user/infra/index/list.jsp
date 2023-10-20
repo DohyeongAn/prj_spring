@@ -110,7 +110,7 @@
                             <option value="1">작성자</option>
                             <option value="2">작성일</option>
                           </select>
-                          <input type="text" v-model="shKeyword" name="shKeyword" @keyup.enter="searchBtn(shKeyword)" class="form-control input-sm" placeholder="검색어 입력" ref="shKeyword"/>
+                          <input type="text" v-model="shKeyword" name="shKeyword" @keyup.enter="searchBtn(shKeyword)" class="form-control input-sm" placeholder="검색어 입력"/>
                           <button id="btnSearch" class="form-control undefined input-sm" v-on:click="searchBtn(shKeyword)">Go</button>
                         </label>
                       </div>
@@ -127,8 +127,8 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr v-if="list.length === 0">
-                          <td colspan="3">데이터가 없습니다.</td>
+                        <tr v-if="list.length === 0 && shKeyword !== ''">
+                          <td colspan="3">검색 결과가 없습니다.</td>
                         </tr>
                         <tr v-else v-for="item in list" :key="item.seq">
                           <td width="70%"><a :href="'../boardList/boardView?seq='+item.seq">{{ item.title }}</a></td>
@@ -221,6 +221,11 @@
     mounted() {
       this.fetchData();
     },
+    watch: {
+      shKeyword: function(newKeyword) {
+        this.fetchData(); // 키워드가 변경될 때마다 fetchData() 호출
+      }
+    },
     methods: {
       fetchData() {
         axios.get("http://localhost:8080/boardListData",{
@@ -228,36 +233,33 @@
             thisPage: this.thisPage,
             shKeyword: this.shKeyword,
             shOption: this.shOption
-        }
-      }).then(response => {
-                  this.list = response.data.list;
-                  this.totalRows = response.data.totalRows;
-                  this.thisPage = response.data.thisPage;
-                  this.pageNumToShow = response.data.pageNumToShow;
-                  this.totalPages = response.data.totalPages;
-                  this.shKeyword = response.data.shKeyword;
-                  this.shOption = response.data.shOption;
-                  console.log(response.data);
-                  console.log("list : " + this.list);
-                  console.log("totalRows : " + this.totalRows);
-                  console.log("thisPage : " + this.thisPage);
-                  console.log("PageNumToShow : " + this.pageNumToShow);
-                  console.log("total Pages : " + this.totalPages);
-                  console.log("shKeyword : " + this.shKeyword);
-                  console.log("shOption : " + this.shOption);
-                })
-                .catch(error => {
-                  console.error('데이터를 가져오는 중 오류가 발생했습니다:', error);
-                });
+          }
+        }).then(response => {
+          this.list = response.data.list;
+          this.totalRows = response.data.totalRows;
+          this.thisPage = response.data.thisPage;
+          this.pageNumToShow = response.data.pageNumToShow;
+          this.totalPages = response.data.totalPages;
+          this.shKeyword = response.data.shKeyword;
+          this.shOption = response.data.shOption;
+          console.log(response.data);
+          console.log("list : " + this.list);
+          console.log("totalRows : " + this.totalRows);
+          console.log("thisPage : " + this.thisPage);
+          console.log("PageNumToShow : " + this.pageNumToShow);
+          console.log("total Pages : " + this.totalPages);
+          console.log("shKeyword : " + this.shKeyword);
+          console.log("shOption : " + this.shOption);
+        }).catch(error => {
+          console.error('데이터를 가져오는 중 오류가 발생했습니다:', error);
+          alert("ddd")
+        });
       },
       goToPage(page) {
         if (page >= 1 && page <= this.totalPages) {
           this.thisPage = page;
           this.fetchData();
         }
-      },
-      searchBtn() {
-        this.fetchData();
       }
     }
   });
