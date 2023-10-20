@@ -9,11 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="numtoshow 완성">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardController.java" afterDir="false" />
+    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="날아간거 boardWrite 수정">
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/boardView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/boardView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,14 +284,6 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task id="LOCAL-00002" summary="intellij window version">
-      <option name="closed" value="true" />
-      <created>1688010693617</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1688010693617</updated>
-    </task>
     <task active="true" id="Default" summary="디폴트 작업">
       <changelist id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="intellij window version" />
       <created>1688343475781</created>
@@ -411,7 +400,7 @@
       <workItem from="1697444803402" duration="3039000" />
       <workItem from="1697447858129" duration="11000" />
       <workItem from="1697503363018" duration="9686000" />
-      <workItem from="1697766968641" duration="12930000" />
+      <workItem from="1697766968641" duration="13624000" />
     </task>
     <task id="LOCAL-00003" summary="0704">
       <option name="closed" value="true" />
@@ -797,7 +786,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697782409397</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="날아간거 boardWrite 수정">
+      <option name="closed" value="true" />
+      <created>1697785122310</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1697785122310</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -818,7 +815,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="0726 dateil 자동 옵션 구현" />
     <MESSAGE value="0731 dateil 자동 옵션 구현" />
     <MESSAGE value="0801 api 연습" />
     <MESSAGE value="0802 m2 맥 변경 후 적용푸시" />
@@ -843,7 +839,8 @@
     <MESSAGE value="실시간 검색 가능" />
     <MESSAGE value="오류수정 무한 쿼리검색" />
     <MESSAGE value="numtoshow 완성" />
-    <option name="LAST_COMMIT_MESSAGE" value="numtoshow 완성" />
+    <MESSAGE value="날아간거 boardWrite 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="날아간거 boardWrite 수정" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
