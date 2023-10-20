@@ -30,8 +30,6 @@ public class CodeGroupController {
         } else {
 //			by pass
         }
-
-
         return "admin/infra/codegroup/adminList";
     }
 

@@ -171,60 +171,6 @@
 
 
 
-<script>
-  new Vue({
-    el: '.container',
-    data:{
-      item: [],
-      seq: null,
-      sessionId: '${writer}',
-    },
-    mounted: function(){
-      let _this=this;
-      const urlParams = new URLSearchParams(window.location.search);
-      const seq = urlParams.get('seq');
-      _this.seq = seq;
-
-      axios.get("/boardViewData", {
-        params: {
-          seq: _this.seq
-        }
-      }).then(function (response){
-        _this.item = response.data;
-      })
-    },
-    methods: {
-      checkButtonAccess() {
-        if (this.sessionId !== this.item.writer) {
-          document.querySelector('.btn-info').disabled = true;
-        }
-      },
-      handleEditClick() {
-        // "수정" 버튼을 클릭했을 때 실행될 메소드입니다.
-        if (this.sessionId === this.item.writer) {
-          // 세션의 id와 작성자가 같을 경우에만 동작합니다.
-          alert("수정 작업을 시작합니다.");
-          // 수정 작업
-          location.href = '../boardList/boardView/boardUpdate?seq=' + this.item.seq;
-
-        }else {
-          alert("작성자만 수정할 수 있습니다.");
-        }
-      },handleDeleteClick() {
-        // "삭제" 버튼을 클릭했을 때 실행될 메소드입니다.
-        if (this.sessionId === this.item.writer) {
-          // 세션의 id와 작성자가 같을 경우에만 동작합니다.
-          alert("삭제 작업을 시작합니다.");
-          confirm("정말 삭제하시겠습니까? 삭제된 데이터는 복구할 수 없습니다.");
-          // 삭제 작업
-          location.href = '../boardList/boardView/boardDelete?seq=' + this.item.seq;
-        }else {
-          alert("작성자만 삭제할 수 있습니다.");
-        }
-      }
-    }
-  })
-</script>
 
 
 </body>

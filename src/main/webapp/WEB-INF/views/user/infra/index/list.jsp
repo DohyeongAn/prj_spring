@@ -84,15 +84,15 @@
                 <div class="clearfix"></div>
               </div>
               <form name=formList>
-<%--                <input type="hidden" name="thisPage" value="<c:out value="${vo.thisPage}" default="1"/>">--%>
-<%--                <input type="hidden" name="rowNumToShow" value="<c:out value="${vo.rowNumToShow}"/>">--%>
+                <input type="hidden" name="thisPage" value="<c:out value="${vo.thisPage}" default="1"/>">
+                <input type="hidden" name="rowNumToShow" value="<c:out value="${vo.rowNumToShow}"/>">
                 <div id="datatable_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
                   <div class="row">
                     <div class="col-sm-6">
-                      <div class="dataTables_length" id="datatable_length">
+                      <div class="dataTables_length" >
                         <label
                         >Show
-                          <select name="datatable_length" aria-controls="datatable" class="form-control input-sm">
+                          <select name="" aria-controls="datatable" class="form-control input-sm">
                             <option value="10">10</option>
                             <option value="25">25</option>
                             <option value="50">50</option>
@@ -103,13 +103,15 @@
                     </div>
                     <div class="col-sm-6">
                       <div id="datatable_filter" class="dataTables_filter">
-                        <label>Search:<select name="shOption" class="form-control undefined">
-                          <option value="" selected>제목</option>
-                          <option value="">작성자</option>
-                          <option value="">작성일</option>
-                        </select>
-<%--                          <input type="text" name="shKeyword" value="<c:out value="${vo.shKeyword}"/>" class="form-control input-sm" placeholder="" aria-controls="datatable"/>--%>
-                          <button id="btnSearch" class="form-control undefined input-sm" >Go</button>
+                        <label>
+                          Search:
+                          <select name="shOption" v-model="shOption" class="form-control undefined" ref="shOption">
+                            <option value="0" selected>제목</option>
+                            <option value="1">작성자</option>
+                            <option value="2">작성일</option>
+                          </select>
+                          <input type="text" v-model="shKeyword" name="shKeyword" @keyup.enter="searchBtn(shKeyword)" class="form-control input-sm" placeholder="검색어 입력" ref="shKeyword"/>
+                          <button id="btnSearch" class="form-control undefined input-sm" v-on:click="searchBtn(shKeyword)">Go</button>
                         </label>
                       </div>
                     </div>
@@ -137,10 +139,25 @@
                       </table>
                     </div>
                   </div>
+
+
                   <!-- pagination s -->
-<%--                  <%@include file="../../../include/pagination.jsp"%>--%>
+                  <div class="text-center">
+                    <ul class="pagination">
+                      <li :class="{ disabled: thisPage === 1 }">
+                        <a @click="goToPage(thisPage - 1)">이전</a>
+                      </li>
+                      <li v-for="pageNumber in totalPages" :key="pageNumber" :class="{ active: pageNumber === thisPage }">
+                        <a @click="goToPage(pageNumber)">{{ pageNumber }}</a>
+                      </li>
+                      <li :class="{ disabled: thisPage === totalPages }">
+                        <a @click="goToPage(thisPage + 1)">다음</a>
+                      </li>
+                    </ul>
+                  </div>
 
                   <!-- pagination e -->
+
 
                 </div>
 
@@ -152,15 +169,7 @@
       </div>
     </div>
     <!-- /page content -->
-    <table class="table">
-      <tr>
-<%--        <td class="text-center">--%>
-<%--          <input type=button value="이전" class="btn btn-sm btn-danger">--%>
-<%--          {{curpage}} page / {{totalpage}} pages--%>
-<%--          <input type=button value="다음" class="btn btn-sm btn-danger">--%>
-<%--        </td>--%>
-      </tr>
-    </table>
+
     <!-- footer content -->
     <footer style="margin-left: 0" >
       <a href="boardList/boardWrite" id="btnInsert" class=" form-control undefined input-sm" style="width: 100px; float: right; text-align: center; " >글쓰기</a>
@@ -197,27 +206,93 @@
 <script src="/resources/css/vendors/pdfmake/build/pdfmake.min.js"></script>
 <script src="/resources/css/vendors/pdfmake/build/vfs_fonts.js"></script>
 
-
-
 <script>
   new Vue({
-    el: '.container',
+    el: '.main_container',
     data: {
       list: [],
+      thisPage: 1,
+      pageNumToShow: 0,
+      totalRows: 0,
+      totalPages: 0,
+      shKeyword: '',
+      shOption: '0'
     },
     mounted() {
-      axios.get('/boardListData')
-              .then(response => {
-                console.log(response.data);
-                this.list = response.data;
-              })
-              .catch(error => {
-                console.error('Error fetching data:', error);
-              });
+      this.fetchData();
+    },
+    methods: {
+      fetchData() {
+        axios.get("http://localhost:8080/boardListData",{
+          params: {
+            thisPage: this.thisPage,
+            shKeyword: this.shKeyword,
+            shOption: this.shOption
+        }
+      })
+                .then(response => {
+                  this.list = response.data.list;
+                  this.totalRows = response.data.totalRows;
+                  this.thisPage = response.data.thisPage;
+                  this.pageNumToShow = response.data.pageNumToShow;
+                  this.totalPages = response.data.totalPages;
+                  this.shKeyword = response.data.shKeyword;
+                  this.shOption = response.data.shOption;
+                  console.log(response.data);
+                  console.log("list : " + this.list);
+                  console.log("totalRows : " + this.totalRows);
+                  console.log("thisPage : " + this.thisPage);
+                  console.log("PageNumToShow : " + this.pageNumToShow);
+                  console.log("total Pages : " + this.totalPages);
+                  console.log("shKeyword : " + this.shKeyword);
+                  console.log("shOption : " + this.shOption);
+                })
+                .catch(error => {
+                  console.error('데이터를 가져오는 중 오류가 발생했습니다:', error);
+                });
+      },
+      goToPage(page) {
+        if (page >= 1 && page <= this.totalPages) {
+          this.thisPage = page;
+          this.fetchData();
+        }
+      },
+      searchBtn() {
+        this.fetchData();
+      }
     }
   });
-
 </script>
+
+<%--<script>--%>
+<%--  new Vue({--%>
+<%--    //el : 관리 영역 지정 => container--%>
+<%--    el:'.container',--%>
+<%--    data:{--%>
+<%--      board_list:[],--%>
+<%--      curpage:1,--%>
+<%--      totalpage:0--%>
+<%--    },--%>
+<%--    mounted:function(){--%>
+<%--      let _this=this;--%>
+<%--      axios.get("http://localhost:8080/web/board/list_vue.do",{--%>
+<%--        params:{--%>
+<%--          page:_this.curpage--%>
+<%--        }--%>
+<%--      }).then(function(result){--%>
+<%--        //개발자도구창에서 넘어온값 확인가능--%>
+<%--        console.log(result.data);--%>
+<%--        _this.board_list=result.data;--%>
+<%--        _this.curpage=result.data[0].curpage;--%>
+<%--        _this.totalpage=result.date[0].totalpage;--%>
+<%--      })--%>
+<%--    }--%>
+<%--  })--%>
+<%--</script>--%>
+
+
+
+
 
 
 

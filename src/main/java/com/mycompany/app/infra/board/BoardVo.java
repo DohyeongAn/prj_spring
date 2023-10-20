@@ -11,6 +11,7 @@ public class BoardVo extends BaseVo {
     private String regdate;
     private String title;
     private Integer delNy;
+
     //--
 
 
@@ -77,4 +78,5 @@ public class BoardVo extends BaseVo {
     public void setDelNy(Integer delNy) {
         this.delNy = delNy;
     }
+
 }

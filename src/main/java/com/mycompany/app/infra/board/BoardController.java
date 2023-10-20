@@ -6,7 +6,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 public class BoardController {
@@ -15,28 +17,43 @@ public class BoardController {
     BoardServiceImpl service;
 
     // 1. 게시판 목록을 보여주는 페이지에 접근하는 요청을 처리하는 핸들러 메서드입니다.
-    @GetMapping("/boardList")
+    @RequestMapping("/boardList")
     public String getBoardList(@ModelAttribute("vo") BoardVo vo, Model model) {
-        // 뷰의 이름을 반환합니다. 여기서는 "user/infra/index/list"로 설정되어 있습니다.
         return "user/infra/index/list";
     }
 
     // 2. 게시판 데이터를 가져오는 요청을 처리하는 핸들러 메서드입니다.
     @ResponseBody
     @RequestMapping(value = "/boardListData")
-    public List<BoardVo> getBoardListData(@ModelAttribute("vo") BoardVo vo, Model model) {
-        // 페이징 처리를 위한 조건이 설정되어 있는 경우
+    public Map<String, Object> getBoardListData(@ModelAttribute("vo") BoardVo vo, Model model) {
+        Map<String, Object> result = new HashMap<String, Object>();
+        vo.setShKeyword(vo.getShKeyword() == null ? "" : vo.getShKeyword());
+        vo.setShOption(vo.getShOption() == null ? 0 : vo.getShOption()); // 추가된 부분
+
+        vo.setParamsPaging(service.selectOneCount(vo));
         if (vo.getTotalRows() > 0) {
             // 게시글 목록을 가져옵니다.
             List<BoardVo> list = service.selectList(vo);
+            // 페이징 처리를 위한 파라미터를 계산합니다.'
             // 뷰에 전달하기 위해 모델에 데이터를 추가합니다.
             model.addAttribute("list", list);
+            result.put("list", list);
         } else {
             // 페이징 조건이 설정되어 있지 않은 경우 by pass (건너뜀)
         }
-        // 게시글 목록을 반환합니다.
-        return service.selectList(vo);
+
+        result.put("shKeyword", vo.getShKeyword());
+        result.put("totalRows", vo.getTotalRows());
+        result.put("thisPage", vo.getThisPage());
+        result.put("pageNumToShow", vo.getPageNumToShow());
+        result.put("totalPages", vo.getTotalPages());
+        result.put("startPage", vo.getStartPage());
+        result.put("endPage", vo.getEndPage());
+        result.put("shOption", vo.getShOption());
+
+        return result;
     }
+
 
     // 3. 게시글 작성 페이지에 접근하는 요청을 처리하는 핸들러 메서드입니다.
     @GetMapping("boardList/boardWrite")
