@@ -46,6 +46,7 @@ public class BoardController {
         result.put("totalRows", vo.getTotalRows());
         result.put("thisPage", vo.getThisPage());
         result.put("pageNumToShow", vo.getPageNumToShow());
+        result.put("rowNumToShow", vo.getRowNumToShow());
         result.put("totalPages", vo.getTotalPages());
         result.put("startPage", vo.getStartPage());
         result.put("endPage", vo.getEndPage());

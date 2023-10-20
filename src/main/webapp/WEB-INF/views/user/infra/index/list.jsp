@@ -84,15 +84,13 @@
                 <div class="clearfix"></div>
               </div>
               <form name=formList>
-                <input type="hidden" name="thisPage" value="<c:out value="${vo.thisPage}" default="1"/>">
-                <input type="hidden" name="rowNumToShow" value="<c:out value="${vo.rowNumToShow}"/>">
                 <div id="datatable_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="dataTables_length" >
                         <label
                         >Show
-                          <select name="" aria-controls="datatable" class="form-control input-sm">
+                          <select name="rowNumToShow" v-model="rowNumToShow" class="form-control input-sm" ref="rowNumToShow" v-on:change="changeRowNumToShow">
                             <option value="10">10</option>
                             <option value="25">25</option>
                             <option value="50">50</option>
@@ -110,8 +108,8 @@
                             <option value="1">작성자</option>
                             <option value="2">작성일</option>
                           </select>
-                          <input type="text" v-model="shKeyword" name="shKeyword" @keyup.enter="searchBtn(shKeyword)" class="form-control input-sm" placeholder="검색어 입력" autocomplete="off"/>
-                          <button id="btnSearch" class="form-control undefined input-sm" v-on:click="searchBtn(shKeyword)">Go</button>
+                          <input type="text" v-model="shKeyword" name="shKeyword" class="form-control input-lg" placeholder="검색어 입력" autocomplete="off" ref="shKeyword"/>
+<%--                          <button id="btnSearch" class="form-control undefined input-sm" v-on:click="searchBtn(shKeyword)">Go</button>--%>
                         </label>
                       </div>
                     </div>
@@ -217,6 +215,7 @@
       totalPages: 0,
       shKeyword: '',
       shOption: '0',
+      rowNumToShow: 10,
       timeout: null, // 딜레이를 위한 타임아웃 변수
     },
     mounted() {
@@ -238,7 +237,8 @@
           params: {
             thisPage: this.thisPage,
             shKeyword: this.shKeyword,
-            shOption: this.shOption
+            shOption: this.shOption,
+            rowNumToShow: this.rowNumToShow
           }
         }).then(response => {
           this.list = response.data.list;
@@ -248,6 +248,7 @@
           this.totalPages = response.data.totalPages;
           this.shKeyword = response.data.shKeyword;
           this.shOption = response.data.shOption;
+          this.rowNumToShow = response.data.rowNumToShow;
           console.log(response.data);
           console.log("list : " + this.list);
           console.log("totalRows : " + this.totalRows);
@@ -256,6 +257,7 @@
           console.log("total Pages : " + this.totalPages);
           console.log("shKeyword : " + this.shKeyword);
           console.log("shOption : " + this.shOption);
+          console.log("rowNumToShow : " + this.rowNumToShow);
         }).catch(error => {
           console.error('데이터를 가져오는 중 오류가 발생했습니다:', error);
         });
@@ -265,6 +267,10 @@
           this.thisPage = page;
           this.fetchData();
         }
+      },
+      changeRowNumToShow() {
+        this.thisPage = 1; // 페이지를 1로 초기화
+        this.fetchData(); // 데이터 다시 불러오기
       }
     }
   });

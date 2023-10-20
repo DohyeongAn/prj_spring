@@ -9,7 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="실시간 검색 가능">
+    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="오류수정 무한 쿼리검색">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -416,7 +417,7 @@
       <workItem from="1697444803402" duration="3039000" />
       <workItem from="1697447858129" duration="11000" />
       <workItem from="1697503363018" duration="9686000" />
-      <workItem from="1697766968641" duration="8971000" />
+      <workItem from="1697766968641" duration="11181000" />
     </task>
     <task id="LOCAL-00003" summary="0704">
       <option name="closed" value="true" />
@@ -786,7 +787,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697779646035</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="오류수정 무한 쿼리검색">
+      <option name="closed" value="true" />
+      <created>1697780785485</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1697780785485</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -807,7 +816,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="로그인 로그아웃 구현완료" />
     <MESSAGE value="0725 디테일 페이지 데이터 들어가긴함 하지만 수정필요" />
     <MESSAGE value="0726 dateil 자동 옵션 구현" />
     <MESSAGE value="0731 dateil 자동 옵션 구현" />
@@ -832,7 +840,8 @@
     <MESSAGE value="검색 페이징 완료" />
     <MESSAGE value="작업전커밋" />
     <MESSAGE value="실시간 검색 가능" />
-    <option name="LAST_COMMIT_MESSAGE" value="실시간 검색 가능" />
+    <MESSAGE value="오류수정 무한 쿼리검색" />
+    <option name="LAST_COMMIT_MESSAGE" value="오류수정 무한 쿼리검색" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
