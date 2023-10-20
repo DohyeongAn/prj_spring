@@ -185,7 +185,8 @@
       writing:'',
       regdate:'',
       title:'',
-      delNy:''
+      delNy:'',
+      viewCnt: ''
     },
     methods:{
       boardWrite:function(){
@@ -212,6 +213,7 @@
             writer:this.writer,
             writing:this.writing,
             title:this.title,
+
           }
         }).then(function(result){
           location.href="../boardList";

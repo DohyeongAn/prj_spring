@@ -87,6 +87,8 @@ public class BoardController {
     public BoardVo boardViewData(BoardVo vo , Model model) {
         // 게시글 번호를 이용하여 게시글 데이터를 가져옵니다.
         BoardVo board = service.selectOne(vo);
+        // 게시글 조회수를 증가시킵니다.
+        service.viewCnt(vo);
         // 뷰에 전달하기 위해 모델에 데이터를 추가합니다.
         model.addAttribute("board", board);
         // 뷰의 이름을 반환합니다. 여기서는 "user/infra/index/boardView"로 설정되어 있습니다.

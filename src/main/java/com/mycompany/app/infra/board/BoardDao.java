@@ -25,10 +25,12 @@ public class BoardDao {
 
     public int selectOneCount(BoardVo vo) { return sqlSession.selectOne(namespace + ".selectOneCount", vo); }
 
-    public int insert(BoardVo dto) { return sqlSession.insert(namespace + ".insert", dto); }
+    public int insert(BoardVo vo) { return sqlSession.insert(namespace + ".insert", vo); }
 
-    public int update(BoardVo dto) { return sqlSession.update(namespace + ".update", dto); }
+    public int update(BoardVo vo) { return sqlSession.update(namespace + ".update", vo); }
 
-    public int delete(BoardVo dto) { return sqlSession.delete(namespace + ".delete", dto); }
+    public int delete(BoardVo vo) { return sqlSession.delete(namespace + ".delete", vo); }
+
+    public int viewCnt(BoardVo vo) { return sqlSession.update(namespace + ".viewCnt", vo); }
 
 }

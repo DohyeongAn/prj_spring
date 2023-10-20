@@ -9,8 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="날아간거 boardWrite 수정">
+    <list default="true" id="29c06fb8-2327-4ad9-86bb-52bf17b8fb57" name="변경" comment="날아간거 boardview 수정">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/21450afa-e05a-42e2-bb01-c31796c93d35.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/21450afa-e05a-42e2-bb01-c31796c93d35.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/21450afa-e05a-42e2-bb01-c31796c93d35/storage_v2/_src_/schema/dodomall.ag29NA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/21450afa-e05a-42e2-bb01-c31796c93d35/storage_v2/_src_/schema/dodomall.ag29NA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/board/BoardVo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/boardView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/boardView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/boardWrite.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/boardWrite.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -400,15 +411,7 @@
       <workItem from="1697444803402" duration="3039000" />
       <workItem from="1697447858129" duration="11000" />
       <workItem from="1697503363018" duration="9686000" />
-      <workItem from="1697766968641" duration="13624000" />
-    </task>
-    <task id="LOCAL-00003" summary="0704">
-      <option name="closed" value="true" />
-      <created>1688457565816</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1688457565816</updated>
+      <workItem from="1697766968641" duration="16346000" />
     </task>
     <task id="LOCAL-00004" summary="0704 페이지내이션완료">
       <option name="closed" value="true" />
@@ -794,7 +797,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697785122310</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="날아간거 boardview 수정">
+      <option name="closed" value="true" />
+      <created>1697785787370</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1697785787370</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -815,7 +826,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="0731 dateil 자동 옵션 구현" />
     <MESSAGE value="0801 api 연습" />
     <MESSAGE value="0802 m2 맥 변경 후 적용푸시" />
     <MESSAGE value="0803 rest 사용하여 api 생성데이터 만듬" />
@@ -840,17 +850,18 @@
     <MESSAGE value="오류수정 무한 쿼리검색" />
     <MESSAGE value="numtoshow 완성" />
     <MESSAGE value="날아간거 boardWrite 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="날아간거 boardWrite 수정" />
+    <MESSAGE value="날아간거 boardview 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="날아간거 boardview 수정" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/infra/index/join.jsp</url>
           <line>969</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/codegroup/CodeGroupVo.java</url>
           <line>39</line>
           <option name="timeStamp" value="2" />
@@ -860,13 +871,18 @@
           <line>5</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/infra/kakao/Kakao.java</url>
           <line>25</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.mycompany.app.infra.board.BoardVo" memberName="viewCnt" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

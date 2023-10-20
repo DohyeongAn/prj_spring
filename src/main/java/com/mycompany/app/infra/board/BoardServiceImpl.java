@@ -21,11 +21,14 @@ public class BoardServiceImpl implements BoardService{
     public BoardVo selectOne(BoardVo vo) { return dao.selectOne(vo); }
 
     @Override
-    public int insert(BoardVo dto) { return dao.insert(dto); }
+    public int insert(BoardVo vo) { return dao.insert(vo); }
 
     @Override
-    public int update(BoardVo dto) { return dao.update(dto); }
+    public int update(BoardVo vo) { return dao.update(vo); }
 
     @Override
-    public int delete(BoardVo dto) { return dao.delete(dto); }
+    public int delete(BoardVo vo) { return dao.delete(vo); }
+
+    @Override
+    public int viewCnt(BoardVo vo) { return dao.viewCnt(vo); }
 }

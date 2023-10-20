@@ -1014,8 +1014,8 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8mb3_general_ci</CollationName>
     </schema>
     <schema id="289" parent="1" name="dodomall">
-      <IntrospectionTimestamp>2023-10-13.16:40:49</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-10-13.07:40:49</LocalIntrospectionTimestamp>
+      <IntrospectionTimestamp>2023-10-20.16:13:50</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-10-20.07:13:50</LocalIntrospectionTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="290" parent="1" name="information_schema">
@@ -1088,7 +1088,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
     <column id="306" parent="300" name="seq">
-      <AutoIncrement>29</AutoIncrement>
+      <AutoIncrement>35</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1114,226 +1114,230 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <DasType>int|0s</DasType>
       <Position>6</Position>
     </column>
-    <index id="312" parent="300" name="PRIMARY">
+    <column id="312" parent="300" name="viewCnt">
+      <DasType>int|0s</DasType>
+      <Position>7</Position>
+    </column>
+    <index id="313" parent="300" name="PRIMARY">
       <ColNames>seq</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="313" parent="300" name="PRIMARY">
+    <key id="314" parent="300" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="314" parent="301" name="seq">
+    <column id="315" parent="301" name="seq">
       <AutoIncrement>144</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="315" parent="301" name="sender">
+    <column id="316" parent="301" name="sender">
       <DasType>varchar(45)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="316" parent="301" name="message">
+    <column id="317" parent="301" name="message">
       <DasType>varchar(1000)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <CollationName>utf8mb3_general_ci</CollationName>
     </column>
-    <column id="317" parent="301" name="regdate">
+    <column id="318" parent="301" name="regdate">
       <DasType>datetime|0s</DasType>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <Position>4</Position>
     </column>
-    <index id="318" parent="301" name="PRIMARY">
+    <index id="319" parent="301" name="PRIMARY">
       <ColNames>seq</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="319" parent="301" name="PRIMARY">
+    <key id="320" parent="301" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="320" parent="302" name="seq">
+    <column id="321" parent="302" name="seq">
       <AutoIncrement>1</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="321" parent="302" name="name">
+    <column id="322" parent="302" name="name">
       <DasType>varchar(45)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="322" parent="302" name="delNy">
+    <column id="323" parent="302" name="delNy">
       <DasType>int|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="323" parent="302" name="codegroup_seq">
+    <column id="324" parent="302" name="codegroup_seq">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <foreign-key id="324" parent="302" name="fk_code_codegroup1">
+    <foreign-key id="325" parent="302" name="fk_code_codegroup1">
       <ColNames>codegroup_seq</ColNames>
       <RefColNames>seq</RefColNames>
       <RefTableName>codegroup</RefTableName>
     </foreign-key>
-    <index id="325" parent="302" name="PRIMARY">
+    <index id="326" parent="302" name="PRIMARY">
       <ColNames>seq</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="326" parent="302" name="fk_code_codegroup1_idx">
+    <index id="327" parent="302" name="fk_code_codegroup1_idx">
       <ColNames>codegroup_seq</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="327" parent="302" name="PRIMARY">
+    <key id="328" parent="302" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="328" parent="303" name="seq">
-      <AutoIncrement>10</AutoIncrement>
+    <column id="329" parent="303" name="seq">
+      <AutoIncrement>32</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="329" parent="303" name="name">
+    <column id="330" parent="303" name="name">
       <DasType>varchar(45)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="330" parent="303" name="delNy">
+    <column id="331" parent="303" name="delNy">
       <DasType>int|0s</DasType>
       <Position>3</Position>
     </column>
-    <index id="331" parent="303" name="PRIMARY">
+    <index id="332" parent="303" name="PRIMARY">
       <ColNames>seq</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="332" parent="303" name="PRIMARY">
+    <key id="333" parent="303" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="333" parent="304" name="seq">
+    <column id="334" parent="304" name="seq">
       <AutoIncrement>4</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="334" parent="304" name="defaultNy">
+    <column id="335" parent="304" name="defaultNy">
       <DasType>int|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="335" parent="304" name="itemImageUrl">
+    <column id="336" parent="304" name="itemImageUrl">
       <DasType>varchar(255)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="336" parent="304" name="itemDescription">
+    <column id="337" parent="304" name="itemDescription">
       <DasType>varchar(255)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="337" parent="304" name="itemName">
+    <column id="338" parent="304" name="itemName">
       <DasType>varchar(255)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="338" parent="304" name="itemDiscountRate">
+    <column id="339" parent="304" name="itemDiscountRate">
       <DasType>int|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="339" parent="304" name="itemPrice1">
+    <column id="340" parent="304" name="itemPrice1">
       <DasType>int|0s</DasType>
       <Position>7</Position>
     </column>
-    <column id="340" parent="304" name="itemPrice2">
+    <column id="341" parent="304" name="itemPrice2">
       <DasType>int|0s</DasType>
       <Position>8</Position>
     </column>
-    <column id="341" parent="304" name="itemDeliveryStatus">
+    <column id="342" parent="304" name="itemDeliveryStatus">
       <DasType>varchar(50)|0s</DasType>
       <Position>9</Position>
     </column>
-    <column id="342" parent="304" name="delNy">
+    <column id="343" parent="304" name="delNy">
       <DasType>int|0s</DasType>
       <Position>10</Position>
     </column>
-    <index id="343" parent="304" name="PRIMARY">
+    <index id="344" parent="304" name="PRIMARY">
       <ColNames>seq</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="344" parent="304" name="PRIMARY">
+    <key id="345" parent="304" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="345" parent="305" name="seq">
-      <AutoIncrement>30</AutoIncrement>
+    <column id="346" parent="305" name="seq">
+      <AutoIncrement>31</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="346" parent="305" name="defaultNy">
+    <column id="347" parent="305" name="defaultNy">
       <DasType>int|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="347" parent="305" name="userName">
+    <column id="348" parent="305" name="userName">
       <DasType>varchar(45)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="348" parent="305" name="phoneNumber">
+    <column id="349" parent="305" name="phoneNumber">
       <DasType>varchar(45)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="349" parent="305" name="id">
+    <column id="350" parent="305" name="id">
       <DasType>varchar(45)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="350" parent="305" name="nickName">
+    <column id="351" parent="305" name="nickName">
       <DasType>varchar(45)|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="351" parent="305" name="password">
+    <column id="352" parent="305" name="password">
       <DasType>varchar(45)|0s</DasType>
       <Position>7</Position>
     </column>
-    <column id="352" parent="305" name="postalCode">
+    <column id="353" parent="305" name="postalCode">
       <DasType>varchar(45)|0s</DasType>
       <Position>8</Position>
     </column>
-    <column id="353" parent="305" name="address">
+    <column id="354" parent="305" name="address">
       <DasType>varchar(45)|0s</DasType>
       <Position>9</Position>
     </column>
-    <column id="354" parent="305" name="addressDetail">
+    <column id="355" parent="305" name="addressDetail">
       <DasType>varchar(45)|0s</DasType>
       <Position>10</Position>
     </column>
-    <column id="355" parent="305" name="smsCheck">
+    <column id="356" parent="305" name="smsCheck">
       <DasType>int|0s</DasType>
       <Position>11</Position>
     </column>
-    <column id="356" parent="305" name="createdAt">
+    <column id="357" parent="305" name="createdAt">
       <DasType>datetime|0s</DasType>
       <Position>12</Position>
     </column>
-    <column id="357" parent="305" name="delNy">
+    <column id="358" parent="305" name="delNy">
       <DasType>int|0s</DasType>
       <Position>13</Position>
     </column>
-    <column id="358" parent="305" name="email">
+    <column id="359" parent="305" name="email">
       <DasType>varchar(45)|0s</DasType>
       <Position>14</Position>
     </column>
-    <index id="359" parent="305" name="PRIMARY">
+    <index id="360" parent="305" name="PRIMARY">
       <ColNames>seq</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="360" parent="305" name="PRIMARY">
+    <key id="361" parent="305" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

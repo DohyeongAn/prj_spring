@@ -12,9 +12,11 @@ public interface BoardService {
 
     public BoardVo selectOne(BoardVo vo);
 
-    public int insert(BoardVo dto);
+    public int insert(BoardVo vo);
 
-    public int update(BoardVo dto);
+    public int update(BoardVo vo);
 
-    public int delete(BoardVo dto);
+    public int delete(BoardVo vo);
+
+    public int viewCnt(BoardVo vo);
 }

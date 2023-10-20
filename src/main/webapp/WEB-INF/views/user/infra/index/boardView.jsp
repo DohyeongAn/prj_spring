@@ -97,7 +97,7 @@
                       <th width=20% class="text-center warning">이름</th>
                       <td width=30% class="text-center">{{item.writer}}</td>
                       <th width=20% class="text-center warning">조회수</th>
-                      <td width=30% class="text-center"></td>
+                      <td width=30% class="text-center">{{item.viewCnt}}</td>
                     </tr>
                     <tr>
                       <th width=20% class="text-center warning">제목</th>
@@ -178,6 +178,7 @@
       item: [],
       seq: null,
       sessionId: '${writer}',
+      viewCnt: 1,
     },
     mounted: function(){
       let _this=this;

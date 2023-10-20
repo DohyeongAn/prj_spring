@@ -11,6 +11,7 @@ public class BoardVo extends BaseVo {
     private String regdate;
     private String title;
     private Integer delNy;
+    private Integer viewCnt;
 
     //--
 
@@ -79,4 +80,11 @@ public class BoardVo extends BaseVo {
         this.delNy = delNy;
     }
 
+    public Integer getViewCnt() {
+        return viewCnt;
+    }
+
+    public void setViewCnt(Integer viewCnt) {
+        this.viewCnt = viewCnt;
+    }
 }

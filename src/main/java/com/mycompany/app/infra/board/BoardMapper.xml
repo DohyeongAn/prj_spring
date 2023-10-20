@@ -15,7 +15,8 @@
                 writing,
                 regdate,
                 title,
-                delNy
+                delNy,
+                viewCnt
     </sql>
 
     <!-- 게시판 목록 조회의 공통 조건을 담은 SQL 코드 조각 정의 -->
@@ -60,8 +61,6 @@
         ) bb
         ORDER BY seq DESC
         LIMIT #{rowNumToShow} OFFSET #{startRnumForMysql}
-
-
     </select>
 
 
@@ -84,7 +83,8 @@
         writing,
         regdate,
         title,
-        delNy
+        delNy,
+        viewCnt
         )
         VALUES
         (
@@ -92,7 +92,8 @@
         #{writing},
         NOW(), <!-- 현재 날짜 및 시간 사용 -->
         #{title},
-         "0"
+        "0",
+        "0"
         )
     </insert>
 
@@ -117,4 +118,15 @@
         WHERE
         seq = #{seq}
     </update>
+
+<!--    게시글 조회수 쿼리-->
+    <update id="viewCnt">
+          UPDATE
+          board
+          SET
+          viewCnt = viewCnt + 1
+          WHERE
+          seq = #{seq}
+    </update>
+
 </mapper>
