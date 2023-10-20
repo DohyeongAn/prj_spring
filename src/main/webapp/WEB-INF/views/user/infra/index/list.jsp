@@ -229,8 +229,7 @@
             shKeyword: this.shKeyword,
             shOption: this.shOption
         }
-      })
-                .then(response => {
+      }).then(response => {
                   this.list = response.data.list;
                   this.totalRows = response.data.totalRows;
                   this.thisPage = response.data.thisPage;
@@ -264,31 +263,6 @@
   });
 </script>
 
-<%--<script>--%>
-<%--  new Vue({--%>
-<%--    //el : 관리 영역 지정 => container--%>
-<%--    el:'.container',--%>
-<%--    data:{--%>
-<%--      board_list:[],--%>
-<%--      curpage:1,--%>
-<%--      totalpage:0--%>
-<%--    },--%>
-<%--    mounted:function(){--%>
-<%--      let _this=this;--%>
-<%--      axios.get("http://localhost:8080/web/board/list_vue.do",{--%>
-<%--        params:{--%>
-<%--          page:_this.curpage--%>
-<%--        }--%>
-<%--      }).then(function(result){--%>
-<%--        //개발자도구창에서 넘어온값 확인가능--%>
-<%--        console.log(result.data);--%>
-<%--        _this.board_list=result.data;--%>
-<%--        _this.curpage=result.data[0].curpage;--%>
-<%--        _this.totalpage=result.date[0].totalpage;--%>
-<%--      })--%>
-<%--    }--%>
-<%--  })--%>
-<%--</script>--%>
 
 
 
